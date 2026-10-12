@@ -638,6 +638,18 @@
       "path": "scouting/vector-06.svg",
       "bytes": 298161,
       "kind": "figma-svg"
+    },
+    {
+      "path": "misc/vector-63-240.svg",
+      "bytes": 199,
+      "kind": "figma-svg",
+      "nodeId": "63:240"
+    },
+    {
+      "path": "misc/vector-63-246.svg",
+      "bytes": 199,
+      "kind": "figma-svg",
+      "nodeId": "63:246"
     }
   ]
 }
