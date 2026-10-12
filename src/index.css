@@ -1,12 +1,15 @@
 :root {
   font-family: Arial, sans-serif;
-  color: #1d1d1d;
+  color: #171717;
   background: #fff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 * { box-sizing: border-box; }
 html, body, #root { min-width: 320px; min-height: 100%; margin: 0; }
 body { min-height: 100vh; }
+img, svg { display: block; max-width: 100%; }
+button, a { font: inherit; }

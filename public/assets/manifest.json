@@ -650,6 +650,76 @@
       "bytes": 199,
       "kind": "figma-svg",
       "nodeId": "63:246"
+    },
+    {
+      "path": "home/type/hero-title.svg",
+      "bytes": 10742,
+      "kind": "figma-text-outline",
+      "nodeId": "63:5",
+      "text": "BE(E)HIND A HIVE"
+    },
+    {
+      "path": "home/type/nav-brand.svg",
+      "bytes": 13923,
+      "kind": "figma-text-outline",
+      "nodeId": "63:216",
+      "text": "Linh Anh’s Portfolio"
+    },
+    {
+      "path": "home/type/nav-about.svg",
+      "bytes": 6795,
+      "kind": "figma-text-outline",
+      "nodeId": "63:217",
+      "text": "About Me"
+    },
+    {
+      "path": "home/type/nav-scouting.svg",
+      "bytes": 16009,
+      "kind": "figma-text-outline",
+      "nodeId": "63:218",
+      "text": "Scouting for pollens"
+    },
+    {
+      "path": "home/type/nav-inside.svg",
+      "bytes": 10591,
+      "kind": "figma-text-outline",
+      "nodeId": "63:219",
+      "text": "Inside the cells"
+    },
+    {
+      "path": "home/type/nav-world.svg",
+      "bytes": 4883,
+      "kind": "figma-text-outline",
+      "nodeId": "63:220",
+      "text": "World"
+    },
+    {
+      "path": "home/type/card-about.svg",
+      "bytes": 9776,
+      "kind": "figma-text-outline",
+      "nodeId": "63:19",
+      "text": "About m(b)ee"
+    },
+    {
+      "path": "home/type/card-scouting.svg",
+      "bytes": 16009,
+      "kind": "figma-text-outline",
+      "nodeId": "63:20",
+      "text": "Scouting for pollens"
+    },
+    {
+      "path": "home/type/card-inside.svg",
+      "bytes": 10591,
+      "kind": "figma-text-outline",
+      "nodeId": "63:21",
+      "text": "Inside the cells"
+    },
+    {
+      "path": "home/type/card-world.svg",
+      "bytes": 4883,
+      "kind": "figma-text-outline",
+      "nodeId": "63:22",
+      "text": "World"
     }
   ]
 }
