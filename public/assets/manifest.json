@@ -564,6 +564,304 @@
       "widthPx": 1393,
       "heightPx": 968,
       "bytes": 1894869
+    },
+    {
+      "path": "inside/linh-anh-tab2-1__63-196@1x.webp",
+      "sourcePath": "inside/linh-anh-tab2-1__63-196@4x.png",
+      "section": "Inside the cells",
+      "kind": "responsive-lossless-webp",
+      "exportScale": 1,
+      "widthPx": 1440,
+      "heightPx": 1045,
+      "bytes": 2276256
+    },
+    {
+      "path": "inside/linh-anh-tab2-1__63-196@2x.webp",
+      "sourcePath": "inside/linh-anh-tab2-1__63-196@4x.png",
+      "section": "Inside the cells",
+      "kind": "responsive-lossless-webp",
+      "exportScale": 2,
+      "widthPx": 2880,
+      "heightPx": 2090,
+      "bytes": 9455156
+    },
+    {
+      "path": "inside/linh-anh-tab2-1__63-196@4x.webp",
+      "sourcePath": "inside/linh-anh-tab2-1__63-196@4x.png",
+      "section": "Inside the cells",
+      "kind": "responsive-lossless-webp",
+      "exportScale": 4,
+      "widthPx": 5760,
+      "heightPx": 4180,
+      "bytes": 20801756
+    },
+    {
+      "path": "inside/linh-anh-tab3-1__54-4@1x.webp",
+      "sourcePath": "inside/linh-anh-tab3-1__54-4@4x.png",
+      "section": "Inside the cells",
+      "kind": "responsive-lossless-webp",
+      "exportScale": 1,
+      "widthPx": 1440,
+      "heightPx": 1001,
+      "bytes": 2031620
+    },
+    {
+      "path": "inside/linh-anh-tab3-1__54-4@2x.webp",
+      "sourcePath": "inside/linh-anh-tab3-1__54-4@4x.png",
+      "section": "Inside the cells",
+      "kind": "responsive-lossless-webp",
+      "exportScale": 2,
+      "widthPx": 2880,
+      "heightPx": 2002,
+      "bytes": 8401754
+    },
+    {
+      "path": "inside/linh-anh-tab3-1__54-4@4x.webp",
+      "sourcePath": "inside/linh-anh-tab3-1__54-4@4x.png",
+      "section": "Inside the cells",
+      "kind": "responsive-lossless-webp",
+      "exportScale": 4,
+      "widthPx": 5760,
+      "heightPx": 4004,
+      "bytes": 19417026
+    },
+    {
+      "nodeId": "63:247",
+      "path": "inside/type/text-63-247.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 13758
+    },
+    {
+      "nodeId": "63:252",
+      "path": "inside/type/text-63-252.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 18593
+    },
+    {
+      "nodeId": "63:262",
+      "path": "inside/type/text-63-262.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 15270
+    },
+    {
+      "nodeId": "63:265",
+      "path": "inside/type/text-63-265.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 13909
+    },
+    {
+      "nodeId": "63:266",
+      "path": "inside/type/text-63-266.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 23477
+    },
+    {
+      "nodeId": "63:268",
+      "path": "inside/type/text-63-268.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 33889
+    },
+    {
+      "nodeId": "63:287",
+      "path": "inside/type/text-63-287.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 14510
+    },
+    {
+      "nodeId": "63:288",
+      "path": "inside/type/text-63-288.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 17076
+    },
+    {
+      "nodeId": "63:289",
+      "path": "inside/type/text-63-289.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 66051
+    },
+    {
+      "nodeId": "63:290",
+      "path": "inside/type/text-63-290.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 97659
+    },
+    {
+      "nodeId": "63:291",
+      "path": "inside/type/text-63-291.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 105622
+    },
+    {
+      "nodeId": "63:303",
+      "path": "inside/type/text-63-303.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 13292
+    },
+    {
+      "nodeId": "63:304",
+      "path": "inside/type/text-63-304.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 23717
+    },
+    {
+      "nodeId": "63:306",
+      "path": "inside/type/text-63-306.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 88899
+    },
+    {
+      "nodeId": "63:307",
+      "path": "inside/type/text-63-307.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 144763
+    },
+    {
+      "nodeId": "66:321",
+      "path": "inside/type/text-66-321.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 17672
+    },
+    {
+      "nodeId": "66:324",
+      "path": "inside/type/text-66-324.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 205021
+    },
+    {
+      "nodeId": "66:337",
+      "path": "inside/type/text-66-337.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 32720
+    },
+    {
+      "nodeId": "67:341",
+      "path": "inside/type/text-67-341.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 18492
+    },
+    {
+      "nodeId": "67:342",
+      "path": "inside/type/text-67-342.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 54951
+    },
+    {
+      "nodeId": "67:343",
+      "path": "inside/type/text-67-343.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 150937
+    },
+    {
+      "nodeId": "67:344",
+      "path": "inside/type/text-67-344.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 10676
+    },
+    {
+      "nodeId": "67:356",
+      "path": "inside/type/text-67-356.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 10153
+    },
+    {
+      "nodeId": "67:357",
+      "path": "inside/type/text-67-357.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 183824
+    },
+    {
+      "nodeId": "70:451",
+      "path": "inside/type/text-70-451.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 6419
+    },
+    {
+      "nodeId": "71:511",
+      "path": "inside/type/text-71-511.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 85619
+    },
+    {
+      "nodeId": "71:533",
+      "path": "inside/type/text-71-533.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 9189
+    },
+    {
+      "nodeId": "71:561",
+      "path": "inside/type/text-71-561.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 126973
+    },
+    {
+      "nodeId": "71:564",
+      "path": "inside/type/text-71-564.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 251925
+    },
+    {
+      "nodeId": "71:576",
+      "path": "inside/type/text-71-576.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 2969
+    },
+    {
+      "nodeId": "71:579",
+      "path": "inside/type/text-71-579.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 163040
+    },
+    {
+      "nodeId": "71:580",
+      "path": "inside/type/text-71-580.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 2962
+    },
+    {
+      "nodeId": "71:585",
+      "path": "inside/type/text-71-585.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 6409
+    },
+    {
+      "nodeId": "71:587",
+      "path": "inside/type/text-71-587.svg",
+      "section": "Inside the cells",
+      "kind": "outlined-svg",
+      "bytes": 9167
     }
   ],
   "rawSources": [

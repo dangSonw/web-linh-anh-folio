@@ -1,0 +1,2465 @@
+[
+  {
+    "id": "63:174",
+    "w": 1440,
+    "h": 1174,
+    "elements": [
+      {
+        "id": "63:196",
+        "name": "Linh Anh tab2 1",
+        "type": "RECTANGLE",
+        "box": [
+          -0.00004567840642266674,
+          128.99993701188947,
+          1441.0000456784064,
+          1045.000185058423
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "52c3e308c861b1d98a03e77d36f7550ceb898b75"
+          }
+        ],
+        "radius": 0,
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "63:247",
+        "name": "Impact & Leadership",
+        "type": "TEXT",
+        "box": [
+          585,
+          910,
+          822,
+          234
+        ],
+        "text": "Impact\n& Leadership",
+        "font": {
+          "family": "iCiel Crocante",
+          "style": "Regular"
+        },
+        "fontSize": 128,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 66.19499921798706
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "63:262",
+        "name": "Scientific exploration",
+        "type": "TEXT",
+        "box": [
+          275,
+          359,
+          299,
+          88
+        ],
+        "text": "Scientific\nexploration",
+        "font": {
+          "family": "iCiel Crocante",
+          "style": "Regular"
+        },
+        "fontSize": 48,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 66.19499921798706
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "63:263",
+        "name": "Text",
+        "type": "TEXT",
+        "box": [
+          945,
+          167,
+          0,
+          44
+        ],
+        "text": " ",
+        "font": {
+          "family": "iCiel Crocante",
+          "style": "Regular"
+        },
+        "fontSize": 48,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 66.19499921798706
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "63:268",
+        "name": "American 250 Summer Camp in the US Embassy",
+        "type": "TEXT",
+        "box": [
+          1188,
+          806,
+          216,
+          66
+        ],
+        "text": "American\n250 Summer Camp\nin the US Embassy",
+        "font": {
+          "family": "iCiel Crocante",
+          "style": "Regular"
+        },
+        "fontSize": 24,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 66.19499921798706
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "63:265",
+        "name": "CNN Vibrant Stage",
+        "type": "TEXT",
+        "box": [
+          637,
+          575,
+          339,
+          88
+        ],
+        "text": "CNN\nVibrant Stage",
+        "font": {
+          "family": "iCiel Crocante",
+          "style": "Regular"
+        },
+        "fontSize": 48,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 66.19499921798706
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "67:344",
+        "name": "Inside bee hives",
+        "type": "TEXT",
+        "box": [
+          235,
+          806,
+          216,
+          88
+        ],
+        "text": "Inside\nbee hives",
+        "font": {
+          "family": "iCiel Crocante",
+          "style": "Regular"
+        },
+        "fontSize": 48,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 66.19499921798706
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "67:341",
+        "name": "Community and Leadership",
+        "type": "TEXT",
+        "box": [
+          958,
+          167,
+          365,
+          88
+        ],
+        "text": "Community\nand Leadership",
+        "font": {
+          "family": "iCiel Crocante",
+          "style": "Regular"
+        },
+        "fontSize": 48,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 66.19499921798706
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "63:252",
+        "name": "CNN Fun Fair Natural Science",
+        "type": "TEXT",
+        "box": [
+          275,
+          458,
+          282,
+          24
+        ],
+        "text": "CNN Fun Fair Natural Science",
+        "font": {
+          "family": "Inter",
+          "style": "Regular",
+          "variationSettings": {
+            "slnt": 0,
+            "wght": 400
+          }
+        },
+        "fontSize": 20,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "63:266",
+        "name": "Thanh Hoa Chi Mong performance",
+        "type": "TEXT",
+        "box": [
+          643,
+          667,
+          282,
+          48
+        ],
+        "text": "Thanh Hoa Chi Mong performance",
+        "font": {
+          "family": "Inter",
+          "style": "Regular",
+          "variationSettings": {
+            "slnt": 0,
+            "wght": 400
+          }
+        },
+        "fontSize": 20,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      }
+    ]
+  },
+  {
+    "id": "63:269",
+    "w": 1440,
+    "h": 1174,
+    "elements": [
+      {
+        "id": "63:278",
+        "name": "Linh Anh tab2 1",
+        "type": "RECTANGLE",
+        "box": [
+          -0.00004567840642266674,
+          128.99993701188941,
+          1441.0000456784064,
+          1045.000185058423
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "52c3e308c861b1d98a03e77d36f7550ceb898b75"
+          }
+        ],
+        "radius": 0,
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "63:286",
+        "name": "Rectangle 68",
+        "type": "RECTANGLE",
+        "box": [
+          113,
+          253,
+          1214,
+          799
+        ],
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 1,
+              "g": 0.7857224345207214,
+              "b": 0.14288975298404694
+            },
+            "opacity": 0.20000000298023224
+          }
+        ],
+        "radius": 25,
+        "effects": [
+          {
+            "type": "GLASS",
+            "visible": true,
+            "radius": 31,
+            "boundVariables": {},
+            "refraction": 0.800000011920929,
+            "depth": 85,
+            "lightAngle": -45,
+            "lightIntensity": 0.800000011920929,
+            "dispersion": 0.5,
+            "splay": 0.5899999737739563
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "id": "63:287",
+        "name": "Scientific exploration",
+        "type": "TEXT",
+        "box": [
+          140,
+          282,
+          731,
+          58
+        ],
+        "text": "Scientific exploration",
+        "font": {
+          "family": "iCiel Crocante",
+          "style": "Regular"
+        },
+        "fontSize": 64,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 66.19499921798706
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "63:288",
+        "name": "CNN Fun Fair Natural Science",
+        "type": "TEXT",
+        "box": [
+          140,
+          362,
+          363,
+          34
+        ],
+        "text": "CNN Fun Fair Natural Science",
+        "font": {
+          "family": "Mona Sans",
+          "style": "SemiBold",
+          "variationSettings": {
+            "wdth": 100,
+            "wght": 600
+          }
+        },
+        "fontSize": 24,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "63:289",
+        "name": "3 months of prototyping with teammates, proving that perfection doesn't happen on day one.",
+        "type": "TEXT",
+        "box": [
+          933,
+          296,
+          363,
+          136
+        ],
+        "text": "3 months of prototyping with teammates, proving that perfection doesn't happen on day one.",
+        "font": {
+          "family": "Mona Sans",
+          "style": "SemiBold",
+          "variationSettings": {
+            "wdth": 100,
+            "wght": 600
+          }
+        },
+        "fontSize": 24,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "63:290",
+        "name": "Building the structural prototype, integrating a water-pumping mechanism using recycled plastic bottles to prevent wood decay.",
+        "type": "TEXT",
+        "box": [
+          169,
+          877,
+          484,
+          136
+        ],
+        "text": "Building the structural prototype, integrating a water-pumping mechanism using recycled plastic bottles to prevent wood decay.",
+        "font": {
+          "family": "Mona Sans",
+          "style": "SemiBold",
+          "variationSettings": {
+            "wdth": 100,
+            "wght": 600
+          }
+        },
+        "fontSize": 24,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "63:291",
+        "name": "Transforming it into an interactive station at the School Fair, where students experienced live experiments, earning us the Third Prize in the Final Round",
+        "type": "TEXT",
+        "box": [
+          772,
+          877,
+          484,
+          136
+        ],
+        "text": "Transforming it into an interactive station at the School Fair, where students experienced live experiments, earning us the Third Prize in the Final Round",
+        "font": {
+          "family": "Mona Sans",
+          "style": "SemiBold",
+          "variationSettings": {
+            "wdth": 100,
+            "wght": 600
+          }
+        },
+        "fontSize": 24,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "71:497",
+        "name": "image 21",
+        "type": "RECTANGLE",
+        "box": [
+          169,
+          490,
+          491,
+          346
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "061550803a869a04d0365cbfe021527790b1322f"
+          }
+        ],
+        "radius": 0,
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 4,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.25
+            },
+            "offset": {
+              "x": 4,
+              "y": 4
+            },
+            "spread": 0,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "id": "71:499",
+        "name": "image 22",
+        "type": "RECTANGLE",
+        "box": [
+          772,
+          490,
+          491,
+          346
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "3ae593260549b96ec2cc79655a58f24d14808362"
+          }
+        ],
+        "radius": 0,
+        "effects": [],
+        "reactions": []
+      }
+    ]
+  },
+  {
+    "id": "63:292",
+    "w": 1440,
+    "h": 1174,
+    "elements": [
+      {
+        "id": "63:301",
+        "name": "Linh Anh tab2 1",
+        "type": "RECTANGLE",
+        "box": [
+          -0.00004567840642266674,
+          128.99993701188941,
+          1441.0000456784064,
+          1045.000185058423
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "52c3e308c861b1d98a03e77d36f7550ceb898b75"
+          }
+        ],
+        "radius": 0,
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "63:302",
+        "name": "Rectangle 68",
+        "type": "RECTANGLE",
+        "box": [
+          113,
+          253,
+          1214,
+          799
+        ],
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 1,
+              "g": 0.7857224345207214,
+              "b": 0.14288975298404694
+            },
+            "opacity": 0.20000000298023224
+          }
+        ],
+        "radius": 25,
+        "effects": [
+          {
+            "type": "GLASS",
+            "visible": true,
+            "radius": 31,
+            "boundVariables": {},
+            "refraction": 0.800000011920929,
+            "depth": 85,
+            "lightAngle": -45,
+            "lightIntensity": 0.800000011920929,
+            "dispersion": 0.5,
+            "splay": 0.5899999737739563
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "id": "63:303",
+        "name": "CNN Vibrant Stage",
+        "type": "TEXT",
+        "box": [
+          140,
+          282,
+          600,
+          58
+        ],
+        "text": "CNN Vibrant Stage",
+        "font": {
+          "family": "iCiel Crocante",
+          "style": "Regular"
+        },
+        "fontSize": 64,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 66.19499921798706
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "63:304",
+        "name": "Thanh Hoa Chi Mong performance",
+        "type": "TEXT",
+        "box": [
+          140,
+          362,
+          445,
+          29
+        ],
+        "text": "Thanh Hoa Chi Mong performance",
+        "font": {
+          "family": "Inter",
+          "style": "Regular",
+          "variationSettings": {
+            "slnt": 0,
+            "wght": 400
+          }
+        },
+        "fontSize": 24,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "63:306",
+        "name": "Managed a 20-member logistics team and a $1,000 budget for a grand Chinese romance stage production.",
+        "type": "TEXT",
+        "box": [
+          162,
+          791,
+          484,
+          102
+        ],
+        "text": "Managed a 20-member logistics team and a $1,000 budget for a grand Chinese romance stage production.",
+        "font": {
+          "family": "Mona Sans",
+          "style": "SemiBold",
+          "variationSettings": {
+            "wdth": 100,
+            "wght": 600
+          }
+        },
+        "fontSize": 24,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "63:307",
+        "name": "Reflection: I stayed until 11 PM on finals night to manage costume and prop inventory. I realized that true leadership lies in owning the unglamorous backend work that powers a team's victory (winning First Prize).",
+        "type": "TEXT",
+        "box": [
+          747,
+          799,
+          484,
+          204
+        ],
+        "text": "Reflection: I stayed until 11 PM on finals night to manage costume and prop inventory. I realized that true leadership lies in owning the unglamorous backend work that powers a team's victory (winning First Prize).",
+        "font": {
+          "family": "Mona Sans",
+          "style": "SemiBold",
+          "variationSettings": {
+            "wdth": 100,
+            "wght": 600
+          }
+        },
+        "fontSize": 24,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "71:501",
+        "name": "image 23",
+        "type": "RECTANGLE",
+        "box": [
+          162,
+          471,
+          491,
+          291
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "e9eb76dc7e5ab5de03c97610462b165a63d3d00e"
+          }
+        ],
+        "radius": 0,
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "71:503",
+        "name": "image 24",
+        "type": "RECTANGLE",
+        "box": [
+          749,
+          471,
+          491,
+          291
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "ca4ea2cadd635dfeb7912c2128edfc55b3762b1d"
+          }
+        ],
+        "radius": 0,
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 4,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.25
+            },
+            "offset": {
+              "x": 4,
+              "y": 4
+            },
+            "spread": 0,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "reactions": []
+      }
+    ]
+  },
+  {
+    "id": "66:310",
+    "w": 1440,
+    "h": 1174,
+    "elements": [
+      {
+        "id": "66:319",
+        "name": "Linh Anh tab2 1",
+        "type": "RECTANGLE",
+        "box": [
+          -0.00004567840642266674,
+          128.99993701188941,
+          1441.0000456784064,
+          1045.000185058423
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "52c3e308c861b1d98a03e77d36f7550ceb898b75"
+          }
+        ],
+        "radius": 0,
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "66:320",
+        "name": "Rectangle 68",
+        "type": "RECTANGLE",
+        "box": [
+          113,
+          211,
+          1214,
+          841
+        ],
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 1,
+              "g": 0.7857224345207214,
+              "b": 0.14288975298404694
+            },
+            "opacity": 0.20000000298023224
+          }
+        ],
+        "radius": 25,
+        "effects": [
+          {
+            "type": "GLASS",
+            "visible": true,
+            "radius": 31,
+            "boundVariables": {},
+            "refraction": 0.800000011920929,
+            "depth": 85,
+            "lightAngle": -45,
+            "lightIntensity": 0.800000011920929,
+            "dispersion": 0.5,
+            "splay": 0.5899999737739563
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "id": "66:321",
+        "name": "Community and Leadership",
+        "type": "TEXT",
+        "box": [
+          140,
+          229,
+          487,
+          116
+        ],
+        "text": "Community\nand Leadership",
+        "font": {
+          "family": "iCiel Crocante",
+          "style": "Regular"
+        },
+        "fontSize": 64,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 66.19499921798706
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "66:324",
+        "name": "Volunteer in Ba Vì Immersed in indigenous culture by learning traditional Dao herbal medicine. Collaborated with locals to install solar-powered streetlights and plant trees, blending sustainability with community impact. Reminiscent of my grandparents’ interest in herbal medicine.",
+        "type": "TEXT",
+        "box": [
+          140,
+          779,
+          566,
+          272
+        ],
+        "text": "Volunteer in Ba Vì\nImmersed in indigenous culture by learning traditional Dao herbal medicine. Collaborated with locals to install solar-powered streetlights and plant trees, blending sustainability with community impact.\nReminiscent of my grandparents’ interest in herbal medicine.",
+        "font": {
+          "family": "Mona Sans",
+          "style": "SemiBold",
+          "variationSettings": {
+            "wdth": 100,
+            "wght": 600
+          }
+        },
+        "fontSize": 24,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "71:511",
+        "name": "Keep Vietnam Clean: Amazed by the environmental event in Ngoc Thuy, Ha Noi, I participated as a volunteer in a World Clean-up Day.",
+        "type": "TEXT",
+        "box": [
+          744,
+          779,
+          566,
+          136
+        ],
+        "text": "Keep Vietnam Clean:\nAmazed by the environmental event in Ngoc Thuy, Ha Noi, I participated as a volunteer in a World Clean-up Day.",
+        "font": {
+          "family": "Mona Sans",
+          "style": "SemiBold",
+          "variationSettings": {
+            "wdth": 100,
+            "wght": 600
+          }
+        },
+        "fontSize": 24,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "71:509",
+        "name": "image 25",
+        "type": "RECTANGLE",
+        "box": [
+          140,
+          405,
+          513,
+          345
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "08bb82dfe59e0888e0c498376e4f253359a57102"
+          }
+        ],
+        "radius": 0,
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 4,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.25
+            },
+            "offset": {
+              "x": 4,
+              "y": 4
+            },
+            "spread": 0,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "id": "71:512",
+        "name": "image 26",
+        "type": "RECTANGLE",
+        "box": [
+          744,
+          405,
+          513,
+          345
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "6b457c5f21f6dd8391b2161659f8c5d35fc1eef2"
+          }
+        ],
+        "radius": 0,
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 4,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.25
+            },
+            "offset": {
+              "x": 4,
+              "y": 4
+            },
+            "spread": 0,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "reactions": []
+      }
+    ]
+  },
+  {
+    "id": "66:326",
+    "w": 1440,
+    "h": 1174,
+    "elements": [
+      {
+        "id": "66:335",
+        "name": "Linh Anh tab2 1",
+        "type": "RECTANGLE",
+        "box": [
+          -0.00004567840642266674,
+          128.99993701188941,
+          1441.0000456784064,
+          1045.000185058423
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "52c3e308c861b1d98a03e77d36f7550ceb898b75"
+          }
+        ],
+        "radius": 0,
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "66:336",
+        "name": "Rectangle 68",
+        "type": "RECTANGLE",
+        "box": [
+          113,
+          253,
+          1214,
+          799
+        ],
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 1,
+              "g": 0.7857224345207214,
+              "b": 0.14288975298404694
+            },
+            "opacity": 0.20000000298023224
+          }
+        ],
+        "radius": 25,
+        "effects": [
+          {
+            "type": "GLASS",
+            "visible": true,
+            "radius": 31,
+            "boundVariables": {},
+            "refraction": 0.800000011920929,
+            "depth": 85,
+            "lightAngle": -45,
+            "lightIntensity": 0.800000011920929,
+            "dispersion": 0.5,
+            "splay": 0.5899999737739563
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "id": "66:337",
+        "name": "American 250 Summer Camp in the US Embassy: ",
+        "type": "TEXT",
+        "box": [
+          140,
+          289,
+          896,
+          116
+        ],
+        "text": "American 250 Summer Camp\nin the US Embassy: ",
+        "font": {
+          "family": "iCiel Crocante",
+          "style": "Regular"
+        },
+        "fontSize": 64,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 66.19499921798706
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "67:342",
+        "name": "I joined the camp thinking, “Maybe it will be similar to other summer camps.”  ",
+        "type": "TEXT",
+        "box": [
+          169,
+          840,
+          484,
+          68
+        ],
+        "text": "I joined the camp thinking, “Maybe it will be similar to other summer camps.”  ",
+        "font": {
+          "family": "Mona Sans",
+          "style": "SemiBold",
+          "variationSettings": {
+            "wdth": 100,
+            "wght": 600
+          }
+        },
+        "fontSize": 24,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "67:343",
+        "name": "However, I was quickly proven wrong. The opportunity to collaborate with other students and work on final projects with humorous, unconventional topics made the experience far more engaging than I had expected.",
+        "type": "TEXT",
+        "box": [
+          734,
+          840,
+          484,
+          204
+        ],
+        "text": "However, I was quickly proven wrong. The opportunity to collaborate with other students and work on final projects with humorous, unconventional topics made the experience far more engaging than I had expected.",
+        "font": {
+          "family": "Mona Sans",
+          "style": "SemiBold",
+          "variationSettings": {
+            "wdth": 100,
+            "wght": 600
+          }
+        },
+        "fontSize": 24,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "71:514",
+        "name": "image 27",
+        "type": "RECTANGLE",
+        "box": [
+          168,
+          458,
+          482,
+          344
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "73a2e86e8950eb7f942755a981dca1f15d8e44a3"
+          }
+        ],
+        "radius": 0,
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 4,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.25
+            },
+            "offset": {
+              "x": 4,
+              "y": 4
+            },
+            "spread": 0,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "id": "71:516",
+        "name": "image 28",
+        "type": "RECTANGLE",
+        "box": [
+          735,
+          458,
+          482,
+          344
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "ef84cd5d97d20b6753cb7b6c95ba1074806eacde"
+          }
+        ],
+        "radius": 0,
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 4,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.25
+            },
+            "offset": {
+              "x": 4,
+              "y": 4
+            },
+            "spread": 0,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "reactions": []
+      }
+    ]
+  },
+  {
+    "id": "67:345",
+    "w": 1440,
+    "h": 1146,
+    "elements": [
+      {
+        "id": "54:4",
+        "name": "Linh Anh tab3 1",
+        "type": "RECTANGLE",
+        "box": [
+          0,
+          143,
+          1440,
+          1001
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "d05f8507a5085a29f9a8c0c42d41285faa6d7bca"
+          }
+        ],
+        "radius": 0,
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "67:355",
+        "name": "Rectangle 68",
+        "type": "RECTANGLE",
+        "box": [
+          72,
+          197,
+          399,
+          500
+        ],
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 1,
+              "g": 0.7857224345207214,
+              "b": 0.14288975298404694
+            },
+            "opacity": 0.20000000298023224
+          }
+        ],
+        "radius": 25,
+        "effects": [
+          {
+            "type": "GLASS",
+            "visible": true,
+            "radius": 31,
+            "boundVariables": {},
+            "refraction": 0.800000011920929,
+            "depth": 85,
+            "lightAngle": -45,
+            "lightIntensity": 0.800000011920929,
+            "dispersion": 0.5,
+            "splay": 0.5899999737739563
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "id": "71:583",
+        "name": "Rectangle 69",
+        "type": "RECTANGLE",
+        "box": [
+          72,
+          839,
+          399,
+          75
+        ],
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 1,
+              "g": 0.7857224345207214,
+              "b": 0.14288975298404694
+            },
+            "opacity": 0.20000000298023224
+          }
+        ],
+        "radius": 25,
+        "effects": [
+          {
+            "type": "GLASS",
+            "visible": true,
+            "radius": 31,
+            "boundVariables": {},
+            "refraction": 0.800000011920929,
+            "depth": 85,
+            "lightAngle": -45,
+            "lightIntensity": 0.800000011920929,
+            "dispersion": 0.5,
+            "splay": 0.5899999737739563
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "id": "71:584",
+        "name": "Rectangle 70",
+        "type": "RECTANGLE",
+        "box": [
+          72,
+          750,
+          399,
+          75
+        ],
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 1,
+              "g": 0.7857224345207214,
+              "b": 0.14288975298404694
+            },
+            "opacity": 0.20000000298023224
+          }
+        ],
+        "radius": 25,
+        "effects": [
+          {
+            "type": "GLASS",
+            "visible": true,
+            "radius": 31,
+            "boundVariables": {},
+            "refraction": 0.800000011920929,
+            "depth": 85,
+            "lightAngle": -45,
+            "lightIntensity": 0.800000011920929,
+            "dispersion": 0.5,
+            "splay": 0.5899999737739563
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "id": "71:586",
+        "name": "Rectangle 71",
+        "type": "RECTANGLE",
+        "box": [
+          72,
+          928,
+          399,
+          75
+        ],
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 1,
+              "g": 0.7857224345207214,
+              "b": 0.14288975298404694
+            },
+            "opacity": 0.20000000298023224
+          }
+        ],
+        "radius": 25,
+        "effects": [
+          {
+            "type": "GLASS",
+            "visible": true,
+            "radius": 31,
+            "boundVariables": {},
+            "refraction": 0.800000011920929,
+            "depth": 85,
+            "lightAngle": -45,
+            "lightIntensity": 0.800000011920929,
+            "dispersion": 0.5,
+            "splay": 0.5899999737739563
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "id": "67:356",
+        "name": "Inside bee hives",
+        "type": "TEXT",
+        "box": [
+          102,
+          216,
+          271,
+          168
+        ],
+        "text": "Inside bee hives",
+        "font": {
+          "family": "iCiel Crocante",
+          "style": "Regular"
+        },
+        "fontSize": 64,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 66.19499921798706
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "67:357",
+        "name": "Data Science (Queen cell): My journey began with the chaos of my parents’ business spreadsheets during COVID-19—from the family responsibility of cleaning up messy Excel rows to a rigorous pursuit of algorithms, data science, and quantitative research.",
+        "type": "TEXT",
+        "box": [
+          102,
+          414,
+          334,
+          198
+        ],
+        "text": "Data Science (Queen cell): My journey began with the chaos of my parents’ business spreadsheets during COVID-19—from the family responsibility of cleaning up messy Excel rows to a rigorous pursuit of algorithms, data science, and quantitative research.",
+        "font": {
+          "family": "Mona Sans",
+          "style": "SemiBold",
+          "variationSettings": {
+            "wdth": 100,
+            "wght": 600
+          }
+        },
+        "fontSize": 20,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "71:580",
+        "name": "WICO",
+        "type": "TEXT",
+        "box": [
+          227,
+          866,
+          83,
+          39
+        ],
+        "text": "WICO",
+        "font": {
+          "family": "Inter",
+          "style": "Bold",
+          "variationSettings": {
+            "slnt": 0,
+            "wght": 700
+          }
+        },
+        "fontSize": 24,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "71:585",
+        "name": "FDB Talent",
+        "type": "TEXT",
+        "box": [
+          172,
+          768,
+          193,
+          39
+        ],
+        "text": "FDB Talent",
+        "font": {
+          "family": "Inter",
+          "style": "Bold",
+          "variationSettings": {
+            "slnt": 0,
+            "wght": 700
+          }
+        },
+        "fontSize": 24,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "71:587",
+        "name": "SIM - LSE DATA ANALYTICS",
+        "type": "TEXT",
+        "box": [
+          87,
+          946,
+          363,
+          39
+        ],
+        "text": "SIM - LSE DATA ANALYTICS",
+        "font": {
+          "family": "Inter",
+          "style": "Bold",
+          "variationSettings": {
+            "slnt": 0,
+            "wght": 700
+          }
+        },
+        "fontSize": 24,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      }
+    ]
+  },
+  {
+    "id": "71:518",
+    "w": 1440,
+    "h": 1146,
+    "elements": [
+      {
+        "id": "71:519",
+        "name": "Linh Anh tab3 1",
+        "type": "RECTANGLE",
+        "box": [
+          0,
+          143,
+          1440,
+          1001
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "d05f8507a5085a29f9a8c0c42d41285faa6d7bca"
+          }
+        ],
+        "radius": 0,
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "71:517",
+        "name": "Rectangle 69",
+        "type": "RECTANGLE",
+        "box": [
+          27,
+          329,
+          1386,
+          734
+        ],
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 1,
+              "g": 0.7857224345207214,
+              "b": 0.14288975298404694
+            },
+            "opacity": 0.20000000298023224
+          }
+        ],
+        "radius": 25,
+        "effects": [
+          {
+            "type": "GLASS",
+            "visible": true,
+            "radius": 31,
+            "boundVariables": {},
+            "refraction": 0.800000011920929,
+            "depth": 85,
+            "lightAngle": -45,
+            "lightIntensity": 0.800000011920929,
+            "dispersion": 0.5,
+            "splay": 0.5899999737739563
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "id": "70:451",
+        "name": "FDB Talent",
+        "type": "TEXT",
+        "box": [
+          123,
+          376,
+          348,
+          39
+        ],
+        "text": "FDB Talent",
+        "font": {
+          "family": "Inter",
+          "style": "Bold",
+          "variationSettings": {
+            "slnt": 0,
+            "wght": 700
+          }
+        },
+        "fontSize": 32,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "70:445",
+        "name": "image 1",
+        "type": "RECTANGLE",
+        "box": [
+          123,
+          596,
+          400,
+          225
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "4e09636ceb7c8f912a50c5c4b4d612f7bf49a8e0"
+          }
+        ],
+        "radius": 8,
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 4,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.25
+            },
+            "offset": {
+              "x": 4,
+              "y": 4
+            },
+            "spread": 0,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "id": "70:447",
+        "name": "image 2",
+        "type": "RECTANGLE",
+        "box": [
+          553,
+          596,
+          400,
+          225
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "7110978fa575addbb9cbc6acf42ea54a095d5b72"
+          }
+        ],
+        "radius": 8,
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 4,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.25
+            },
+            "offset": {
+              "x": 4,
+              "y": 4
+            },
+            "spread": 0,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "id": "71:561",
+        "name": "Our team developed an enterprise strategic solution for fintech firm BRAVO, gaining deep insights into Management Information Systems (MIS) and automated workflow streamlining.",
+        "type": "TEXT",
+        "box": [
+          123,
+          448,
+          919,
+          102
+        ],
+        "text": "Our team developed an enterprise strategic solution for fintech firm BRAVO, gaining deep insights into Management Information Systems (MIS) and automated workflow streamlining.",
+        "font": {
+          "family": "Mona Sans",
+          "style": "SemiBold",
+          "variationSettings": {
+            "wdth": 100,
+            "wght": 600
+          }
+        },
+        "fontSize": 24,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      }
+    ]
+  },
+  {
+    "id": "71:551",
+    "w": 1440,
+    "h": 1146,
+    "elements": [
+      {
+        "id": "71:552",
+        "name": "Linh Anh tab3 1",
+        "type": "RECTANGLE",
+        "box": [
+          0,
+          143,
+          1440,
+          1001
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "d05f8507a5085a29f9a8c0c42d41285faa6d7bca"
+          }
+        ],
+        "radius": 0,
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "71:562",
+        "name": "Rectangle 69",
+        "type": "RECTANGLE",
+        "box": [
+          27,
+          329,
+          1386,
+          734
+        ],
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 1,
+              "g": 0.7857224345207214,
+              "b": 0.14288975298404694
+            },
+            "opacity": 0.20000000298023224
+          }
+        ],
+        "radius": 25,
+        "effects": [
+          {
+            "type": "GLASS",
+            "visible": true,
+            "radius": 31,
+            "boundVariables": {},
+            "refraction": 0.800000011920929,
+            "depth": 85,
+            "lightAngle": -45,
+            "lightIntensity": 0.800000011920929,
+            "dispersion": 0.5,
+            "splay": 0.5899999737739563
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "id": "71:533",
+        "name": "SIM - LSE DATA ANALYTICS",
+        "type": "TEXT",
+        "box": [
+          123,
+          406,
+          571,
+          39
+        ],
+        "text": "SIM - LSE DATA ANALYTICS",
+        "font": {
+          "family": "Inter",
+          "style": "Bold",
+          "variationSettings": {
+            "slnt": 0,
+            "wght": 700
+          }
+        },
+        "fontSize": 32,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "71:537",
+        "name": "image 11",
+        "type": "RECTANGLE",
+        "box": [
+          138,
+          696,
+          417,
+          265
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "1edafee059b7629985a131e488aaf462d5a0ebcc"
+          }
+        ],
+        "radius": 0,
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 4,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.25
+            },
+            "offset": {
+              "x": 4,
+              "y": 4
+            },
+            "spread": 0,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "id": "71:539",
+        "name": "image 13",
+        "type": "RECTANGLE",
+        "box": [
+          559,
+          696,
+          417,
+          265
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "7aed3a0cea94c0dfefe1f018cafb4594363728db"
+          }
+        ],
+        "radius": 0,
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 4,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.25
+            },
+            "offset": {
+              "x": 4,
+              "y": 4
+            },
+            "spread": 0,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "id": "71:564",
+        "name": "Identifying that traditional 60/40 equity-bond portfolios failed post-2022, our team decided to propose an automated robo-advisor API and an AI-driven early warning system utilizing R language to calculate real-time portfolio rebalancing thresholds for investors. We demonstrated our project in Seoul National University of Education, Seoul",
+        "type": "TEXT",
+        "box": [
+          123,
+          494,
+          919,
+          204
+        ],
+        "text": "Identifying that traditional 60/40 equity-bond portfolios failed post-2022, our team decided to propose an automated robo-advisor API and an AI-driven early warning system utilizing R language to calculate real-time portfolio rebalancing thresholds for investors.\nWe demonstrated our project in Seoul National University of Education, Seoul",
+        "font": {
+          "family": "Mona Sans",
+          "style": "SemiBold",
+          "variationSettings": {
+            "wdth": 100,
+            "wght": 600
+          }
+        },
+        "fontSize": 24,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      }
+    ]
+  },
+  {
+    "id": "71:565",
+    "w": 1440,
+    "h": 1146,
+    "elements": [
+      {
+        "id": "71:566",
+        "name": "Linh Anh tab3 1",
+        "type": "RECTANGLE",
+        "box": [
+          0,
+          143,
+          1440,
+          1001
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "d05f8507a5085a29f9a8c0c42d41285faa6d7bca"
+          }
+        ],
+        "radius": 0,
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "71:575",
+        "name": "Rectangle 69",
+        "type": "RECTANGLE",
+        "box": [
+          27,
+          329,
+          1386,
+          734
+        ],
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 1,
+              "g": 0.7857224345207214,
+              "b": 0.14288975298404694
+            },
+            "opacity": 0.20000000298023224
+          }
+        ],
+        "radius": 25,
+        "effects": [
+          {
+            "type": "GLASS",
+            "visible": true,
+            "radius": 31,
+            "boundVariables": {},
+            "refraction": 0.800000011920929,
+            "depth": 85,
+            "lightAngle": -45,
+            "lightIntensity": 0.800000011920929,
+            "dispersion": 0.5,
+            "splay": 0.5899999737739563
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "id": "71:576",
+        "name": "WICO",
+        "type": "TEXT",
+        "box": [
+          123,
+          406,
+          571,
+          39
+        ],
+        "text": "WICO",
+        "font": {
+          "family": "Inter",
+          "style": "Bold",
+          "variationSettings": {
+            "slnt": 0,
+            "wght": 700
+          }
+        },
+        "fontSize": 32,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "71:579",
+        "name": "In this activity, our 2-member team decided to build interactive dashboards to surface consumption trends on Tableau and Excel. To deliver our insights and recommendations, we designed a presentation in Canva.",
+        "type": "TEXT",
+        "box": [
+          123,
+          494,
+          919,
+          136
+        ],
+        "text": "In this activity, our 2-member team decided to build interactive dashboards to surface consumption trends on Tableau and Excel.\nTo deliver our insights and recommendations, we designed a presentation in Canva.",
+        "font": {
+          "family": "Mona Sans",
+          "style": "SemiBold",
+          "variationSettings": {
+            "wdth": 100,
+            "wght": 600
+          }
+        },
+        "fontSize": 24,
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 0.3176470696926117,
+              "g": 0.19607843458652496,
+              "b": 0.007843137718737125
+            },
+            "opacity": 1
+          }
+        ],
+        "effects": [],
+        "reactions": []
+      },
+      {
+        "id": "71:538",
+        "name": "image 12",
+        "type": "RECTANGLE",
+        "box": [
+          123,
+          676,
+          417,
+          265
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "e77a915af5675c468483bf8f9a7770d9e7eab470"
+          }
+        ],
+        "radius": 0,
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 4,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.25
+            },
+            "offset": {
+              "x": 4,
+              "y": 4
+            },
+            "spread": 0,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "reactions": []
+      },
+      {
+        "id": "71:540",
+        "name": "image 14",
+        "type": "RECTANGLE",
+        "box": [
+          544,
+          676,
+          417,
+          265
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "opacity": 1,
+            "imageHash": "809e49ca17613f4d4c29855c586c71a9e3e3d282"
+          }
+        ],
+        "radius": 0,
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 4,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.25
+            },
+            "offset": {
+              "x": 4,
+              "y": 4
+            },
+            "spread": 0,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "reactions": []
+      }
+    ]
+  }
+]

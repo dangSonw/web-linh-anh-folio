@@ -6,21 +6,16 @@ import { preloadRoute } from '../lib/routeAssets.js';
 const baseItems = [
   { label: 'About Me', asset: 'nav-about-gold.svg', to: '/about-me' },
   { label: 'Scouting for pollens', asset: 'nav-scouting.svg', to: '/scouting' },
-  { label: 'Inside the cells', asset: 'nav-inside.svg', to: '/#inside-the-cells' },
+  { label: 'Inside the cells', asset: 'nav-inside.svg', to: '/inside-the-cells' },
   { label: 'World', asset: 'nav-world.svg', to: '/#world' },
 ];
 
 export default function PortfolioHeader() {
   const location = useLocation();
-  const isScoutingRoute = location.pathname.startsWith('/scouting');
-  const items = isScoutingRoute
-    ? baseItems.map((item, index) => index === 2
-      ? { ...item, label: 'BUILDING MY HIVE', asset: 'nav-building-my-hive.svg' }
-      : item)
-    : baseItems;
+  const items = baseItems;
   const navRef = useRef(null);
   const linkRefs = useRef([]);
-  const routeIndex = isScoutingRoute ? 1 : items.findIndex((item) => item.to === location.pathname);
+  const routeIndex = items.findIndex(item => location.pathname === item.to || location.pathname.startsWith(item.to + '/'));
   const hashIndex = items.findIndex((item) => item.to === `/#${location.hash.slice(1)}`);
   const currentIndex = routeIndex >= 0 ? routeIndex : hashIndex;
   const [selectedIndex, setSelectedIndex] = useState(routeIndex >= 0 ? routeIndex : null);
@@ -29,12 +24,9 @@ export default function PortfolioHeader() {
   const displayedIndex = hoverIndex ?? selectedIndex;
 
   useLayoutEffect(() => {
-    const pageIndex = location.pathname.startsWith('/scouting')
-      ? 1
-      : baseItems.findIndex((item) => item.to === location.pathname);
-    setSelectedIndex(location.pathname === '/' ? null : pageIndex >= 0 ? pageIndex : 0);
+    setSelectedIndex(location.pathname === '/' ? null : routeIndex >= 0 ? routeIndex : null);
     setHoverIndex(null);
-  }, [location.hash, location.pathname]);
+  }, [location.hash, location.pathname, routeIndex]);
 
   const movePill = useCallback((index) => {
     const link = linkRefs.current[index];

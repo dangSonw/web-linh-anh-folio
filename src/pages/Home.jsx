@@ -21,7 +21,7 @@ const sections = [
   },
   {
     id: 'inside-the-cells',
-    to: '/#inside-the-cells',
+    to: '/inside-the-cells',
     title: 'Inside the cells',
     image: '/assets/home/linh-anh-tab2-1__54-3@4x.png',
     imageAlt: 'Watercolor illustration from Inside the cells',
