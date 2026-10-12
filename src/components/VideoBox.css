@@ -1,0 +1,7 @@
+.video-box { position: relative; width: 100%; height: 100%; background: #000; }
+.video-box__poster { position: relative; display: block; width: 100%; height: 100%; padding: 0; border: 0; background: transparent; }
+.video-box__poster img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.video-box__play { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: grid; place-items: center; width: 54px; height: 54px; border-radius: 50%; background: #f5d226; color: #513202; box-shadow: 0 2px 10px #0005; font-size: 23px; }
+.video-box iframe, .video-box video { display: block; width: 100%; height: 100%; border: 0; object-fit: contain; }
+.video-box__poster:focus-visible { outline: 3px solid #513202; outline-offset: 3px; }
+@media (max-width: 880px) { .video-box { aspect-ratio: 16 / 9; height: auto; min-height: 200px; } }

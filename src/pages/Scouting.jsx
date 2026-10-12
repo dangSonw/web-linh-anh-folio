@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { animate, motion, useMotionValue, useReducedMotion, useTransform } from 'framer-motion';
-import { Link, Navigate, useParams } from 'react-router-dom';
-import { preloadRoute, scoutingBackdrop, scoutingBackdropSizes, scoutingBackdropSrcSet } from '../lib/routeAssets.js';
+import { Link } from 'react-router-dom';
+import { preloadRoute } from '../lib/routeAssets.js';
 import './Scouting.css';
 
 const topics = [
@@ -42,11 +42,11 @@ function FlowerLink({ topic, onHover, onLeave }) {
     <Link
       className={`scouting-flower-hit scouting-flower-hit--${topic.id}`}
       id={`scouting-flower-${topic.id}`}
-      to={`/scouting/${topic.id}`}
+      to={`/scouting#${topic.id}`}
       aria-label={topic.label}
-      onPointerEnter={() => { onHover(topic.id); preloadRoute(`/scouting/${topic.id}`); }}
+      onPointerEnter={() => { onHover(topic.id); preloadRoute(`/scouting#${topic.id}`); }}
       onPointerLeave={onLeave}
-      onFocus={() => { onHover(topic.id); preloadRoute(`/scouting/${topic.id}`); }}
+      onFocus={() => { onHover(topic.id); preloadRoute(`/scouting#${topic.id}`); }}
       onBlur={onLeave}
     >
       <span className="portfolio-visually-hidden">{topic.label}</span>
@@ -184,23 +184,16 @@ function ScoutingOverview() {
 }
 
 export default function Scouting() {
-  const { topic } = useParams();
-  const activeTab = topic ?? null;
-  if (topic && !topics.some(entry => entry.id === topic)) {
-    return <Navigate to="/scouting" replace />;
-  }
-  return (
-    <main className={`scouting-page${activeTab ? ' scouting-page--detail' : ''}`}>
-      <div className="scouting-hero">
-        <img className="scouting-backdrop" src={scoutingBackdrop} srcSet={scoutingBackdropSrcSet} sizes={scoutingBackdropSizes} decoding="async" alt="" />
-        {!activeTab && <ScoutingOverview />}
-      </div>
-      {activeTab && (
-        <div className="scouting-panel-anchor">
-          <h1 className="portfolio-visually-hidden">{topics.find(entry => entry.id === activeTab).label}</h1>
-          <TabPanel activeTab={activeTab} />
-        </div>
-      )}
-    </main>
-  );
+  const reduced = useReducedMotion();
+  return <main className="scouting-scroll">
+    <section id="overview" className="scroll-section scouting-overview-section" style={{ '--section-source-height': 1044 }} aria-label="Scouting for pollens">
+      <div className="scouting-page"><div className="scouting-hero"><ScoutingOverview /></div></div>
+    </section>
+    {topics.map(topic => <motion.section key={topic.id} id={topic.id}
+      className="scroll-section scouting-detail-section" style={{ '--section-source-height': 1044 }}
+      aria-label={topic.label} initial={reduced ? false : { opacity: 0 }} whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0.1 }} transition={{ duration: reduced ? 0 : 0.4 }}>
+      <div className="scouting-page scouting-page--detail"><div className="scouting-panel-anchor"><TabPanel activeTab={topic.id} /></div></div>
+    </motion.section>)}
+  </main>;
 }

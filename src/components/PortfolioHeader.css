@@ -38,7 +38,7 @@
   flex: 1 1 0;
   grid-template-columns: 20.06% 35.96% 30.84% 13.14%;
   min-width: 0;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .portfolio-nav__pill {
@@ -81,7 +81,7 @@
   left: -0.1389cqw;
 }
 
-.portfolio-nav__link:nth-of-type(4) img {
+.portfolio-nav__link--world img {
   position: relative;
   left: -0.4167cqw;
 }
@@ -170,4 +170,17 @@
   .portfolio-nav__link img {
     transition: none;
   }
+}
+.portfolio-nav__group { position: relative; min-width: 0; height: 100%; }
+.portfolio-nav__pill-track { position: absolute; inset: 0; border-radius: inherit; overflow: hidden; pointer-events: none; }
+.portfolio-nav__group > button { width: 100%; height: 100%; border: 0; background: transparent; color: inherit; gap: 0.55cqw; }
+.portfolio-nav__link .portfolio-nav__chevron { display: block; flex: 0 0 auto; width: 13px; max-width: 13px; height: 8px; }
+.portfolio-nav__dropdown { position: absolute; top: calc(100% - 1px); left: 0; z-index: 20; width: 100%; padding: 8px 0; border: 2px solid #f5d226; border-radius: 18px; background: #fffdf2; box-shadow: 0 10px 28px #51320222; }
+.portfolio-nav__dropdown-item { display: flex; align-items: center; min-height: 44px; padding: 12px; text-decoration: none; }
+.portfolio-nav__dropdown-item img { width: auto; max-width: 100%; height: auto; }
+.portfolio-nav__dropdown-item:hover, .portfolio-nav__dropdown-item:focus-visible { background: #fff1a0; outline: 2px solid #f5d226; outline-offset: -2px; }
+@media (max-width: 880px) {
+  .portfolio-nav { overflow: visible; }
+  .portfolio-nav__dropdown-item img { display: none; }
+  .portfolio-nav__dropdown-item .portfolio-nav__text { text-align: left; }
 }

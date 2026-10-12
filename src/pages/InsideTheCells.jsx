@@ -1,5 +1,7 @@
-import { Link, Navigate, useLocation } from 'react-router-dom';
-import { insidePages, insideSrcSet } from '../data/insidePages.js';
+import { Link } from 'react-router-dom';
+import { motion, useReducedMotion } from 'framer-motion';
+import { impactPages, hivePages, insideDestination } from '../lib/pageGroups.js';
+import VideoBox from '../components/VideoBox.jsx';
 import { preloadRoute } from '../lib/routeAssets.js';
 import './InsideTheCells.css';
 
@@ -13,7 +15,9 @@ function DesignNode({ node, origin, heading = false, alt }) {
   return (
     <Tag className={`inside-node inside-node--${node.type}${heading ? ' inside-node--heading' : ''}`}
       data-node={node.id} style={position(node.box, origin)}>
-      {node.type === 'image' ? <img src={node.src} alt={alt} decoding="async" /> : <>
+      {node.id === '71:499' ? <VideoBox poster={node.src} title="Scientific exploration prototype" src="/assets/inside/scientific-prototype.mp4" />
+        : node.id === '71:501' ? <VideoBox poster={node.src} title="CNN Vibrant Stage performance" youtubeId="KTAN_pvkji0" />
+        : node.type === 'image' ? <img src={node.src} alt={alt} decoding="async" /> : <>
         <img src={node.src} alt="" aria-hidden="true" />
         <span className="inside-readable">{node.text}</span>
       </>}
@@ -24,7 +28,7 @@ function DesignNode({ node, origin, heading = false, alt }) {
 function PageLink({ entry, page, glass = false }) {
   const panel = page.nodes.find(node => node.id === entry.panel);
   const box = panel?.box ?? entry.box;
-  const to = `/inside-the-cells/${entry.to}`;
+  const to = insideDestination(entry.to);
   return (
     <Link className={`inside-page-link${glass ? ' inside-glass inside-hive-link' : ' inside-overview-link'}`}
       to={to} style={position(box)} aria-label={entry.label}
@@ -53,16 +57,10 @@ function Detail({ page }) {
   );
 }
 
-export default function InsideTheCells() {
-  const location = useLocation();
-  const page = insidePages.find(entry => entry.path === location.pathname);
-  if (!page) return <Navigate to="/inside-the-cells" replace />;
+function InsideFrame({ page }) {
   const node = id => page.nodes.find(entry => entry.id === id);
   return (
-    <main className={`inside-page inside-page--${page.kind ?? 'detail'}`} data-frame={page.frame}>
-      <div className="inside-background inside-node" style={position(page.background.box)}>
-        <img src={page.background.src} srcSet={insideSrcSet(page.background.src)} sizes="100vw" alt="" decoding="async" />
-      </div>
+    <div className={`inside-page inside-page--${page.kind ?? 'detail'}`} data-frame={page.frame}>
       {page.kind === 'overview' ? <>
         <DesignNode node={node(page.heading)} heading />
         <nav className="inside-overview-nav" aria-label="Impact and Leadership projects">
@@ -77,6 +75,21 @@ export default function InsideTheCells() {
           {page.links.map(entry => <PageLink key={entry.to} entry={entry} page={page} glass />)}
         </nav>
       </> : <Detail page={page} />}
-    </main>
+    </div>
   );
+}
+
+export default function InsideTheCells({ group = 'hive' }) {
+  const pages = group === 'impact' ? impactPages : hivePages;
+  const reduced = useReducedMotion();
+  return <main className="inside-scroll">
+    {pages.map((page, index) => <motion.section key={page.key}
+      id={index === 0 ? 'overview' : page.key.split('/').pop()}
+      className="scroll-section" aria-label={page.title}
+      style={{ '--section-source-height': page.height - 124 }}
+      initial={reduced ? false : { opacity: 0 }} whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0.1 }} transition={{ duration: reduced ? 0 : 0.4 }}>
+      <InsideFrame page={page} />
+    </motion.section>)}
+  </main>;
 }

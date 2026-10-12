@@ -123,6 +123,10 @@
   .inside-page .inside-detail-columns,
   .inside-page .inside-overview-nav { grid-template-columns: minmax(0, 1fr); }
 }
+.inside-scroll .inside-page { top: -8.6111cqw; bottom: auto; height: calc(100cqw * (var(--section-source-height) + 124) / 1440); background: transparent; }
+@media (max-width: 880px) {
+  .inside-scroll .inside-page { top: auto; height: auto; min-height: calc(100svh - 176px); }
+}
 @media (prefers-reduced-motion: reduce) {
   .inside-page .inside-page-link { transition: none; }
   .inside-page .inside-page-link:hover,

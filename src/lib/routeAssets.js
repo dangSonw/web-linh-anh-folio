@@ -1,4 +1,5 @@
 import { insideAssets, insideBackdrops, insideSrcSet } from '../data/insidePages.js';
+import { impactPages, hivePages } from './pageGroups.js';
 export const scoutingBackdrop = '/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@4x.webp';
 export const scoutingBackdropSrcSet = [1, 2, 4]
   .map(scale => scoutingBackdrop.replace('@4x.webp', `@${scale}x.webp`) + ` ${1440 * scale}w`)
@@ -67,5 +68,8 @@ function preloadImage(src) {
 }
 export function preloadRoute(to) {
   const pathname = to.split('#')[0] || '/';
-  return Promise.all((assets[pathname] ?? []).map(preloadImage));
+  const grouped = pathname === '/scouting' ? Object.entries(assets).filter(([path]) => path.startsWith('/scouting')).flatMap(([, images]) => images)
+    : pathname === '/impact-leadership' ? ['/assets/home/type/nav-impact.svg', ...impactPages.flatMap(page => insideAssets[page.path])]
+      : pathname === '/inside-the-cells' ? hivePages.flatMap(page => insideAssets[page.path]) : assets[pathname] ?? [];
+  return Promise.all([...new Set(grouped)].map(preloadImage));
 }

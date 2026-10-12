@@ -470,3 +470,20 @@
 @media (prefers-reduced-motion: reduce) {
   .scouting-flower-art { transition: none; }
 }
+.scouting-scroll .scouting-page { top: -8.6111cqw; bottom: auto; height: 81.1111cqw; background: transparent; }
+@media (max-width: 880px) {
+  .scouting-scroll .scouting-page { top: auto; height: auto; display: block; padding: 20px clamp(18px, 4.4vw, 38px) 32px; }
+  .scouting-scroll .scouting-page--detail .scouting-panel-anchor { position: relative; inset: auto; }
+  .scouting-scroll .scouting-tab-panel { height: auto; overflow: visible; }
+  .scouting-scroll .scouting-overview-section .scouting-hero { display: flex; flex-direction: column; height: auto; min-height: calc(100svh - 228px); overflow: visible; }
+  .scouting-scroll .scouting-arrow,
+  .scouting-scroll .scouting-flower-art,
+  .scouting-scroll .scouting-bee,
+  .scouting-scroll .scouting-callout { display: none; }
+  .scouting-scroll .scouting-title { position: relative; inset: auto; margin: 24px 0; }
+  .scouting-scroll .scouting-title .scouting-outline { transform: none; }
+  .scouting-scroll .scouting-title img { width: 100%; max-width: 100%; }
+  .scouting-scroll .scouting-tab-list { position: relative; inset: auto; display: grid; gap: 16px; }
+  .scouting-scroll .scouting-flower-hit { position: relative; inset: auto; width: 100%; height: auto; min-height: 60px; padding: 16px; background: rgba(255,255,255,.75); border: 2px solid #fff; border-radius: 18px; }
+  .scouting-scroll .scouting-flower-hit .portfolio-visually-hidden { position: static; width: auto; height: auto; clip: auto; clip-path: none; white-space: normal; font-weight: 900; color: #513202; }
+}

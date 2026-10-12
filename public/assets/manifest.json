@@ -862,6 +862,29 @@
       "section": "Inside the cells",
       "kind": "outlined-svg",
       "bytes": 9167
+    },
+    {
+      "path": "home/type/nav-impact.svg",
+      "nodeId": "63:238",
+      "kind": "outlined-svg",
+      "bytes": 15300
+    },
+    {
+      "path": "home/type/nav-chevron.svg",
+      "nodeId": "63:240",
+      "kind": "svg",
+      "bytes": 199
+    },
+    {
+      "path": "inside/scientific-prototype.mp4",
+      "sourcePath": "inside/Video 1.mov",
+      "kind": "video-remux",
+      "durationSeconds": 10.308005,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "widthPx": 1024,
+      "heightPx": 576,
+      "bytes": 1267367
     }
   ],
   "rawSources": [

@@ -19,6 +19,7 @@ button, a { font: inherit; }
   }
 }
 .app-stage {
+  --header-height: 8.6111cqw;
   --fit-width: min(100cqw, 2560px, calc(100svh * 1440 / 1168));
   --fit-height: calc(var(--fit-width) * 1168 / 1440);
   --fit-top: max(0px, calc((100svh - var(--fit-height)) / 2));
@@ -104,4 +105,23 @@ button, a { font: inherit; }
 }
 @media (prefers-reduced-motion: reduce) {
   .portfolio-header-shell { transition: none; }
+}
+
+/* Only the section content scrolls; the shared artwork and navigation stay visible. */
+.group-backdrop { position: fixed; z-index: 0; top: var(--header-height); left: 0; right: 0; bottom: 0; pointer-events: none; }
+.group-backdrop img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.portfolio-header-shell--scouting,
+.portfolio-header-shell--impact,
+.portfolio-header-shell--inside { position: sticky; top: 0; width: 100%; height: var(--header-height); aspect-ratio: auto; background: #fff; }
+.portfolio-header-shell--about { position: fixed; top: 0; height: var(--header-height); aspect-ratio: auto; background: #fff; }
+.page-transitions--scouting,
+.page-transitions--impact,
+.page-transitions--inside { height: auto; min-height: calc(100svh - var(--header-height)); overflow: visible; }
+.app-shell--scrolling { width: 100%; height: auto; aspect-ratio: auto; padding: 0; background: transparent; }
+.app-shell--scrolling > .route-layer { position: relative; inset: auto; height: auto; }
+.scroll-section { position: relative; height: calc(100cqw * var(--section-source-height) / 1440); min-height: calc(100svh - var(--header-height)); scroll-margin-top: var(--header-height); overflow-anchor: none; }
+@media (max-width: 880px) {
+  .app-stage { --header-height: 176px; }
+  .portfolio-header-shell--about { position: sticky; }
+  .scroll-section { height: auto; min-height: calc(100svh - var(--header-height)); }
 }
