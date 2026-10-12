@@ -13,3 +13,49 @@ html, body, #root { min-width: 320px; min-height: 100%; margin: 0; }
 body { min-height: 100vh; }
 img, svg { display: block; max-width: 100%; }
 button, a { font: inherit; }
+
+.app-stage {
+  display: grid;
+  min-height: 100svh;
+  place-items: center;
+}
+
+.app-shell {
+  position: relative;
+  container-type: inline-size;
+  background: #fff;
+}
+
+.app-shell--home {
+  width: min(100vw, 2560px, calc(100svh * 1.328413284));
+  aspect-ratio: 1440 / 1084;
+}
+
+.app-shell--about {
+  width: min(100%, 2560px);
+  aspect-ratio: 1440 / 2336;
+}
+
+.route-layer {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+}
+
+@media (max-width: 880px) {
+  .app-stage { display: block; }
+
+  .app-shell,
+  .app-shell--home,
+  .app-shell--about {
+    width: 100%;
+    min-height: 100svh;
+    aspect-ratio: auto;
+    padding: 18px clamp(18px, 4.4vw, 38px) 36px;
+  }
+
+  .route-layer {
+    position: relative;
+    inset: auto;
+  }
+}

@@ -720,6 +720,20 @@
       "kind": "figma-text-outline",
       "nodeId": "63:22",
       "text": "World"
+    },
+    {
+      "path": "about/type/building-title.svg",
+      "bytes": 11240,
+      "kind": "figma-text-outline",
+      "nodeId": "26:3",
+      "text": "BUILDING MY HIVE"
+    },
+    {
+      "path": "about/type/about-title.svg",
+      "bytes": 6492,
+      "kind": "figma-text-outline",
+      "nodeId": "26:57",
+      "text": "About Me"
     }
   ]
 }

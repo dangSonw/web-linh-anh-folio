@@ -1,0 +1,156 @@
+.about-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: clip;
+  background: #fff;
+}
+
+.about-hero-image {
+  position: absolute;
+  top: 29.3056cqw;
+  left: 0;
+  width: 100%;
+  height: 87.7778cqw;
+  object-fit: cover;
+}
+
+.about-hero-title {
+  position: absolute;
+  z-index: 1;
+  top: 11.1111cqw;
+  left: 13.0556cqw;
+  width: 73.5417cqw;
+  margin: 0;
+}
+
+.about-hero-title img {
+  width: 100%;
+  height: auto;
+}
+
+.about-copy {
+  position: absolute;
+  top: 119.375cqw;
+  left: 7.8472cqw;
+  width: 31.4583cqw;
+}
+
+.about-heading {
+  position: absolute;
+  top: 1.4583cqw;
+  left: 0;
+  width: 31.3889cqw;
+  margin: 0;
+}
+
+.about-heading img {
+  width: 100%;
+  height: auto;
+}
+
+.about-bio {
+  position: absolute;
+  top: 9.4444cqw;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  color: #111;
+  font-family: Inter, Arial, sans-serif;
+  font-size: clamp(13.5px, 1.3889cqw, 20px);
+  line-height: 1.2;
+}
+
+.about-bio__visual,
+.about-bio__visual span {
+  display: block;
+}
+
+.about-profile-photo {
+  position: absolute;
+  top: 120.2778cqw;
+  left: 50cqw;
+  width: 40.8333cqw;
+  height: 34.2361cqw;
+  object-fit: cover;
+}
+
+@media (max-width: 880px) {
+  .route-layer--about {
+    position: relative;
+  }
+
+  .about-page {
+    display: flex;
+    height: auto;
+    min-height: 0;
+    flex-direction: column;
+    gap: 28px;
+    overflow: visible;
+    padding: 0 0 48px;
+  }
+
+  .about-hero-title {
+    position: static;
+    order: 0;
+    width: min(100%, 740px);
+    margin: clamp(24px, 8vw, 64px) auto 0;
+  }
+
+  .about-hero-image {
+    position: static;
+    order: 1;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1440 / 1264;
+    object-fit: cover;
+  }
+
+  .about-profile {
+    position: static;
+    order: 2;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .about-copy {
+    position: static;
+    width: 100%;
+  }
+
+  .about-heading {
+    position: static;
+    width: min(100%, 452px);
+    margin: 12px 0 24px;
+  }
+
+  .about-bio {
+    position: static;
+    font-size: clamp(15px, 1.3889cqw, 20px);
+    line-height: 1.35;
+  }
+
+  .about-profile-photo {
+    position: static;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 588 / 493;
+  }
+}
+
+@media (max-width: 520px) {
+  .about-profile {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .about-heading {
+    margin-top: 4px;
+  }
+
+  .about-profile-photo {
+    max-width: 588px;
+  }
+}
