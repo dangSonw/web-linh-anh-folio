@@ -1,5 +1,4 @@
-import { useRef, useState } from 'react';
-import { useReducedMotion } from 'framer-motion';
+import { Link, Navigate, useParams } from 'react-router-dom';
 import './Scouting.css';
 
 const topics = [
@@ -35,30 +34,24 @@ function OutlineText({ file, text, className = '' }) {
   );
 }
 
-function FlowerTab({ topic, index, selected, buttonRef, onSelect, onKeyDown }) {
+function FlowerLink({ topic, selected }) {
   return (
-    <button
-      ref={buttonRef}
+    <Link
       className={`scouting-flower-hit scouting-flower-hit--${topic.id}`}
-      type="button"
-      role="tab"
-      id={`scouting-tab-${topic.id}`}
+      id={`scouting-flower-${topic.id}`}
+      to={`/scouting/${topic.id}`}
       aria-label={topic.label}
-      aria-controls="scouting-tab-panel"
-      aria-selected={selected}
-      tabIndex={selected || (!selected && index === 0) ? 0 : -1}
-      onClick={onSelect}
-      onKeyDown={onKeyDown}
+      aria-current={selected ? 'page' : undefined}
     >
       <span className="portfolio-visually-hidden">{topic.label}</span>
-    </button>
+    </Link>
   );
 }
 
 function TabPanel({ activeTab }) {
   if (activeTab === 'vision') {
     return (
-      <section className="scouting-tab-panel scouting-tab-panel--vision" role="tabpanel" id="scouting-tab-panel" aria-labelledby="scouting-tab-vision" tabIndex="0">
+      <section className="scouting-tab-panel scouting-tab-panel--vision" aria-labelledby="scouting-flower-vision">
         <h2>
           <OutlineText file="vision-tab-title" text="Vision" />
         </h2>
@@ -79,7 +72,7 @@ function TabPanel({ activeTab }) {
 
   if (activeTab === 'side-interest') {
     return (
-      <section className="scouting-tab-panel scouting-tab-panel--projects" role="tabpanel" id="scouting-tab-panel" aria-labelledby="scouting-tab-side-interest" tabIndex="0">
+      <section className="scouting-tab-panel scouting-tab-panel--projects" aria-labelledby="scouting-flower-side-interest">
         <h2><OutlineText file="side-interest-tab-title" text="Side-interest" /></h2>
         <div className="scouting-project-grid">
           {sideProjects.map((project) => (
@@ -95,7 +88,7 @@ function TabPanel({ activeTab }) {
 
   if (activeTab === 'art') {
     return (
-      <section className="scouting-tab-panel scouting-tab-panel--art" role="tabpanel" id="scouting-tab-panel" aria-labelledby="scouting-tab-art" tabIndex="0">
+      <section className="scouting-tab-panel scouting-tab-panel--art" aria-labelledby="scouting-flower-art">
         <h2><OutlineText file="art-tab-title" text="Art" /></h2>
         <div className="scouting-art-grid">
           {artImages.map(([src, alt], index) => (
@@ -115,33 +108,12 @@ function TabPanel({ activeTab }) {
 }
 
 export default function Scouting() {
-  const [activeTab, setActiveTab] = useState(null);
-  const panelRef = useRef(null);
-  const tabRefs = useRef([]);
-  const reduceMotion = useReducedMotion();
+  const { topic } = useParams();
+  const activeTab = topic ?? null;
 
-  const selectTab = (index) => {
-    setActiveTab(topics[index].id);
-    if (window.matchMedia('(max-width: 880px)').matches) {
-      requestAnimationFrame(() => panelRef.current?.scrollIntoView({
-        behavior: reduceMotion ? 'auto' : 'smooth',
-        block: 'start',
-      }));
-    }
-  };
-
-  const handleTabKeyDown = (event, index) => {
-    let nextIndex = index;
-    if (event.key === 'ArrowRight') nextIndex = (index + 1) % topics.length;
-    else if (event.key === 'ArrowLeft') nextIndex = (index - 1 + topics.length) % topics.length;
-    else if (event.key === 'Home') nextIndex = 0;
-    else if (event.key === 'End') nextIndex = topics.length - 1;
-    else return;
-
-    event.preventDefault();
-    tabRefs.current[nextIndex]?.focus();
-    selectTab(nextIndex);
-  };
+  if (topic && !topics.some((entry) => entry.id === topic)) {
+    return <Navigate to="/scouting" replace />;
+  }
 
   return (
     <main className="scouting-page">
@@ -161,22 +133,18 @@ export default function Scouting() {
           <OutlineText file="bee-scouting-title" text="Bee Scouting for Pollens" />
         </h1>
 
-        <div className="scouting-tab-list" role="tablist" aria-label="Scouting for pollens topics">
-          {topics.map((topic, index) => (
-            <FlowerTab
-              key={topic.id}
-              topic={topic}
-              index={index}
-              selected={activeTab === topic.id}
-              buttonRef={(node) => { tabRefs.current[index] = node; }}
-              onSelect={() => selectTab(index)}
-              onKeyDown={(event) => handleTabKeyDown(event, index)}
+        <nav className="scouting-tab-list" aria-label="Scouting for pollens pages">
+          {topics.map((entry) => (
+            <FlowerLink
+              key={entry.id}
+              topic={entry}
+              selected={activeTab === entry.id}
             />
           ))}
-        </div>
+        </nav>
       </div>
 
-      <div ref={panelRef} className="scouting-panel-anchor">
+      <div className="scouting-panel-anchor">
         <TabPanel activeTab={activeTab} />
       </div>
     </main>

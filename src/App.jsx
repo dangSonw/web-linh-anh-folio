@@ -1,6 +1,5 @@
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
-import { useRef } from 'react';
 import AboutMe from './pages/AboutMe.jsx';
 import Home from './pages/Home.jsx';
 import Scouting from './pages/Scouting.jsx';
@@ -8,14 +7,9 @@ import PortfolioHeader from './components/PortfolioHeader.jsx';
 
 export default function App() {
   const location = useLocation();
-  const startedAtHome = useRef(window.location.pathname === '/').current;
   const reduceMotion = useReducedMotion();
   const isAboutPage = location.pathname === '/about-me';
-  const isScoutingPage = location.pathname === '/scouting';
-
-  if (!startedAtHome && location.pathname !== '/') {
-    return <Navigate to="/" replace />;
-  }
+  const isScoutingPage = location.pathname.startsWith('/scouting');
 
   return (
     <div className="app-stage">
@@ -34,6 +28,7 @@ export default function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about-me" element={<AboutMe />} />
               <Route path="/scouting" element={<Scouting />} />
+              <Route path="/scouting/:topic" element={<Scouting />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </motion.div>

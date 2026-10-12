@@ -35,7 +35,7 @@
   position: relative;
   display: grid;
   flex: 1 1 0;
-  grid-template-columns: 19.6% 37.5% 25.9% 17%;
+  grid-template-columns: 20.06% 35.96% 30.84% 13.14%;
   min-width: 0;
   overflow: hidden;
 }
@@ -68,8 +68,20 @@
 .portfolio-nav__link img {
   width: auto;
   max-width: 100%;
-  height: 38%;
+  height: auto;
+  transform: scale(calc(100cqw / 1440px));
+  transform-origin: center;
   transition: filter 160ms ease;
+}
+
+.portfolio-nav__link:nth-of-type(2) img {
+  position: relative;
+  left: -0.1389cqw;
+}
+
+.portfolio-nav__link:nth-of-type(4) img {
+  position: relative;
+  left: -0.4167cqw;
 }
 
 .portfolio-nav__link.is-selected img,
@@ -129,6 +141,8 @@
   }
 
   .portfolio-nav__link img {
+    left: 0;
+    transform: none;
     height: auto;
     max-height: 20px;
   }
