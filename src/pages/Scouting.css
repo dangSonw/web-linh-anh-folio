@@ -358,7 +358,7 @@
 
   .scouting-panel-anchor {
     position: absolute;
-    inset: clamp(10px, 2svh, 20px) 0;
+    inset: clamp(10px, 2svh, 20px) clamp(18px, 4.4vw, 38px);
   }
 
   .scouting-panel-anchor:empty {

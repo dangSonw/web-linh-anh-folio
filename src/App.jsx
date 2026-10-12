@@ -55,7 +55,7 @@ export default function App() {
 
   return (
     <div className="app-stage">
-      <div className="portfolio-header-shell"><PortfolioHeader /></div>
+      <div className={`portfolio-header-shell portfolio-header-shell--${pageKind(displayLocation.pathname)}`}><PortfolioHeader /></div>
       <div
         className={`page-transitions page-transitions--${pageKind(displayLocation.pathname)}`}
         aria-busy={location.pathname !== displayLocation.pathname}

@@ -100,7 +100,9 @@
   .about-hero-image {
     position: static;
     order: 1;
-    width: 100%;
+    width: calc(100% + 2 * clamp(18px, 4.4vw, 38px));
+    max-width: none;
+    margin-inline: calc(-1 * clamp(18px, 4.4vw, 38px));
     height: auto;
     aspect-ratio: 1440 / 1264;
     object-fit: cover;

@@ -2,7 +2,7 @@ export const scoutingBackdrop = '/assets/scouting/untitled-9-september-2026-14-4
 export const scoutingBackdropSrcSet = [1, 2, 4]
   .map(scale => scoutingBackdrop.replace('@4x.webp', `@${scale}x.webp`) + ` ${1440 * scale}w`)
   .join(', ');
-export const scoutingBackdropSizes = '(max-width: 880px) calc(100vw - 36px), min(100vw, 2560px, calc(100svh * 1440 / 1168))';
+export const scoutingBackdropSizes = '100vw';
 const scouting = '/assets/scouting/';
 const home = '/assets/home/';
 const assets = {
