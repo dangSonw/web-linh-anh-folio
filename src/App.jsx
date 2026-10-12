@@ -3,6 +3,7 @@ import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { useRef } from 'react';
 import AboutMe from './pages/AboutMe.jsx';
 import Home from './pages/Home.jsx';
+import Scouting from './pages/Scouting.jsx';
 import PortfolioHeader from './components/PortfolioHeader.jsx';
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
   const startedAtHome = useRef(window.location.pathname === '/').current;
   const reduceMotion = useReducedMotion();
   const isAboutPage = location.pathname === '/about-me';
+  const isScoutingPage = location.pathname === '/scouting';
 
   if (!startedAtHome && location.pathname !== '/') {
     return <Navigate to="/" replace />;
@@ -17,12 +19,12 @@ export default function App() {
 
   return (
     <div className="app-stage">
-      <div className={`app-shell app-shell--${isAboutPage ? 'about' : 'home'}`}>
-        <PortfolioHeader activePage="about-me" />
+      <div className={`app-shell app-shell--${isAboutPage ? 'about' : isScoutingPage ? 'scouting' : 'home'}`}>
+        <PortfolioHeader />
         <AnimatePresence mode="wait" initial={false}>
           <motion.div
             key={location.pathname}
-            className={`route-layer route-layer--${isAboutPage ? 'about' : 'home'}`}
+            className={`route-layer route-layer--${isAboutPage ? 'about' : isScoutingPage ? 'scouting' : 'home'}`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -31,6 +33,7 @@ export default function App() {
             <Routes location={location}>
               <Route path="/" element={<Home />} />
               <Route path="/about-me" element={<AboutMe />} />
+              <Route path="/scouting" element={<Scouting />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </motion.div>

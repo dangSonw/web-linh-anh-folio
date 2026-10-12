@@ -56,7 +56,7 @@ export default function Home() {
         {sections.map((section) => (
           <Link
             className="home-card"
-            to={section.id === 'about-me' ? '/about-me' : `/#${section.id}`}
+            to={section.id === 'about-me' ? '/about-me' : section.id === 'scouting-for-pollens' ? '/scouting' : `/#${section.id}`}
             id={section.id}
             key={section.id}
             aria-label={section.title}

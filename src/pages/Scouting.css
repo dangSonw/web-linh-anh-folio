@@ -1,0 +1,451 @@
+.scouting-page {
+  --scouting-scale: calc(100cqw / 1440px);
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: #fff;
+}
+
+.scouting-hero {
+  position: absolute;
+  inset: 0;
+}
+
+.scouting-backdrop {
+  position: absolute;
+  top: 8.6111cqw;
+  left: 0;
+  width: 100%;
+  height: 72.5cqw;
+  max-width: none;
+  object-fit: fill;
+}
+
+.scouting-flower-art,
+.scouting-arrow,
+.scouting-bee {
+  position: absolute;
+  max-width: none;
+  height: auto;
+  transform: scale(var(--scouting-scale));
+  transform-origin: top left;
+  pointer-events: none;
+}
+
+.scouting-flower-art--vision {
+  top: 16.5972cqw;
+  left: 10.8333cqw;
+}
+
+.scouting-flower-art--side-interest {
+  top: 28.0028cqw;
+  left: 38.5521cqw;
+}
+
+.scouting-flower-art--art {
+  top: 27.9511cqw;
+  left: 67.1179cqw;
+}
+
+.scouting-arrow--vision {
+  top: 29.0972cqw;
+  left: 8.75cqw;
+}
+
+.scouting-arrow--side-interest {
+  top: 30.3472cqw;
+  left: 38.5417cqw;
+}
+
+.scouting-arrow--art {
+  top: 54.7917cqw;
+  left: 66.875cqw;
+}
+
+.scouting-outline {
+  display: block;
+  transform: scale(var(--scouting-scale));
+  transform-origin: top left;
+}
+
+.scouting-outline img {
+  width: auto;
+  height: auto;
+  max-width: none;
+}
+
+.scouting-callout {
+  position: absolute;
+  z-index: 2;
+}
+
+.scouting-callout--vision {
+  top: 36.7361cqw;
+  left: 4.375cqw;
+}
+
+.scouting-callout--side-interest {
+  top: 23.3333cqw;
+  left: 35cqw;
+}
+
+.scouting-callout--art {
+  top: 61.1111cqw;
+  left: 69.1667cqw;
+}
+
+.scouting-bee {
+  top: 58.1944cqw;
+  left: 16.3889cqw;
+  width: 180px;
+}
+
+.scouting-title {
+  position: absolute;
+  top: 62.6389cqw;
+  left: 5.4861cqw;
+  z-index: 1;
+  margin: 0;
+}
+
+.scouting-tab-list {
+  position: absolute;
+  z-index: 4;
+  inset: 0;
+  pointer-events: none;
+}
+
+.scouting-flower-hit {
+  position: absolute;
+  display: block;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.scouting-flower-hit--vision {
+  top: 16.5972cqw;
+  left: 10.8333cqw;
+  width: 22.7919cqw;
+  height: 22.75cqw;
+}
+
+.scouting-flower-hit--side-interest {
+  top: 28.0028cqw;
+  left: 38.5521cqw;
+  width: 23.3112cqw;
+  height: 21.2444cqw;
+}
+
+.scouting-flower-hit--art {
+  top: 27.9511cqw;
+  left: 67.1179cqw;
+  width: 26.4516cqw;
+  height: 27.5764cqw;
+}
+
+.scouting-flower-hit:focus-visible {
+  outline: 3px solid #171717;
+  outline-offset: 4px;
+}
+
+.scouting-panel-anchor {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  pointer-events: none;
+}
+
+.scouting-tab-panel {
+  position: absolute;
+  top: 17.8472cqw;
+  left: 7.8472cqw;
+  width: 84.3056cqw;
+  height: 55.4861cqw;
+  overflow: hidden;
+  border: 0.2083cqw solid #fff;
+  border-radius: 1.6667cqw;
+  background: rgba(255, 200, 36, 0.2);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  pointer-events: none;
+}
+
+.scouting-tab-panel h2,
+.scouting-tab-panel h3,
+.scouting-tab-panel p,
+.scouting-tab-panel figure {
+  margin: 0;
+}
+
+.scouting-tab-panel h2,
+.scouting-tab-panel h3 {
+  position: absolute;
+}
+
+.scouting-tab-panel--vision h2 {
+  top: calc(11.8899% + 0.6944cqw);
+  left: calc(3.6252% - 0.1389cqw);
+}
+
+.scouting-tab-panel--vision h3 {
+  top: calc(43.8048% + 0.7639cqw);
+  left: calc(3.6252% - 0.1389cqw);
+}
+
+.scouting-vision-copy,
+.scouting-background-copy {
+  position: absolute;
+  left: calc(3.6252% - 0.1389cqw);
+  width: calc(91.68% + 0.2778cqw);
+  color: #090909;
+  font: 700 1.3889cqw/1.4 "Arial", sans-serif;
+}
+
+.scouting-vision-copy {
+  top: 21.7772%;
+  padding-top: 1.9444cqw;
+}
+
+.scouting-background-copy {
+  top: 64.5807%;
+}
+
+.scouting-tab-panel--projects h2,
+.scouting-tab-panel--art h2 {
+  top: calc(2.2531% + 0.625cqw);
+  left: calc(3.6252% - 0.1389cqw);
+}
+
+.scouting-project-grid {
+  position: absolute;
+  top: calc(14.6433% - 0.1389cqw);
+  left: calc(3.6252% - 0.1389cqw);
+  display: grid;
+  grid-template-columns: 272fr 341fr;
+  grid-template-rows: 15.8333cqw 19.4444cqw;
+  gap: 2.2222cqw 2.9167cqw;
+  width: 45.4861cqw;
+  height: 37.5cqw;
+}
+
+.scouting-project {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.scouting-project img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 35%);
+}
+
+.project-debate img,
+.project-abp img {
+  height: 13.3333cqw;
+}
+
+.project-kmpg img,
+.project-vandon img {
+  height: 17.5cqw;
+}
+
+.project-kmpg,
+.project-vandon {
+  max-width: 18.9583cqw;
+}
+
+.scouting-project figcaption {
+  margin-top: 0.4167cqw;
+  color: #090909;
+  font: 600 1.3889cqw/1.4 Arial, sans-serif;
+}
+
+.project-abp figcaption,
+.project-vandon figcaption {
+  width: 100%;
+}
+
+.scouting-art-grid {
+  position: absolute;
+  top: calc(13.2678% - 0.1389cqw);
+  left: calc(3.6252% - 0.1389cqw);
+  right: 2.5535%;
+  display: grid;
+  grid-template-columns: 254fr 254fr 299fr 299fr;
+  grid-template-rows: 23.6111cqw 19.7917cqw;
+  gap: 0.9028cqw 0.7639cqw;
+  width: 79.0972cqw;
+}
+
+.scouting-art-image {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: fill;
+}
+
+@media (max-width: 880px) {
+  .route-layer--scouting {
+    position: relative;
+  }
+
+  .scouting-page {
+    position: relative;
+    inset: auto;
+    overflow: visible;
+  }
+
+  .scouting-hero {
+    position: relative;
+    height: 72.5cqw;
+    overflow: hidden;
+  }
+
+  .scouting-backdrop {
+    top: 0;
+    height: 100%;
+  }
+
+  .scouting-flower-art--vision,
+  .scouting-flower-hit--vision {
+    top: 7.9861cqw;
+  }
+
+  .scouting-flower-art--side-interest,
+  .scouting-flower-hit--side-interest {
+    top: 19.3848cqw;
+  }
+
+  .scouting-flower-art--art,
+  .scouting-flower-hit--art {
+    top: 19.340cqw;
+  }
+
+  .scouting-arrow--vision { top: 20.4861cqw; }
+  .scouting-arrow--side-interest { top: 21.7361cqw; }
+  .scouting-arrow--art { top: 46.1806cqw; }
+  .scouting-callout--vision { top: 28.125cqw; }
+  .scouting-callout--side-interest { top: 14.7222cqw; }
+  .scouting-callout--art { top: 52.5cqw; }
+  .scouting-bee { top: 49.5833cqw; }
+  .scouting-title { top: 54.0278cqw; }
+
+  .scouting-panel-anchor {
+    position: static;
+    margin-top: 22px;
+    scroll-margin-top: 16px;
+  }
+
+  .scouting-panel-anchor:empty {
+    display: none;
+  }
+
+  .scouting-tab-panel {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+    border: 2px solid #fff;
+    border-radius: 18px;
+    padding: clamp(18px, 4vw, 30px);
+    pointer-events: auto;
+  }
+
+  .scouting-tab-panel h2,
+  .scouting-tab-panel h3,
+  .scouting-vision-copy,
+  .scouting-background-copy,
+  .scouting-project-grid,
+  .scouting-art-grid {
+    position: static;
+  }
+
+  .scouting-tab-panel h2,
+  .scouting-tab-panel h3,
+  .scouting-vision-copy {
+    margin-bottom: 18px;
+  }
+
+  .scouting-tab-panel h3 {
+    margin-top: 30px;
+  }
+
+  .scouting-vision-copy,
+  .scouting-background-copy {
+    width: 100%;
+    padding-top: 0;
+    font-size: clamp(15px, 1.3889cqw, 20px);
+    line-height: 1.45;
+  }
+
+  .scouting-project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto;
+    gap: 22px 16px;
+    width: 100%;
+    margin-top: 18px;
+  }
+
+  .scouting-project img,
+  .project-debate img,
+  .project-abp img,
+  .project-kmpg img,
+  .project-vandon img {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .project-kmpg,
+  .project-vandon {
+    max-width: none;
+  }
+
+  .scouting-project figcaption {
+    margin-top: 6px;
+    font-size: clamp(14px, 1.3889cqw, 20px);
+  }
+
+  .scouting-art-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto;
+    gap: 12px;
+    margin-top: 18px;
+  }
+
+  .scouting-art-image {
+    height: auto;
+    object-fit: cover;
+  }
+
+  .scouting-art-image:nth-child(-n+4) {
+    aspect-ratio: 254 / 340;
+  }
+
+  .scouting-art-image:nth-child(n+5) {
+    aspect-ratio: 254 / 285;
+  }
+}
+
+@media (max-width: 520px) {
+  .scouting-project-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .scouting-project img,
+  .project-debate img,
+  .project-abp img,
+  .project-kmpg img,
+  .project-vandon img {
+    aspect-ratio: 16 / 10;
+  }
+}

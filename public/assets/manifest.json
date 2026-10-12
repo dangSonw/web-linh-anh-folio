@@ -612,38 +612,107 @@
     {
       "path": "scouting/vector-01.svg",
       "bytes": 30260,
-      "kind": "figma-svg"
+      "kind": "figma-svg",
+      "nodeId": "63:109"
     },
     {
       "path": "scouting/vector-02.svg",
       "bytes": 33880,
-      "kind": "figma-svg"
+      "kind": "figma-svg",
+      "nodeId": "63:114"
     },
     {
       "path": "scouting/vector-03.svg",
       "bytes": 407390,
-      "kind": "figma-svg"
+      "kind": "figma-svg",
+      "nodeId": "63:51"
     },
     {
       "path": "scouting/vector-04.svg",
       "bytes": 28678,
-      "kind": "figma-svg"
+      "kind": "figma-svg",
+      "nodeId": "63:111"
     },
     {
       "path": "scouting/vector-05.svg",
       "bytes": 346270,
-      "kind": "figma-svg"
+      "kind": "figma-svg",
+      "nodeId": "63:107"
     },
     {
       "path": "scouting/vector-06.svg",
       "bytes": 298161,
-      "kind": "figma-svg"
+      "kind": "figma-svg",
+      "nodeId": "63:106"
+    },
+    {
+      "path": "scouting/type/bee-scouting-title.svg",
+      "bytes": 19085,
+      "kind": "figma-text-outline",
+      "nodeId": "63:37",
+      "text": "BEE SCOUTING FOR POLLENS"
+    },
+    {
+      "path": "scouting/type/vision-flower-label.svg",
+      "bytes": 17259,
+      "kind": "figma-text-outline",
+      "nodeId": "63:108",
+      "text": "Vision & Background"
+    },
+    {
+      "path": "scouting/type/side-interest-flower-label.svg",
+      "bytes": 10037,
+      "kind": "figma-text-outline",
+      "nodeId": "63:110",
+      "text": "Side-interest"
+    },
+    {
+      "path": "scouting/type/art-flower-label.svg",
+      "bytes": 3000,
+      "kind": "figma-text-outline",
+      "nodeId": "63:112",
+      "text": "Art"
+    },
+    {
+      "path": "scouting/type/vision-tab-title.svg",
+      "bytes": 4589,
+      "kind": "figma-text-outline",
+      "nodeId": "63:141",
+      "text": "Vision"
+    },
+    {
+      "path": "scouting/type/background-tab-title.svg",
+      "bytes": 33285,
+      "kind": "figma-text-outline",
+      "nodeId": "63:143",
+      "text": "Background: One moment lasting for a whole life"
+    },
+    {
+      "path": "scouting/type/side-interest-tab-title.svg",
+      "bytes": 154388,
+      "kind": "figma-text-outline",
+      "nodeId": "63:156",
+      "text": "Side-interest"
+    },
+    {
+      "path": "scouting/type/art-tab-title.svg",
+      "bytes": 49372,
+      "kind": "figma-text-outline",
+      "nodeId": "63:173",
+      "text": "Art"
     },
     {
       "path": "misc/vector-63-240.svg",
       "bytes": 199,
       "kind": "figma-svg",
       "nodeId": "63:240"
+    },
+    {
+      "path": "home/type/nav-about-gold.svg",
+      "bytes": 6797,
+      "kind": "figma-text-outline",
+      "nodeId": "63:43",
+      "text": "About Me"
     },
     {
       "path": "misc/vector-63-246.svg",

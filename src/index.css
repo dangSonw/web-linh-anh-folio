@@ -36,6 +36,11 @@ button, a { font: inherit; }
   aspect-ratio: 1440 / 2336;
 }
 
+.app-shell--scouting {
+  width: min(100%, 2560px);
+  aspect-ratio: 1440 / 1168;
+}
+
 .route-layer {
   position: absolute;
   z-index: 0;

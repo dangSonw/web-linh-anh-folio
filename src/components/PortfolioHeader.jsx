@@ -3,24 +3,27 @@ import { Link, useLocation } from 'react-router-dom';
 import './PortfolioHeader.css';
 
 const items = [
-  { label: 'About Me', asset: 'nav-about.svg', to: '/about-me' },
-  { label: 'Scouting for pollens', asset: 'nav-scouting.svg', to: '/#scouting-for-pollens' },
+  { label: 'About Me', asset: 'nav-about-gold.svg', to: '/about-me' },
+  { label: 'Scouting for pollens', asset: 'nav-scouting.svg', to: '/scouting' },
   { label: 'Inside the cells', asset: 'nav-inside.svg', to: '/#inside-the-cells' },
   { label: 'World', asset: 'nav-world.svg', to: '/#world' },
 ];
 
-export default function PortfolioHeader({ activePage = 'about-me' }) {
+export default function PortfolioHeader() {
   const location = useLocation();
   const navRef = useRef(null);
   const linkRefs = useRef([]);
-  const activeIndex = items.findIndex((item) => item.to === `/${activePage}`);
-  const [selectedIndex, setSelectedIndex] = useState(activeIndex < 0 ? 0 : activeIndex);
+  const routeIndex = items.findIndex((item) => item.to === location.pathname);
+  const hashIndex = items.findIndex((item) => item.to === `/#${location.hash.slice(1)}`);
+  const currentIndex = routeIndex >= 0 ? routeIndex : hashIndex;
+  const [selectedIndex, setSelectedIndex] = useState(routeIndex >= 0 ? routeIndex : null);
   const [hoverIndex, setHoverIndex] = useState(null);
   const [pill, setPill] = useState({ left: 0, top: 0, width: 0, height: 0 });
+  const displayedIndex = hoverIndex ?? selectedIndex;
 
   useLayoutEffect(() => {
-    const hashIndex = items.findIndex((item) => item.to === `/#${location.hash.slice(1)}`);
-    setSelectedIndex(location.pathname === '/' && hashIndex >= 0 ? hashIndex : 0);
+    const pageIndex = items.findIndex((item) => item.to === location.pathname);
+    setSelectedIndex(location.pathname === '/' ? null : pageIndex >= 0 ? pageIndex : 0);
     setHoverIndex(null);
   }, [location.hash, location.pathname]);
 
@@ -40,13 +43,14 @@ export default function PortfolioHeader({ activePage = 'about-me' }) {
   }, []);
 
   useLayoutEffect(() => {
-    const update = () => movePill(hoverIndex ?? selectedIndex);
+    if (displayedIndex === null) return undefined;
+    const update = () => movePill(displayedIndex);
     update();
 
     const observer = new ResizeObserver(update);
     if (navRef.current) observer.observe(navRef.current);
     return () => observer.disconnect();
-  }, [hoverIndex, movePill, selectedIndex]);
+  }, [displayedIndex, movePill]);
 
   return (
     <header className="portfolio-header">
@@ -64,20 +68,20 @@ export default function PortfolioHeader({ activePage = 'about-me' }) {
         }}
       >
         <span
-          className="portfolio-nav__pill"
+          className={`portfolio-nav__pill${displayedIndex === null ? '' : ' is-visible'}`}
           aria-hidden="true"
           style={{ left: pill.left, top: pill.top, width: pill.width, height: pill.height }}
         />
         {items.map((item, index) => (
           <Link
-            className={`portfolio-nav__link${index === selectedIndex ? ' is-selected' : ''}`}
+            className={`portfolio-nav__link${index === displayedIndex ? ' is-selected' : ''}`}
             to={item.to}
             key={item.label}
             ref={(node) => { linkRefs.current[index] = node; }}
-            aria-current={item.label.toLowerCase().replaceAll(' ', '-') === activePage ? 'page' : undefined}
+            aria-current={index === currentIndex ? 'page' : undefined}
             onMouseEnter={() => setHoverIndex(index)}
             onFocus={() => setHoverIndex(index)}
-            onClick={() => { setSelectedIndex(index); setHoverIndex(null); }}
+            onClick={() => setSelectedIndex(index)}
           >
             <img src={`/assets/home/type/${item.asset}`} alt="" />
             <span className="portfolio-visually-hidden">{item.label}</span>
