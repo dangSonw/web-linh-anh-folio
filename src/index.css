@@ -13,6 +13,11 @@ html, body, #root { min-width: 320px; min-height: 100%; margin: 0; }
 body { min-height: 100svh; }
 img, svg { display: block; max-width: 100%; }
 button, a { font: inherit; }
+@media (any-hover: hover) and (any-pointer: fine) {
+  html, body, body * {
+    cursor: url('/assets/cursor/bee.svg') 18 6, auto !important;
+  }
+}
 .app-stage {
   --fit-width: min(100cqw, 2560px, calc(100svh * 1440 / 1168));
   --fit-height: calc(var(--fit-width) * 1168 / 1440);

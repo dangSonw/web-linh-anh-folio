@@ -4,6 +4,17 @@
   "note": "Raster layers exported from Figma at 4x, preserving each layer crop. Original uploaded raster sources are stored alongside exports.",
   "assets": [
     {
+      "nodeId": "63:117",
+      "name": "Bee cursor",
+      "section": "Shared",
+      "path": "cursor/bee.svg",
+      "sourcePath": "scouting/con-ong-anh-thu-2__63-117@4x.png",
+      "kind": "cursor-svg",
+      "widthPx": 28,
+      "heightPx": 32,
+      "bytes": 921065
+    },
+    {
       "nodeId": "54:2",
       "name": "Beehive of Linh Anh 1",
       "section": "About me",
