@@ -1,10 +1,13 @@
+import { useEffect, useState } from 'react';
+import { animate, motion, useMotionValue, useReducedMotion, useTransform } from 'framer-motion';
 import { Link, Navigate, useParams } from 'react-router-dom';
+import { preloadRoute, scoutingBackdrop, scoutingBackdropSizes, scoutingBackdropSrcSet } from '../lib/routeAssets.js';
 import './Scouting.css';
 
 const topics = [
-  { id: 'vision', label: 'Vision & Background', flower: 'flower-vision' },
-  { id: 'side-interest', label: 'Side-interest', flower: 'flower-side-interest' },
-  { id: 'art', label: 'Art', flower: 'flower-art' },
+  { id: 'vision', label: 'Vision & Background' },
+  { id: 'side-interest', label: 'Side-interest' },
+  { id: 'art', label: 'Art' },
 ];
 
 const sideProjects = [
@@ -34,14 +37,17 @@ function OutlineText({ file, text, className = '' }) {
   );
 }
 
-function FlowerLink({ topic, selected }) {
+function FlowerLink({ topic, onHover, onLeave }) {
   return (
     <Link
       className={`scouting-flower-hit scouting-flower-hit--${topic.id}`}
       id={`scouting-flower-${topic.id}`}
       to={`/scouting/${topic.id}`}
       aria-label={topic.label}
-      aria-current={selected ? 'page' : undefined}
+      onPointerEnter={() => { onHover(topic.id); preloadRoute(`/scouting/${topic.id}`); }}
+      onPointerLeave={onLeave}
+      onFocus={() => { onHover(topic.id); preloadRoute(`/scouting/${topic.id}`); }}
+      onBlur={onLeave}
     >
       <span className="portfolio-visually-hidden">{topic.label}</span>
     </Link>
@@ -51,7 +57,7 @@ function FlowerLink({ topic, selected }) {
 function TabPanel({ activeTab }) {
   if (activeTab === 'vision') {
     return (
-      <section className="scouting-tab-panel scouting-tab-panel--vision" aria-labelledby="scouting-flower-vision">
+      <section className="scouting-tab-panel scouting-tab-panel--vision" aria-label="Vision & Background">
         <h2>
           <OutlineText file="vision-tab-title" text="Vision" />
         </h2>
@@ -72,7 +78,7 @@ function TabPanel({ activeTab }) {
 
   if (activeTab === 'side-interest') {
     return (
-      <section className="scouting-tab-panel scouting-tab-panel--projects" aria-labelledby="scouting-flower-side-interest">
+      <section className="scouting-tab-panel scouting-tab-panel--projects" aria-label="Side-interest">
         <h2><OutlineText file="side-interest-tab-title" text="Side-interest" /></h2>
         <div className="scouting-project-grid">
           {sideProjects.map((project) => (
@@ -88,7 +94,7 @@ function TabPanel({ activeTab }) {
 
   if (activeTab === 'art') {
     return (
-      <section className="scouting-tab-panel scouting-tab-panel--art" aria-labelledby="scouting-flower-art">
+      <section className="scouting-tab-panel scouting-tab-panel--art" aria-label="Art">
         <h2><OutlineText file="art-tab-title" text="Art" /></h2>
         <div className="scouting-art-grid">
           {artImages.map(([src, alt], index) => (
@@ -107,46 +113,94 @@ function TabPanel({ activeTab }) {
   return null;
 }
 
+function FlyingBee({ flower }) {
+  const x = useMotionValue(236);
+  const y = useMotionValue(838);
+  const left = useTransform(x, value => `${value / 14.4}cqw`);
+  const top = useTransform(y, value => `calc(${value / 14.4}cqw - var(--scouting-top-offset))`);
+  const reducedMotion = useReducedMotion();
+
+  useEffect(() => {
+    const destinations = {
+      vision: { x: 230, y: 303 },
+      'side-interest': { x: 633, y: 456 },
+      art: { x: 1067, y: 501 },
+    };
+    const target = destinations[flower] ?? { x: 236, y: 838 };
+    const start = { x: x.get(), y: y.get() };
+    if (reducedMotion) {
+      x.set(target.x);
+      y.set(target.y);
+      return undefined;
+    }
+    if (start.x === target.x && start.y === target.y) return undefined;
+    const control = {
+      x: (start.x + target.x) / 2 + (target.x >= start.x ? -60 : 60),
+      y: Math.min(start.y, target.y) - 90,
+    };
+    const flight = animate(0, 1, {
+      duration: 0.95,
+      ease: [0.4, 0, 0.2, 1],
+      onUpdate: progress => {
+        const rest = 1 - progress;
+        x.set(rest * rest * start.x + 2 * rest * progress * control.x + progress * progress * target.x);
+        y.set(rest * rest * start.y + 2 * rest * progress * control.y + progress * progress * target.y);
+      },
+    });
+    return () => flight.stop();
+  }, [flower, reducedMotion, x, y]);
+
+  return (
+    <motion.div className="scouting-bee" style={{ left: 0, top: 0, x: left, y: top }}>
+      <img src="/assets/scouting/con-ong-anh-thu-2__63-117@4x.png" alt="A small bee mascot" />
+    </motion.div>
+  );
+}
+
+function ScoutingOverview() {
+  const [flower, setFlower] = useState(null);
+  return (
+    <>
+      <img className={`scouting-flower-art scouting-flower-art--vision${flower === 'vision' ? ' is-hovered' : ''}`} src="/assets/scouting/vector-03.svg" alt="" />
+      <img className={`scouting-flower-art scouting-flower-art--side-interest${flower === 'side-interest' ? ' is-hovered' : ''}`} src="/assets/scouting/vector-06.svg" alt="" />
+      <img className={`scouting-flower-art scouting-flower-art--art${flower === 'art' ? ' is-hovered' : ''}`} src="/assets/scouting/vector-05.svg" alt="" />
+      <img className="scouting-arrow scouting-arrow--vision" src="/assets/scouting/vector-01.svg" alt="" />
+      <img className="scouting-arrow scouting-arrow--side-interest" src="/assets/scouting/vector-04.svg" alt="" />
+      <img className="scouting-arrow scouting-arrow--art" src="/assets/scouting/vector-02.svg" alt="" />
+      <OutlineText file="vision-flower-label" text="Vision & Background" className="scouting-callout scouting-callout--vision" />
+      <OutlineText file="side-interest-flower-label" text="Side-interest" className="scouting-callout scouting-callout--side-interest" />
+      <OutlineText file="art-flower-label" text="Art" className="scouting-callout scouting-callout--art" />
+      <FlyingBee flower={flower} />
+      <h1 className="scouting-title">
+        <OutlineText file="bee-scouting-title" text="Bee Scouting for Pollens" />
+      </h1>
+      <nav className="scouting-tab-list" aria-label="Scouting for pollens pages">
+        {topics.map(entry => (
+          <FlowerLink key={entry.id} topic={entry} onHover={setFlower} onLeave={() => setFlower(null)} />
+        ))}
+      </nav>
+    </>
+  );
+}
+
 export default function Scouting() {
   const { topic } = useParams();
   const activeTab = topic ?? null;
-
-  if (topic && !topics.some((entry) => entry.id === topic)) {
+  if (topic && !topics.some(entry => entry.id === topic)) {
     return <Navigate to="/scouting" replace />;
   }
-
   return (
-    <main className="scouting-page">
+    <main className={`scouting-page${activeTab ? ' scouting-page--detail' : ''}`}>
       <div className="scouting-hero">
-        <img className="scouting-backdrop" src="/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@4x.png" alt="" />
-        <img className="scouting-flower-art scouting-flower-art--vision" src="/assets/scouting/vector-03.svg" alt="" />
-        <img className="scouting-flower-art scouting-flower-art--side-interest" src="/assets/scouting/vector-06.svg" alt="" />
-        <img className="scouting-flower-art scouting-flower-art--art" src="/assets/scouting/vector-05.svg" alt="" />
-        <img className="scouting-arrow scouting-arrow--vision" src="/assets/scouting/vector-01.svg" alt="" />
-        <img className="scouting-arrow scouting-arrow--side-interest" src="/assets/scouting/vector-04.svg" alt="" />
-        <img className="scouting-arrow scouting-arrow--art" src="/assets/scouting/vector-02.svg" alt="" />
-        <OutlineText file="vision-flower-label" text="Vision & Background" className="scouting-callout scouting-callout--vision" />
-        <OutlineText file="side-interest-flower-label" text="Side-interest" className="scouting-callout scouting-callout--side-interest" />
-        <OutlineText file="art-flower-label" text="Art" className="scouting-callout scouting-callout--art" />
-        <img className="scouting-bee" src="/assets/scouting/con-ong-anh-thu-2__63-117@4x.png" alt="A small bee mascot" />
-        <h1 className="scouting-title">
-          <OutlineText file="bee-scouting-title" text="Bee Scouting for Pollens" />
-        </h1>
-
-        <nav className="scouting-tab-list" aria-label="Scouting for pollens pages">
-          {topics.map((entry) => (
-            <FlowerLink
-              key={entry.id}
-              topic={entry}
-              selected={activeTab === entry.id}
-            />
-          ))}
-        </nav>
+        <img className="scouting-backdrop" src={scoutingBackdrop} srcSet={scoutingBackdropSrcSet} sizes={scoutingBackdropSizes} decoding="async" alt="" />
+        {!activeTab && <ScoutingOverview />}
       </div>
-
-      <div className="scouting-panel-anchor">
-        <TabPanel activeTab={activeTab} />
-      </div>
+      {activeTab && (
+        <div className="scouting-panel-anchor">
+          <h1 className="portfolio-visually-hidden">{topics.find(entry => entry.id === activeTab).label}</h1>
+          <TabPanel activeTab={activeTab} />
+        </div>
+      )}
     </main>
   );
 }

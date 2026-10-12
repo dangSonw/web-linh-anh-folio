@@ -46,6 +46,39 @@
       "bytes": 26836510
     },
     {
+      "nodeId": "63:49",
+      "section": "Scouting for pollens",
+      "path": "scouting/untitled-9-september-2026-14-47-00-1__63-49@4x.webp",
+      "sourcePath": "scouting/untitled-9-september-2026-14-47-00-1__63-49@4x.png",
+      "kind": "lossless-webp",
+      "exportScale": 4,
+      "widthPx": 5760,
+      "heightPx": 4176,
+      "bytes": 17781432
+    },
+    {
+      "nodeId": "63:49",
+      "section": "Scouting for pollens",
+      "path": "scouting/untitled-9-september-2026-14-47-00-1__63-49@1x.webp",
+      "sourcePath": "scouting/untitled-9-september-2026-14-47-00-1__63-49@4x.png",
+      "kind": "responsive-lossless-webp",
+      "exportScale": 1,
+      "widthPx": 1440,
+      "heightPx": 1044,
+      "bytes": 2111180
+    },
+    {
+      "nodeId": "63:49",
+      "section": "Scouting for pollens",
+      "path": "scouting/untitled-9-september-2026-14-47-00-1__63-49@2x.webp",
+      "sourcePath": "scouting/untitled-9-september-2026-14-47-00-1__63-49@4x.png",
+      "kind": "responsive-lossless-webp",
+      "exportScale": 2,
+      "widthPx": 2880,
+      "heightPx": 2088,
+      "bytes": 8572194
+    },
+    {
       "nodeId": "63:117",
       "name": "Con Ong Anh Thư 2",
       "section": "Scouting for pollens",

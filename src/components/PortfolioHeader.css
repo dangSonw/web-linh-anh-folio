@@ -8,6 +8,7 @@
   align-items: stretch;
   gap: 3.386%;
   height: 3.9583cqw;
+  min-height: 40px;
 }
 
 .portfolio-brand,
@@ -27,7 +28,7 @@
 }
 
 .portfolio-brand img {
-  width: min(100%, 303px);
+  width: 100%;
   height: auto;
 }
 
@@ -55,6 +56,7 @@
 }
 
 .portfolio-nav__link {
+  text-decoration: none;
   position: relative;
   z-index: 1;
   display: flex;
@@ -111,8 +113,8 @@
     display: flex;
     height: auto;
     flex-direction: column;
-    gap: 12px;
-    margin-bottom: 12px;
+    gap: 10px;
+    margin-bottom: 0;
   }
 
   .portfolio-brand {
@@ -130,33 +132,37 @@
     flex: none;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     width: 100%;
-    min-height: 100px;
+    min-height: 88px;
     overflow: hidden;
   }
 
   .portfolio-nav__link {
-    min-height: 48px;
+    min-height: 44px;
     padding: 8px 12px;
   }
 
   .portfolio-nav__link img {
-    left: 0;
-    transform: none;
+    display: none;
+  }
+
+  .portfolio-nav__text {
+    position: static;
+    width: auto;
     height: auto;
-    max-height: 20px;
+    overflow: visible;
+    clip: auto;
+    clip-path: none;
+    white-space: normal;
+    color: #f5d226;
+    font-size: clamp(12px, 2.8vw, 15px);
+    font-weight: 900;
+    line-height: 1.15;
+    text-align: center;
+    text-transform: uppercase;
   }
-}
 
-@media (max-width: 520px) {
-  .portfolio-nav {
-    grid-template-columns: minmax(0, 1fr);
-    min-height: 0;
-    padding: 4px;
-  }
-
-  .portfolio-nav__link {
-    min-height: 44px;
-  }
+  .portfolio-nav__link.is-selected .portfolio-nav__text,
+  .portfolio-nav__link:hover .portfolio-nav__text { color: #fff; }
 }
 
 @media (prefers-reduced-motion: reduce) {

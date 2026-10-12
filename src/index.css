@@ -7,60 +7,78 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 * { box-sizing: border-box; }
+html { scrollbar-gutter: stable; }
 html, body, #root { min-width: 320px; min-height: 100%; margin: 0; }
-body { min-height: 100vh; }
+body { min-height: 100svh; }
 img, svg { display: block; max-width: 100%; }
 button, a { font: inherit; }
-
 .app-stage {
-  display: grid;
-  min-height: 100svh;
-  place-items: center;
-}
-
-.app-shell {
+  --fit-width: min(100cqw, 2560px, calc(100svh * 1440 / 1168));
+  --fit-height: calc(var(--fit-width) * 1168 / 1440);
+  --fit-top: max(0px, calc((100svh - var(--fit-height)) / 2));
+  display: flow-root;
   position: relative;
+  container-type: inline-size;
+  min-height: 100svh;
+}
+.portfolio-header-shell {
+  position: absolute;
+  z-index: 10;
+  top: var(--fit-top);
+  left: 0;
+  right: 0;
+  width: var(--fit-width);
+  aspect-ratio: 1440 / 1168;
+  margin-inline: auto;
+  container-type: inline-size;
+  pointer-events: none;
+}
+.portfolio-header-shell .portfolio-header { pointer-events: auto; }
+.page-transitions {
+  position: relative;
+  width: 100%;
+  height: var(--fit-height);
+  margin-top: var(--fit-top);
+  overflow: clip;
+}
+.page-transitions--about {
+  height: calc(min(100cqw, 2560px) * 2336 / 1440);
+  overflow: visible;
+}
+.app-shell {
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  width: var(--fit-width);
+  aspect-ratio: 1440 / 1168;
+  margin-inline: auto;
   container-type: inline-size;
   background: #fff;
 }
-
-.app-shell--home {
-  width: min(100vw, 2560px, calc(100svh * 1.328413284));
-  aspect-ratio: 1440 / 1084;
-}
-
 .app-shell--about {
-  width: min(100%, 2560px);
+  width: min(100cqw, 2560px);
   aspect-ratio: 1440 / 2336;
 }
-
-.app-shell--scouting {
-  width: min(100%, 2560px);
-  aspect-ratio: 1440 / 1168;
-}
-
-.route-layer {
-  position: absolute;
-  z-index: 0;
-  inset: 0;
-}
-
+.route-layer { position: absolute; inset: 0; }
+.route-layer--home { top: 2.9167cqw; height: 75.2778cqw; bottom: auto; }
 @media (max-width: 880px) {
-  .app-stage { display: block; }
-
-  .app-shell,
-  .app-shell--home,
-  .app-shell--about {
-    width: 100%;
-    min-height: 100svh;
-    aspect-ratio: auto;
-    padding: 18px clamp(18px, 4.4vw, 38px) 36px;
-  }
-
-  .route-layer {
+  .portfolio-header-shell {
     position: relative;
-    inset: auto;
+    top: auto;
+    width: 100%;
+    height: 176px;
+    aspect-ratio: auto;
+    padding: 18px clamp(18px, 4.4vw, 38px) 12px;
   }
+  .page-transitions { height: calc(100svh - 176px); margin-top: 0; }
+  .page-transitions--about { height: auto; min-height: calc(100svh - 176px); }
+  .app-shell {
+    width: 100%;
+    height: calc(100svh - 176px);
+    aspect-ratio: auto;
+    padding: 0 clamp(18px, 4.4vw, 38px) 18px;
+  }
+  .app-shell--about { position: relative; height: auto; }
+  .route-layer { position: relative; inset: auto; height: 100%; }
 }

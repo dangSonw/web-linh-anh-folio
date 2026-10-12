@@ -1,9 +1,11 @@
 import './Home.css';
 import { Link } from 'react-router-dom';
+import { preloadRoute } from '../lib/routeAssets.js';
 
 const sections = [
   {
     id: 'about-me',
+    to: '/about-me',
     title: 'About m(b)ee',
     image: '/assets/home/beehive-of-linh-anh-1__63-15@4x.png',
     imageAlt: 'Watercolor illustration of a beehive',
@@ -11,6 +13,7 @@ const sections = [
   },
   {
     id: 'scouting-for-pollens',
+    to: '/scouting',
     title: 'Scouting for pollens',
     image: '/assets/home/untitled-9-september-2026-14-47-00-1__63-2@4x.png',
     imageAlt: 'Watercolor illustration from Scouting for pollens',
@@ -18,6 +21,7 @@ const sections = [
   },
   {
     id: 'inside-the-cells',
+    to: '/#inside-the-cells',
     title: 'Inside the cells',
     image: '/assets/home/linh-anh-tab2-1__54-3@4x.png',
     imageAlt: 'Watercolor illustration from Inside the cells',
@@ -25,6 +29,7 @@ const sections = [
   },
   {
     id: 'world',
+    to: '/#world',
     title: 'World',
     image: '/assets/home/untitled-8-september-2026-15-35-24-1__54-5@4x.png',
     imageAlt: 'Watercolor illustration of a world',
@@ -56,7 +61,9 @@ export default function Home() {
         {sections.map((section) => (
           <Link
             className="home-card"
-            to={section.id === 'about-me' ? '/about-me' : section.id === 'scouting-for-pollens' ? '/scouting' : `/#${section.id}`}
+            to={section.to}
+            onPointerEnter={() => preloadRoute(section.to)}
+            onFocus={() => preloadRoute(section.to)}
             id={section.id}
             key={section.id}
             aria-label={section.title}

@@ -1,6 +1,7 @@
 import { useCallback, useLayoutEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './PortfolioHeader.css';
+import { preloadRoute } from '../lib/routeAssets.js';
 
 const baseItems = [
   { label: 'About Me', asset: 'nav-about-gold.svg', to: '/about-me' },
@@ -84,14 +85,15 @@ export default function PortfolioHeader() {
           <Link
             className={`portfolio-nav__link${index === displayedIndex ? ' is-selected' : ''}`}
             to={item.to}
-            key={item.label}
+            key={item.to}
             ref={(node) => { linkRefs.current[index] = node; }}
             aria-current={index === currentIndex ? 'page' : undefined}
-            onMouseEnter={() => setHoverIndex(index)}
+            onMouseEnter={() => { setHoverIndex(index); preloadRoute(item.to); }}
+            onFocus={() => preloadRoute(item.to)}
             onClick={() => setSelectedIndex(index)}
           >
             <img src={`/assets/home/type/${item.asset}`} alt="" />
-            <span className="portfolio-visually-hidden">{item.label}</span>
+            <span className="portfolio-visually-hidden portfolio-nav__text">{item.label}</span>
           </Link>
         ))}
       </nav>

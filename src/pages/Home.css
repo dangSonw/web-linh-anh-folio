@@ -80,36 +80,36 @@
   }
 
   .home-content {
-    position: static;
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(12px, 3svh, 24px);
     overflow: visible;
-    padding-bottom: 36px;
   }
 
   .home-title {
     position: static;
-    width: min(100%, 740px);
-    margin: clamp(24px, 8vw, 64px) auto clamp(36px, 8vw, 64px);
+    width: min(100%, calc((100svh - 194px) * 0.7));
+    margin: 0;
   }
 
   .home-sections {
     position: static;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: clamp(20px, 5vw, 36px) 0;
+    width: min(100%, calc((100svh - 194px) * 0.7));
+    gap: 14px 0;
   }
 
   .home-card__label-art {
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 520px) {
-  .home-sections {
-    grid-template-columns: minmax(0, 1fr);
-    row-gap: 28px;
+    margin-top: 8px;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .home-card { transition: none; }
+  .home-card:hover, .home-card:focus-visible { transform: none; }
 }
