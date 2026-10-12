@@ -88,7 +88,6 @@ export default function PortfolioHeader() {
             ref={(node) => { linkRefs.current[index] = node; }}
             aria-current={index === currentIndex ? 'page' : undefined}
             onMouseEnter={() => setHoverIndex(index)}
-            onFocus={() => setHoverIndex(index)}
             onClick={() => setSelectedIndex(index)}
           >
             <img src={`/assets/home/type/${item.asset}`} alt="" />

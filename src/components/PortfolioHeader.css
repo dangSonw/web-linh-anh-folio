@@ -85,8 +85,7 @@
 }
 
 .portfolio-nav__link.is-selected img,
-.portfolio-nav__link:hover img,
-.portfolio-nav__link:focus-visible img {
+.portfolio-nav__link:hover img {
   filter: brightness(0) invert(1);
 }
 
