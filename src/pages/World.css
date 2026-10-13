@@ -5,10 +5,13 @@
   font-style: normal;
   font-display: swap;
 }
-.portfolio-header-shell.portfolio-header-shell--world { position: fixed; top: 0; width: 100%; height: var(--header-height); aspect-ratio: auto; background: #fff; }
-.app-shell.app-shell--world { width: 100%; height: 100svh; aspect-ratio: auto; }
-.world-page { position: absolute; top: var(--header-height); bottom: 0; width: 100%; background: #fff; }
-.world-hive { position: absolute; top: 0.5556cqw; left: 0; width: 99.8611%; height: calc(100% - 3.5417cqw); object-fit: contain; }
+.world-backdrop { position: fixed; inset: 0; z-index: 0; width: 100%; height: 100svh; }
+.world-backdrop > img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.world-backdrop::after { content: ''; position: absolute; inset: 0; background: linear-gradient(transparent 60%, rgba(255,255,255,.94) 84%, #fff 100%); }
+.portfolio-header-shell--world .portfolio-nav { background: #fff; }
+.page-transitions--world { z-index: 1; }
+.app-shell.app-shell--world { top: var(--fit-top); width: var(--fit-width); height: var(--fit-height); aspect-ratio: 1440 / 1168; background: transparent; }
+.world-page { position: absolute; top: 8.6111cqw; bottom: 0; width: 100%; }
 .world-ending { position: absolute; left: 3.1874cqw; bottom: 5.7778cqw; width: 35.2778cqw; margin: 0; }
 .world-ending img { width: 100%; height: auto; }
 .world-contact { position: absolute; right: 1.25cqw; bottom: 3.0278cqw; width: 42.2222cqw; font: 600 1.3889cqw/1.4 'World Mona Sans', Arial, sans-serif; }
@@ -16,7 +19,7 @@
 .world-contact-links { position: absolute; bottom: -8px; right: 0; display: flex; align-items: center; justify-content: flex-end; min-height: 40px; white-space: pre; color: transparent; }
 .world-contact-links a { display: inline-flex; align-items: center; min-height: 40px; color: inherit; text-decoration: none; }
 .world-contact-links a:focus-visible { outline: 2px solid #513202; outline-offset: 2px; border-radius: 4px; }
-@media (max-width: 1100px) and (min-width: 881px) {
+@container (max-width: 1100px) {
   .world-contact { width: min(70%, 650px); font-size: 14px; text-align: right; }
   .world-contact-art { display: none; }
   .world-contact .world-message { position: static; width: auto; height: auto; overflow: visible; clip: auto; clip-path: none; white-space: normal; margin: 0; }
@@ -25,11 +28,10 @@
   .world-ending { bottom: 15cqw; }
 }
 @media (max-width: 880px) {
-  .portfolio-header-shell.portfolio-header-shell--world { position: relative; height: 176px; }
   .page-transitions.page-transitions--world { height: auto; min-height: calc(100svh - 176px); overflow: visible; }
-  .app-shell.app-shell--world { position: relative; height: auto; min-height: calc(100svh - 176px); padding: 0; }
-  .world-page { position: relative; inset: auto; display: flex; flex-direction: column; justify-content: center; min-height: calc(100svh - 176px); padding: 0 18px 24px; }
-  .world-hive { position: relative; inset: auto; width: 100%; height: auto; max-height: 48svh; object-fit: contain; }
+  .app-shell.app-shell--world { position: relative; top: 0; width: 100%; height: auto; min-height: calc(100svh - 176px); padding: 0; }
+  .world-page { position: relative; inset: auto; display: flex; flex-direction: column; justify-content: flex-end; min-height: calc(100svh - 176px); padding: 0 18px 24px; }
+  .world-backdrop::after { background: linear-gradient(transparent 35%, rgba(255,255,255,.94) 65%, #fff 100%); }
   .world-ending { position: relative; inset: auto; width: min(70%, 350px); margin: 8px auto 20px; }
   .world-contact { position: relative; inset: auto; width: 100%; font-size: clamp(14px, 2vw, 18px); text-align: center; }
   .world-contact-art { display: none; }

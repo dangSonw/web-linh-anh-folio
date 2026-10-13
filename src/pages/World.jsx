@@ -5,8 +5,6 @@ export const worldHiveSrcSet = [1, 2, 4].map(scale => `/assets/world/hive@${scal
 
 export default function World() {
   return <main className="world-page" aria-label="World">
-    <img className="world-hive" src={worldHive} srcSet={worldHiveSrcSet} sizes="100vw"
-      alt="A golden beehive hanging from a leafy branch" />
     <h1 className="world-ending"><img src="/assets/world/ending.svg" alt="" />
       <span className="portfolio-visually-hidden">Ending</span>
     </h1>
