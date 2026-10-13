@@ -3,7 +3,6 @@ import './AboutMe.css';
 export default function AboutMe() {
   return (
     <main className="about-page">
-      <div className="about-hero">
       <img
         className="about-hero-image"
         src="/assets/about/beehive-of-linh-anh-1__54-2@4x.png"
@@ -14,7 +13,6 @@ export default function AboutMe() {
         <img src="/assets/about/type/building-title.svg" alt="" aria-hidden="true" />
         <span className="portfolio-visually-hidden">Building my hive</span>
       </h1>
-      </div>
 
       <section className="about-profile" aria-labelledby="about-heading">
         <div className="about-copy">

@@ -19,7 +19,7 @@ button, a { font: inherit; }
   }
 }
 .app-stage {
-  --header-height: 8.6111cqw;
+  --header-height: calc(var(--fit-width) * 124 / 1440);
   --fit-width: min(100cqw, 2560px, calc(100svh * 1440 / 1168));
   --fit-height: calc(var(--fit-width) * 1168 / 1440);
   --fit-top: max(0px, calc((100svh - var(--fit-height)) / 2));
@@ -43,7 +43,7 @@ button, a { font: inherit; }
 }
 .portfolio-header-shell--about,
 .portfolio-header-shell--scouting,
-.portfolio-header-shell--inside { width: 100%; top: 0; }
+.portfolio-header-shell--inside { top: 0; }
 .portfolio-header-shell .portfolio-header { pointer-events: auto; }
 .page-transitions {
   position: relative;
@@ -126,7 +126,7 @@ button, a { font: inherit; }
 .scouting-detail-section, .inside-scroll > .scroll-section:not(:first-child) { z-index: 3; }
 .portfolio-header-shell--scouting,
 .portfolio-header-shell--impact,
-.portfolio-header-shell--inside { position: sticky; top: 0; width: 100%; height: var(--header-height); aspect-ratio: auto; background: #fff; }
+.portfolio-header-shell--inside { position: sticky; top: 0; height: var(--header-height); aspect-ratio: auto; background: #fff; }
 .portfolio-header-shell--about { position: fixed; top: 0; height: var(--header-height); aspect-ratio: auto; background: #fff; }
 .page-transitions--scouting,
 .page-transitions--impact,
