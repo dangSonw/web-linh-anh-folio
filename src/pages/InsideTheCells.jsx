@@ -57,15 +57,20 @@ function Detail({ page }) {
   );
 }
 
+export function ImpactArtwork() {
+  const page = impactPages[0];
+  return <nav className="inside-overview-nav" aria-label="Impact and Leadership projects">
+    {page.links.map(entry => <PageLink key={entry.to} entry={entry} page={page} />)}
+  </nav>;
+}
+
 function InsideFrame({ page }) {
   const node = id => page.nodes.find(entry => entry.id === id);
   return (
     <div className={`inside-page inside-page--${page.kind ?? 'detail'}`} data-frame={page.frame}>
       {page.kind === 'overview' ? <>
         <DesignNode node={node(page.heading)} heading />
-        <nav className="inside-overview-nav" aria-label="Impact and Leadership projects">
-          {page.links.map(entry => <PageLink key={entry.to} entry={entry} page={page} />)}
-        </nav>
+        <div className="inside-mobile-artwork"><ImpactArtwork /></div>
       </> : page.kind === 'hive' ? <>
         <section className="inside-hive-intro inside-glass" style={position(node(page.panel).box)}>
           <DesignNode node={node(page.heading)} origin={node(page.panel).box} heading />

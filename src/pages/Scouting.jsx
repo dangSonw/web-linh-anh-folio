@@ -10,6 +10,9 @@ const topics = [
   { id: 'art', label: 'Art' },
 ];
 
+// The Figma node is mirrored: x=236 is its right edge, paint starts at 56.
+const beeOrigin = { x: 56, y: 838 };
+
 const sideProjects = [
   { src: 'image-9__71-469@4x.png', alt: 'Plss Debate Open certificate', title: 'Plss Debate Open', className: 'project-debate' },
   { src: 'image-10__71-472@4x.png', alt: 'Hanoi ABP event stage', title: 'Hanoi ABP', className: 'project-abp' },
@@ -28,12 +31,13 @@ const artImages = [
   ['image-18__71-487@4x.png', 'A painting of a cat under the moon'],
 ];
 
-function OutlineText({ file, text, className = '' }) {
+function OutlineText({ file, text, className = '', to, ...events }) {
+  const Tag = to ? Link : 'span';
   return (
-    <span className={`scouting-outline ${className}`}>
+    <Tag className={`scouting-outline ${className}`} to={to} {...events}>
       <img src={`/assets/scouting/type/${file}.svg`} alt="" aria-hidden="true" />
       <span className="portfolio-visually-hidden">{text}</span>
-    </span>
+    </Tag>
   );
 }
 
@@ -114,8 +118,8 @@ function TabPanel({ activeTab }) {
 }
 
 function FlyingBee({ flower }) {
-  const x = useMotionValue(236);
-  const y = useMotionValue(838);
+  const x = useMotionValue(beeOrigin.x);
+  const y = useMotionValue(beeOrigin.y);
   const left = useTransform(x, value => `${value / 14.4}cqw`);
   const top = useTransform(y, value => `calc(${value / 14.4}cqw - var(--scouting-top-offset))`);
   const reducedMotion = useReducedMotion();
@@ -126,7 +130,7 @@ function FlyingBee({ flower }) {
       'side-interest': { x: 633, y: 456 },
       art: { x: 1067, y: 501 },
     };
-    const target = destinations[flower] ?? { x: 236, y: 838 };
+    const target = destinations[flower] ?? beeOrigin;
     const start = { x: x.get(), y: y.get() };
     if (reducedMotion) {
       x.set(target.x);
@@ -157,28 +161,31 @@ function FlyingBee({ flower }) {
   );
 }
 
-function ScoutingOverview() {
+export function ScoutingArtwork({ title = false, decorations = true }) {
   const [flower, setFlower] = useState(null);
   return (
     <>
+      {decorations && <>
       <img className={`scouting-flower-art scouting-flower-art--vision${flower === 'vision' ? ' is-hovered' : ''}`} src="/assets/scouting/vector-03.svg" alt="" />
       <img className={`scouting-flower-art scouting-flower-art--side-interest${flower === 'side-interest' ? ' is-hovered' : ''}`} src="/assets/scouting/vector-06.svg" alt="" />
       <img className={`scouting-flower-art scouting-flower-art--art${flower === 'art' ? ' is-hovered' : ''}`} src="/assets/scouting/vector-05.svg" alt="" />
       <img className="scouting-arrow scouting-arrow--vision" src="/assets/scouting/vector-01.svg" alt="" />
       <img className="scouting-arrow scouting-arrow--side-interest" src="/assets/scouting/vector-04.svg" alt="" />
       <img className="scouting-arrow scouting-arrow--art" src="/assets/scouting/vector-02.svg" alt="" />
-      <OutlineText file="vision-flower-label" text="Vision & Background" className="scouting-callout scouting-callout--vision" />
-      <OutlineText file="side-interest-flower-label" text="Side-interest" className="scouting-callout scouting-callout--side-interest" />
-      <OutlineText file="art-flower-label" text="Art" className="scouting-callout scouting-callout--art" />
+      {topics.map(topic => <OutlineText key={topic.id} file={`${topic.id}-flower-label`} text={topic.label}
+        className={`scouting-callout scouting-callout--${topic.id}`} to={`/scouting#${topic.id}`}
+        onPointerEnter={() => setFlower(topic.id)} onPointerLeave={() => setFlower(null)}
+        onFocus={() => setFlower(topic.id)} onBlur={() => setFlower(null)} />)}
       <FlyingBee flower={flower} />
-      <h1 className="scouting-title">
+      </>}
+      {title && <h1 className="scouting-title">
         <OutlineText file="bee-scouting-title" text="Bee Scouting for Pollens" />
-      </h1>
-      <nav className="scouting-tab-list" aria-label="Scouting for pollens pages">
+      </h1>}
+      {decorations && <nav className="scouting-tab-list" aria-label="Scouting for pollens pages">
         {topics.map(entry => (
           <FlowerLink key={entry.id} topic={entry} onHover={setFlower} onLeave={() => setFlower(null)} />
         ))}
-      </nav>
+      </nav>}
     </>
   );
 }
@@ -187,7 +194,7 @@ export default function Scouting() {
   const reduced = useReducedMotion();
   return <main className="scouting-scroll">
     <section id="overview" className="scroll-section scouting-overview-section" style={{ '--section-source-height': 1044 }} aria-label="Scouting for pollens">
-      <div className="scouting-page"><div className="scouting-hero"><ScoutingOverview /></div></div>
+      <div className="scouting-page"><div className="scouting-hero"><ScoutingArtwork title decorations={false} /><div className="scouting-mobile-artwork"><ScoutingArtwork decorations /></div></div></div>
     </section>
     {topics.map(topic => <motion.section key={topic.id} id={topic.id}
       className="scroll-section scouting-detail-section" style={{ '--section-source-height': 1044 }}
