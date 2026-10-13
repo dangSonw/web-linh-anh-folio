@@ -14,7 +14,9 @@ export default function GroupBackdrop({ kind }) {
     initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: reduced ? 0 : 0.4 }}>
     {kind === 'world' ? <div className="world-backdrop"><img src={src} srcSet={worldHiveSrcSet} sizes="100vw"
       alt="A golden beehive hanging from a leafy branch" /></div> : <>
-    <div className="group-backdrop-layer group-backdrop-layer--image"><div className="group-artwork" style={{ '--artwork-ratio': ratio }}>
+    <div className="group-backdrop-layer group-backdrop-layer--image">
+    <img className="group-bleed-image" src={src} srcSet={kind === 'scouting' ? scoutingBackdropSrcSet : insideSrcSet(src)} sizes="100vw" alt="" />
+    <div className="group-artwork" style={{ '--artwork-ratio': ratio }}>
       <img className="group-artwork-image" src={src} srcSet={kind === 'scouting' ? scoutingBackdropSrcSet : insideSrcSet(src)} sizes="100vw" alt="" />
     </div></div>
     <div className="group-backdrop-layer group-backdrop-layer--decoration"><div className="group-artwork" style={{ '--artwork-ratio': ratio }}>

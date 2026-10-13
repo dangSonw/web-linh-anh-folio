@@ -471,6 +471,13 @@
   .scouting-flower-art { transition: none; }
 }
 .scouting-scroll .scouting-page { top: -8.6111cqw; bottom: auto; height: 81.1111cqw; background: transparent; }
+@media (min-width: 881px) {
+ @container (max-width: 1000px) {
+  .scouting-tab-panel { overflow: auto; }
+  .scouting-vision-copy, .scouting-background-copy, .scouting-project figcaption { font-size: max(14px, 1.3889cqw); }
+  .scouting-callout { transform: scale(calc(max(840px, 100cqw) / 1440px)); }
+ }
+}
 @media (max-width: 880px) {
   .scouting-scroll .scouting-page { top: auto; height: auto; display: block; padding: 20px clamp(18px, 4.4vw, 38px) 32px; }
   .scouting-scroll .scouting-page--detail .scouting-panel-anchor { position: relative; inset: auto; }

@@ -94,7 +94,7 @@ export default function InsideTheCells({ group = 'hive' }) {
       style={{ '--section-source-height': page.height - 124 }}
       initial={reduced ? false : { opacity: 0 }} whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.1 }} transition={{ duration: reduced ? 0 : 0.4 }}>
-      <InsideFrame page={page} />
+      <div className="section-canvas"><InsideFrame page={page} /></div>
     </motion.section>)}
   </main>;
 }

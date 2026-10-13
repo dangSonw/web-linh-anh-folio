@@ -6,13 +6,22 @@ export default function VideoBox({ poster, title, youtubeId, src }) {
   const boxRef = useRef(null);
   useEffect(() => {
     if (!playing) return;
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) return;
-      boxRef.current?.querySelector('video')?.pause();
-      boxRef.current?.querySelector('iframe')?.contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'pauseVideo', args: [] }), 'https://www.youtube.com');
-    });
-    observer.observe(boxRef.current);
-    return () => observer.disconnect();
+    const header = document.querySelector('.portfolio-header-shell');
+    let observer;
+    const updateVisibility = () => {
+      observer?.disconnect();
+      const top = Math.max(0, header?.getBoundingClientRect().bottom ?? 0);
+      observer = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) return;
+        boxRef.current?.querySelector('video')?.pause();
+        boxRef.current?.querySelector('iframe')?.contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'pauseVideo', args: [] }), 'https://www.youtube.com');
+      }, { rootMargin: `-${top}px 0px 0px 0px` });
+      observer.observe(boxRef.current);
+    };
+    updateVisibility();
+    const resize = new ResizeObserver(updateVisibility);
+    if (header) resize.observe(header);
+    return () => { observer.disconnect(); resize.disconnect(); };
   }, [playing]);
   return <div className="video-box" ref={boxRef}>
     {!playing ? <button type="button" className="video-box__poster" aria-label={`Play ${title}`} onClick={() => setPlaying(true)}>

@@ -12,9 +12,9 @@
 .page-transitions--world { z-index: 1; }
 .app-shell.app-shell--world { top: var(--fit-top); width: var(--fit-width); height: var(--fit-height); aspect-ratio: 1440 / 1168; background: transparent; }
 .world-page { position: absolute; top: 8.6111cqw; bottom: 0; width: 100%; }
-.world-ending { position: absolute; left: 3.1874cqw; bottom: 5.7778cqw; width: 35.2778cqw; margin: 0; }
+.world-ending { position: absolute; left: calc(3.2vw - (100vw - 100cqw) / 2); bottom: 5.7778cqw; width: 35.2778cqw; margin: 0; }
 .world-ending img { width: 100%; height: auto; }
-.world-contact { position: absolute; right: 1.25cqw; bottom: 3.0278cqw; width: 42.2222cqw; font: 600 1.3889cqw/1.4 'World Mona Sans', Arial, sans-serif; }
+.world-contact { position: absolute; right: calc(1.25vw - (100vw - 100cqw) / 2); bottom: 3.0278cqw; width: 42.2222cqw; font: 600 1.3889cqw/1.4 'World Mona Sans', Arial, sans-serif; }
 .world-contact-art { width: 100%; height: auto; }
 .world-contact-links { position: absolute; bottom: -8px; right: 0; display: flex; align-items: center; justify-content: flex-end; min-height: 40px; white-space: pre; color: transparent; }
 .world-contact-links a { display: inline-flex; align-items: center; min-height: 40px; color: inherit; text-decoration: none; }
@@ -32,10 +32,10 @@
   .app-shell.app-shell--world { position: relative; top: 0; width: 100%; height: auto; min-height: calc(100svh - 176px); padding: 0; }
   .world-page { position: relative; inset: auto; display: flex; flex-direction: column; justify-content: flex-end; min-height: calc(100svh - 176px); padding: 0 18px 24px; }
   .world-backdrop::after { background: linear-gradient(transparent 35%, rgba(255,255,255,.94) 65%, #fff 100%); }
-  .world-ending { position: relative; inset: auto; width: min(70%, 350px); margin: 8px auto 20px; }
-  .world-contact { position: relative; inset: auto; width: 100%; font-size: clamp(14px, 2vw, 18px); text-align: center; }
+  .world-ending { position: relative; inset: auto; width: min(70%, 350px); margin: 8px 0 20px; }
+  .world-contact { position: relative; inset: auto; width: 100%; font-size: clamp(14px, 2vw, 18px); text-align: right; }
   .world-contact-art { display: none; }
   .world-contact .world-message { position: static; width: auto; height: auto; overflow: visible; clip: auto; clip-path: none; white-space: normal; margin: 0; }
-  .world-contact-links { position: static; flex-wrap: wrap; justify-content: center; color: #f5d226; white-space: normal; }
+  .world-contact-links { position: static; flex-wrap: wrap; justify-content: flex-end; color: #f5d226; white-space: normal; }
   .world-contact-links a { text-decoration: underline; }
 }

@@ -132,3 +132,22 @@
   .inside-page .inside-page-link:hover,
   .inside-page .inside-page-link:focus-visible { transform: none; }
 }
+
+/* Keep project copy readable when the desktop viewport is very short. */
+@media (min-width: 881px) {
+ @container (max-width: 1000px) {
+  .inside-page .inside-detail-panel { top: calc(8.6111cqw + 12px); left: 12px; width: calc(100% - 24px); height: calc(100cqw * var(--section-source-height) / 1440 - 24px); overflow: auto; padding: 16px; }
+  .inside-page .inside-detail-intro { display: grid; gap: 12px; margin-bottom: 16px; }
+  .inside-page .inside-detail-columns { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; }
+  .inside-page .inside-detail-column { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+  .inside-page .inside-detail-panel .inside-node { position: relative; inset: auto; width: 100%; height: auto; }
+  .inside-page .inside-detail-panel .inside-node--text:not(.inside-node--heading) > img { display: none; }
+  .inside-page .inside-detail-panel .inside-readable { position: static; width: auto; height: auto; overflow: visible; clip-path: none; white-space: pre-line; font: 600 14px/1.4 'World Mona Sans', Arial, sans-serif; }
+  .inside-page .inside-detail-panel .inside-node--heading > img { width: auto; height: 36px; max-width: 100%; object-fit: contain; transform: none; }
+  .inside-page .inside-detail-panel .inside-node--heading > .inside-readable { position: absolute; width: 1px; height: 1px; clip-path: inset(50%); }
+  .inside-page .inside-detail-panel .inside-node--image > img { height: auto; object-fit: contain; }
+  .inside-page .inside-detail-panel .inside-node--image:has(button),
+  .inside-page .inside-detail-panel .inside-node--image:has(video),
+  .inside-page .inside-detail-panel .inside-node--image:has(iframe) { height: 200px; }
+ }
+}

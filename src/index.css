@@ -134,6 +134,16 @@ button, a { font: inherit; }
 .app-shell--scrolling { width: 100%; height: auto; aspect-ratio: auto; padding: 0; background: transparent; }
 .app-shell--scrolling > .route-layer { position: relative; inset: auto; height: auto; }
 .scroll-section { position: relative; height: calc(100cqw * var(--section-source-height) / 1440); min-height: calc(100svh - var(--header-height)); scroll-margin-top: var(--header-height); overflow-anchor: none; }
+.section-canvas { position: relative; width: 100%; height: 100%; container-type: inline-size; }
+.group-bleed-image { display: none; }
+@media (min-width: 881px) {
+  .scroll-section { display: grid; place-items: center; height: calc(100svh - var(--header-height)); }
+  .section-canvas { width: min(100%, calc((100svh - var(--header-height)) * 1440 / var(--section-source-height))); height: auto; aspect-ratio: 1440 / var(--section-source-height); }
+  .group-artwork { width: min(100cqw, calc((100svh - var(--header-height)) * var(--artwork-ratio))); left: 0; right: 0; top: 0; bottom: 0; margin: auto; height: auto; }
+  .group-backdrop-layer--image { z-index: 0; }
+  .group-backdrop-layer--image .group-artwork-image { mask-image: linear-gradient(to right, transparent, #000 24px, #000 calc(100% - 24px), transparent); }
+  .group-bleed-image { display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(30px); transform: scale(1.06); }
+}
 @media (max-width: 880px) {
   .app-stage { --header-height: 176px; }
   .group-artwork-decoration { display: none; }
@@ -141,4 +151,5 @@ button, a { font: inherit; }
   .inside-page-link { pointer-events: auto; }
   .portfolio-header-shell--about { position: sticky; }
   .scroll-section { height: auto; min-height: calc(100svh - var(--header-height)); }
+  .section-canvas { height: auto; }
 }

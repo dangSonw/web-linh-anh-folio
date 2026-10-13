@@ -194,13 +194,13 @@ export default function Scouting() {
   const reduced = useReducedMotion();
   return <main className="scouting-scroll">
     <section id="overview" className="scroll-section scouting-overview-section" style={{ '--section-source-height': 1044 }} aria-label="Scouting for pollens">
-      <div className="scouting-page"><div className="scouting-hero"><ScoutingArtwork title decorations={false} /><div className="scouting-mobile-artwork"><ScoutingArtwork decorations /></div></div></div>
+      <div className="section-canvas"><div className="scouting-page"><div className="scouting-hero"><ScoutingArtwork title decorations={false} /><div className="scouting-mobile-artwork"><ScoutingArtwork decorations /></div></div></div></div>
     </section>
     {topics.map(topic => <motion.section key={topic.id} id={topic.id}
       className="scroll-section scouting-detail-section" style={{ '--section-source-height': 1044 }}
       aria-label={topic.label} initial={reduced ? false : { opacity: 0 }} whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.1 }} transition={{ duration: reduced ? 0 : 0.4 }}>
-      <div className="scouting-page scouting-page--detail"><div className="scouting-panel-anchor"><TabPanel activeTab={topic.id} /></div></div>
+      <div className="section-canvas"><div className="scouting-page scouting-page--detail"><div className="scouting-panel-anchor"><TabPanel activeTab={topic.id} /></div></div></div>
     </motion.section>)}
   </main>;
 }
