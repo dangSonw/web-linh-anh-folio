@@ -11,15 +11,18 @@ function position(box, origin = [0, 0]) {
 }
 
 function DesignNode({ node, origin, heading = false, alt }) {
-  const Tag = node.type === 'image' ? 'div' : heading ? 'h1' : 'p';
+  const listed = node.listType === 'unordered';
+  const Tag = node.type === 'image' || listed ? 'div' : heading ? 'h1' : 'p';
   return (
     <Tag className={`inside-node inside-node--${node.type}${heading ? ' inside-node--heading' : ''}`}
-      data-node={node.id} style={position(node.box, origin)}>
+      data-node={node.id} style={position(node.type === 'image' ? node.slot : node.box, origin)}>
       {node.id === '71:499' ? <VideoBox poster={node.src} title="Scientific exploration prototype" src="/assets/inside/scientific-prototype.mp4" />
         : node.id === '71:501' ? <VideoBox poster={node.src} title="CNN Vibrant Stage performance" youtubeId="KTAN_pvkji0" />
         : node.type === 'image' ? <img src={node.src} alt={alt} decoding="async" /> : <>
         <img src={node.src} alt="" aria-hidden="true" />
-        <span className="inside-readable">{node.text}</span>
+        {listed ? <ul className="inside-readable inside-copy-list">
+          {node.text.split('\n').filter(Boolean).map(text => <li key={text}>{text}</li>)}
+        </ul> : <span className="inside-readable">{node.text}</span>}
       </>}
     </Tag>
   );
@@ -42,7 +45,8 @@ function Detail({ page }) {
   const panel = page.nodes.find(node => node.id === page.panel);
   const node = id => page.nodes.find(entry => entry.id === id);
   return (
-    <section className="inside-detail-panel inside-glass" style={position(panel.box)} aria-label={page.title}>
+    <section className="inside-detail-panel inside-glass"
+      style={{ ...position(panel.box), '--media-ratio': page.nodes.find(entry => entry.type === 'image').slot.slice(2).join(' / ') }} aria-label={page.title}>
       <div className="inside-detail-intro">
         <DesignNode node={node(page.heading)} origin={panel.box} heading />
         {page.intro.map(id => <DesignNode key={id} node={node(id)} origin={panel.box} />)}
@@ -67,7 +71,7 @@ export function ImpactArtwork() {
 function InsideFrame({ page }) {
   const node = id => page.nodes.find(entry => entry.id === id);
   return (
-    <div className={`inside-page inside-page--${page.kind ?? 'detail'}`} data-frame={page.frame}>
+    <div className={`inside-page inside-page--${page.kind ?? 'detail'}${page.key.startsWith('bee-hives/') ? ' inside-page--hive-detail' : ''}`} data-frame={page.frame}>
       {page.kind === 'overview' ? <>
         <DesignNode node={node(page.heading)} heading />
         <div className="inside-mobile-artwork"><ImpactArtwork /></div>

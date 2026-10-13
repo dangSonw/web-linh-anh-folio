@@ -1344,6 +1344,7 @@ export const insidePages = [
       {
         "id": "71:579",
         "type": "text",
+        "listType": "unordered",
         "box": [
           138.0146484375,
           502.50390625,
@@ -1507,6 +1508,7 @@ export const insidePages = [
       {
         "id": "71:564",
         "type": "text",
+        "listType": "unordered",
         "box": [
           138.0146484375,
           502.4560546875,
