@@ -29,7 +29,7 @@ const sections = [
   },
   {
     id: 'world',
-    to: '/#world',
+    to: '/world',
     title: 'World',
     image: '/assets/home/untitled-8-september-2026-15-35-24-1__54-5@4x.png',
     imageAlt: 'Watercolor illustration of a world',

@@ -1,5 +1,6 @@
 import { insideAssets, insideBackdrops, insideSrcSet } from '../data/insidePages.js';
 import { impactPages, hivePages } from './pageGroups.js';
+import { worldHive, worldHiveSrcSet } from '../pages/World.jsx';
 export const scoutingBackdrop = '/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@4x.webp';
 export const scoutingBackdropSrcSet = [1, 2, 4]
   .map(scale => scoutingBackdrop.replace('@4x.webp', `@${scale}x.webp`) + ` ${1440 * scale}w`)
@@ -8,6 +9,7 @@ export const scoutingBackdropSizes = '100vw';
 const scouting = '/assets/scouting/';
 const home = '/assets/home/';
 const assets = {
+  '/world': [worldHive, '/assets/world/ending.svg', '/assets/world/contact.svg'],
   ...insideAssets,
   '/': [
     home + 'type/hero-title.svg',
@@ -46,14 +48,14 @@ const assets = {
 // Retain decoded images so the incoming route can fade in with every layer ready.
 const loadedImages = new Map();
 function preloadImage(src) {
-  const responsive = src === scoutingBackdrop || insideBackdrops.includes(src);
+  const responsive = src === worldHive || src === scoutingBackdrop || insideBackdrops.includes(src);
   const key = responsive ? `${src}:${innerWidth}:${innerHeight}:${devicePixelRatio}` : src;
   if (!loadedImages.has(key)) {
     loadedImages.set(key, new Promise(resolve => {
       const image = new Image();
       image.decoding = 'async';
       if (responsive) {
-        image.srcset = src === scoutingBackdrop ? scoutingBackdropSrcSet : insideSrcSet(src);
+        image.srcset = src === worldHive ? worldHiveSrcSet : src === scoutingBackdrop ? scoutingBackdropSrcSet : insideSrcSet(src);
         image.sizes = '100vw';
       }
       image.onload = async () => {

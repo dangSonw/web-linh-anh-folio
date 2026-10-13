@@ -7,7 +7,7 @@ const items = [
   { label: 'About Me', asset: 'nav-about-gold.svg', to: '/about-me' },
   { label: 'Scouting for pollens', asset: 'nav-scouting.svg', to: '/scouting' },
   { label: 'Inside the cells', asset: 'nav-inside.svg', to: '/inside-the-cells' },
-  { label: 'World', asset: 'nav-world.svg', to: '/#world' },
+  { label: 'World', asset: 'nav-world.svg', to: '/world' },
 ];
 const groups = [
   { label: 'Impact & Leadership', asset: 'nav-impact.svg', to: '/impact-leadership' },

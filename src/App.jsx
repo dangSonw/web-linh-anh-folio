@@ -5,13 +5,14 @@ import AboutMe from './pages/AboutMe.jsx';
 import Home from './pages/Home.jsx';
 import Scouting from './pages/Scouting.jsx';
 import InsideTheCells from './pages/InsideTheCells.jsx';
+import World from './pages/World.jsx';
 import PortfolioHeader from './components/PortfolioHeader.jsx';
 import GroupBackdrop from './components/GroupBackdrop.jsx';
 import { preloadRoute } from './lib/routeAssets.js';
 import { legacyDestination } from './lib/pageGroups.js';
 
 function pageKind(path) {
-  return path === '/about-me' ? 'about' : path.startsWith('/scouting') ? 'scouting'
+  return path === '/world' ? 'world' : path === '/about-me' ? 'about' : path.startsWith('/scouting') ? 'scouting'
     : path.startsWith('/impact-leadership') ? 'impact' : path.startsWith('/inside-the-cells') ? 'inside' : 'home';
 }
 function LegacyRoute() {
@@ -28,6 +29,7 @@ function PageFrame({ location, reduceMotion }) {
     <div className={`route-layer route-layer--${kind}`}>
       <Routes location={location}>
         <Route path="/" element={<Home />} />
+        <Route path="/world" element={<World />} />
         <Route path="/about-me" element={<AboutMe />} />
         <Route path="/scouting" element={<Scouting />} />
         <Route path="/scouting/:topic" element={<LegacyRoute />} />
