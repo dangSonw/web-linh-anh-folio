@@ -1,0 +1,2829 @@
+{
+  "phase": "before",
+  "note": "Natural pixel RGBA is a workload estimate, not measured resident browser/GPU RAM.",
+  "errors": [],
+  "snapshots": [
+    {
+      "step": "home",
+      "retainedImages": 0,
+      "uniqueSources": 0,
+      "naturalPixelRGBAEstimateMiB": 0,
+      "jsHeapMiB": 8.405384063720703,
+      "images": []
+    },
+    {
+      "step": "preload-after-resize-1",
+      "retainedImages": 82,
+      "uniqueSources": 82,
+      "naturalPixelRGBAEstimateMiB": 210.56760025024414,
+      "jsHeapMiB": 8.706169128417969,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@1x.webp",
+          "width": 1280,
+          "height": 928
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-01.svg",
+          "width": 51,
+          "height": 110
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-02.svg",
+          "width": 75,
+          "height": 107
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-03.svg",
+          "width": 332,
+          "height": 332
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-04.svg",
+          "width": 75,
+          "height": 80
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-05.svg",
+          "width": 385,
+          "height": 401
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-06.svg",
+          "width": 340,
+          "height": 310
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/vision-flower-label.svg",
+          "width": 173,
+          "height": 41
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/side-interest-flower-label.svg",
+          "width": 161,
+          "height": 20
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/art-flower-label.svg",
+          "width": 44,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/bee-scouting-title.svg",
+          "width": 717,
+          "height": 189
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/con-ong-anh-thu-2__63-117@4x.png",
+          "width": 720,
+          "height": 800
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/vision-tab-title.svg",
+          "width": 200,
+          "height": 51
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/background-tab-title.svg",
+          "width": 1084,
+          "height": 108
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/side-interest-tab-title.svg",
+          "width": 431,
+          "height": 53
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-9__71-469@4x.png",
+          "width": 1120,
+          "height": 800
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-10__71-472@4x.png",
+          "width": 1396,
+          "height": 800
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-19__71-489@4x.png",
+          "width": 1124,
+          "height": 1040
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-20__71-491@4x.png",
+          "width": 1124,
+          "height": 1040
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/art-tab-title.svg",
+          "width": 118,
+          "height": 49
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-11__71-478@4x.png",
+          "width": 1016,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-12__71-479@4x.png",
+          "width": 1016,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-13__71-481@4x.png",
+          "width": 1196,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-14__71-483@4x.png",
+          "width": 1196,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-15__71-484@4x.png",
+          "width": 1016,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-16__71-485@4x.png",
+          "width": 1016,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-17__71-486@4x.png",
+          "width": 1196,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-18__71-487@4x.png",
+          "width": 1196,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/home/type/nav-impact.svg",
+          "width": 242,
+          "height": 20
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab2-1__63-196@1x.webp",
+          "width": 1280,
+          "height": 928
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-247.svg",
+          "width": 821,
+          "height": 217
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-262.svg",
+          "width": 298,
+          "height": 82
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-268.svg",
+          "width": 216,
+          "height": 64
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-265.svg",
+          "width": 339,
+          "height": 81
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-344.svg",
+          "width": 215,
+          "height": 83
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-341.svg",
+          "width": 365,
+          "height": 82
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-252.svg",
+          "width": 279,
+          "height": 16
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-266.svg",
+          "width": 197,
+          "height": 44
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-287.svg",
+          "width": 730,
+          "height": 50
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-288.svg",
+          "width": 345,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-289.svg",
+          "width": 336,
+          "height": 124
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-290.svg",
+          "width": 474,
+          "height": 124
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-291.svg",
+          "width": 476,
+          "height": 120
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-21__71-497@4x.png",
+          "width": 1996,
+          "height": 1416
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-22__71-499@4x.png",
+          "width": 1964,
+          "height": 1384
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-303.svg",
+          "width": 599,
+          "height": 50
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-304.svg",
+          "width": 389,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-306.svg",
+          "width": 464,
+          "height": 90
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-307.svg",
+          "width": 462,
+          "height": 192
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-23__71-501@4x.png",
+          "width": 1964,
+          "height": 1164
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-24__71-503@4x.png",
+          "width": 1996,
+          "height": 1196
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-66-321.svg",
+          "width": 487,
+          "height": 109
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-66-324.svg",
+          "width": 562,
+          "height": 256
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-511.svg",
+          "width": 559,
+          "height": 124
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-25__71-509@4x.png",
+          "width": 2084,
+          "height": 1412
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-26__71-512@4x.png",
+          "width": 2084,
+          "height": 1412
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-66-337.svg",
+          "width": 896,
+          "height": 109
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-342.svg",
+          "width": 459,
+          "height": 56
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-343.svg",
+          "width": 471,
+          "height": 192
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-27__71-514@4x.png",
+          "width": 1960,
+          "height": 1408
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-28__71-516@4x.png",
+          "width": 1960,
+          "height": 1408
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab3-1__54-4@1x.webp",
+          "width": 1280,
+          "height": 889
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-356.svg",
+          "width": 189,
+          "height": 167
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-357.svg",
+          "width": 335,
+          "height": 241
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-580.svg",
+          "width": 67,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-585.svg",
+          "width": 125,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-587.svg",
+          "width": 325,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-70-451.svg",
+          "width": 166,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-1__70-445@4x.png",
+          "width": 1632,
+          "height": 932
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-2__70-447@4x.png",
+          "width": 1632,
+          "height": 932
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-561.svg",
+          "width": 868,
+          "height": 90
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-533.svg",
+          "width": 433,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-11__71-537@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-13__71-539@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-564.svg",
+          "width": 900,
+          "height": 188
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-576.svg",
+          "width": 89,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-579.svg",
+          "width": 891,
+          "height": 120
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-12__71-538@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-14__71-540@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/hive@1x.webp",
+          "width": 1280,
+          "height": 889
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/ending.svg",
+          "width": 508,
+          "height": 115
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/contact.svg",
+          "width": 608,
+          "height": 112
+        }
+      ]
+    },
+    {
+      "step": "preload-after-resize-2",
+      "retainedImages": 86,
+      "uniqueSources": 82,
+      "naturalPixelRGBAEstimateMiB": 229.03716659545898,
+      "jsHeapMiB": 8.738601684570312,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@1x.webp",
+          "width": 1293,
+          "height": 937
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-01.svg",
+          "width": 51,
+          "height": 110
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-02.svg",
+          "width": 75,
+          "height": 107
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-03.svg",
+          "width": 332,
+          "height": 332
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-04.svg",
+          "width": 75,
+          "height": 80
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-05.svg",
+          "width": 385,
+          "height": 401
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-06.svg",
+          "width": 340,
+          "height": 310
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/vision-flower-label.svg",
+          "width": 173,
+          "height": 41
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/side-interest-flower-label.svg",
+          "width": 161,
+          "height": 20
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/art-flower-label.svg",
+          "width": 44,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/bee-scouting-title.svg",
+          "width": 717,
+          "height": 189
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/con-ong-anh-thu-2__63-117@4x.png",
+          "width": 720,
+          "height": 800
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/vision-tab-title.svg",
+          "width": 200,
+          "height": 51
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/background-tab-title.svg",
+          "width": 1084,
+          "height": 108
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/side-interest-tab-title.svg",
+          "width": 431,
+          "height": 53
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-9__71-469@4x.png",
+          "width": 1120,
+          "height": 800
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-10__71-472@4x.png",
+          "width": 1396,
+          "height": 800
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-19__71-489@4x.png",
+          "width": 1124,
+          "height": 1040
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-20__71-491@4x.png",
+          "width": 1124,
+          "height": 1040
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/art-tab-title.svg",
+          "width": 118,
+          "height": 49
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-11__71-478@4x.png",
+          "width": 1016,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-12__71-479@4x.png",
+          "width": 1016,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-13__71-481@4x.png",
+          "width": 1196,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-14__71-483@4x.png",
+          "width": 1196,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-15__71-484@4x.png",
+          "width": 1016,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-16__71-485@4x.png",
+          "width": 1016,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-17__71-486@4x.png",
+          "width": 1196,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-18__71-487@4x.png",
+          "width": 1196,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/home/type/nav-impact.svg",
+          "width": 242,
+          "height": 20
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab2-1__63-196@1x.webp",
+          "width": 1293,
+          "height": 938
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-247.svg",
+          "width": 821,
+          "height": 217
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-262.svg",
+          "width": 298,
+          "height": 82
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-268.svg",
+          "width": 216,
+          "height": 64
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-265.svg",
+          "width": 339,
+          "height": 81
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-344.svg",
+          "width": 215,
+          "height": 83
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-341.svg",
+          "width": 365,
+          "height": 82
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-252.svg",
+          "width": 279,
+          "height": 16
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-266.svg",
+          "width": 197,
+          "height": 44
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-287.svg",
+          "width": 730,
+          "height": 50
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-288.svg",
+          "width": 345,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-289.svg",
+          "width": 336,
+          "height": 124
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-290.svg",
+          "width": 474,
+          "height": 124
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-291.svg",
+          "width": 476,
+          "height": 120
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-21__71-497@4x.png",
+          "width": 1996,
+          "height": 1416
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-22__71-499@4x.png",
+          "width": 1964,
+          "height": 1384
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-303.svg",
+          "width": 599,
+          "height": 50
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-304.svg",
+          "width": 389,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-306.svg",
+          "width": 464,
+          "height": 90
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-307.svg",
+          "width": 462,
+          "height": 192
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-23__71-501@4x.png",
+          "width": 1964,
+          "height": 1164
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-24__71-503@4x.png",
+          "width": 1996,
+          "height": 1196
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-66-321.svg",
+          "width": 487,
+          "height": 109
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-66-324.svg",
+          "width": 562,
+          "height": 256
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-511.svg",
+          "width": 559,
+          "height": 124
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-25__71-509@4x.png",
+          "width": 2084,
+          "height": 1412
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-26__71-512@4x.png",
+          "width": 2084,
+          "height": 1412
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-66-337.svg",
+          "width": 896,
+          "height": 109
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-342.svg",
+          "width": 459,
+          "height": 56
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-343.svg",
+          "width": 471,
+          "height": 192
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-27__71-514@4x.png",
+          "width": 1960,
+          "height": 1408
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-28__71-516@4x.png",
+          "width": 1960,
+          "height": 1408
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab3-1__54-4@1x.webp",
+          "width": 1293,
+          "height": 898
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-356.svg",
+          "width": 189,
+          "height": 167
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-357.svg",
+          "width": 335,
+          "height": 241
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-580.svg",
+          "width": 67,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-585.svg",
+          "width": 125,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-587.svg",
+          "width": 325,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-70-451.svg",
+          "width": 166,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-1__70-445@4x.png",
+          "width": 1632,
+          "height": 932
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-2__70-447@4x.png",
+          "width": 1632,
+          "height": 932
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-561.svg",
+          "width": 868,
+          "height": 90
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-533.svg",
+          "width": 433,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-11__71-537@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-13__71-539@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-564.svg",
+          "width": 900,
+          "height": 188
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-576.svg",
+          "width": 89,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-579.svg",
+          "width": 891,
+          "height": 120
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-12__71-538@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-14__71-540@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/hive@1x.webp",
+          "width": 1293,
+          "height": 898
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/ending.svg",
+          "width": 508,
+          "height": 115
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/contact.svg",
+          "width": 608,
+          "height": 112
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@1x.webp",
+          "width": 1293,
+          "height": 937
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab2-1__63-196@1x.webp",
+          "width": 1293,
+          "height": 938
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab3-1__54-4@1x.webp",
+          "width": 1293,
+          "height": 898
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/hive@1x.webp",
+          "width": 1293,
+          "height": 898
+        }
+      ]
+    },
+    {
+      "step": "preload-after-resize-3",
+      "retainedImages": 90,
+      "uniqueSources": 82,
+      "naturalPixelRGBAEstimateMiB": 248.22822189331055,
+      "jsHeapMiB": 8.745731353759766,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@1x.webp",
+          "width": 1306,
+          "height": 946
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-01.svg",
+          "width": 51,
+          "height": 110
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-02.svg",
+          "width": 75,
+          "height": 107
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-03.svg",
+          "width": 332,
+          "height": 332
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-04.svg",
+          "width": 75,
+          "height": 80
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-05.svg",
+          "width": 385,
+          "height": 401
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-06.svg",
+          "width": 340,
+          "height": 310
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/vision-flower-label.svg",
+          "width": 173,
+          "height": 41
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/side-interest-flower-label.svg",
+          "width": 161,
+          "height": 20
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/art-flower-label.svg",
+          "width": 44,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/bee-scouting-title.svg",
+          "width": 717,
+          "height": 189
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/con-ong-anh-thu-2__63-117@4x.png",
+          "width": 720,
+          "height": 800
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/vision-tab-title.svg",
+          "width": 200,
+          "height": 51
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/background-tab-title.svg",
+          "width": 1084,
+          "height": 108
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/side-interest-tab-title.svg",
+          "width": 431,
+          "height": 53
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-9__71-469@4x.png",
+          "width": 1120,
+          "height": 800
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-10__71-472@4x.png",
+          "width": 1396,
+          "height": 800
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-19__71-489@4x.png",
+          "width": 1124,
+          "height": 1040
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-20__71-491@4x.png",
+          "width": 1124,
+          "height": 1040
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/art-tab-title.svg",
+          "width": 118,
+          "height": 49
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-11__71-478@4x.png",
+          "width": 1016,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-12__71-479@4x.png",
+          "width": 1016,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-13__71-481@4x.png",
+          "width": 1196,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-14__71-483@4x.png",
+          "width": 1196,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-15__71-484@4x.png",
+          "width": 1016,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-16__71-485@4x.png",
+          "width": 1016,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-17__71-486@4x.png",
+          "width": 1196,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-18__71-487@4x.png",
+          "width": 1196,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/home/type/nav-impact.svg",
+          "width": 242,
+          "height": 20
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab2-1__63-196@1x.webp",
+          "width": 1306,
+          "height": 947
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-247.svg",
+          "width": 821,
+          "height": 217
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-262.svg",
+          "width": 298,
+          "height": 82
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-268.svg",
+          "width": 216,
+          "height": 64
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-265.svg",
+          "width": 339,
+          "height": 81
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-344.svg",
+          "width": 215,
+          "height": 83
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-341.svg",
+          "width": 365,
+          "height": 82
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-252.svg",
+          "width": 279,
+          "height": 16
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-266.svg",
+          "width": 197,
+          "height": 44
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-287.svg",
+          "width": 730,
+          "height": 50
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-288.svg",
+          "width": 345,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-289.svg",
+          "width": 336,
+          "height": 124
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-290.svg",
+          "width": 474,
+          "height": 124
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-291.svg",
+          "width": 476,
+          "height": 120
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-21__71-497@4x.png",
+          "width": 1996,
+          "height": 1416
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-22__71-499@4x.png",
+          "width": 1964,
+          "height": 1384
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-303.svg",
+          "width": 599,
+          "height": 50
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-304.svg",
+          "width": 389,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-306.svg",
+          "width": 464,
+          "height": 90
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-307.svg",
+          "width": 462,
+          "height": 192
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-23__71-501@4x.png",
+          "width": 1964,
+          "height": 1164
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-24__71-503@4x.png",
+          "width": 1996,
+          "height": 1196
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-66-321.svg",
+          "width": 487,
+          "height": 109
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-66-324.svg",
+          "width": 562,
+          "height": 256
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-511.svg",
+          "width": 559,
+          "height": 124
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-25__71-509@4x.png",
+          "width": 2084,
+          "height": 1412
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-26__71-512@4x.png",
+          "width": 2084,
+          "height": 1412
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-66-337.svg",
+          "width": 896,
+          "height": 109
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-342.svg",
+          "width": 459,
+          "height": 56
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-343.svg",
+          "width": 471,
+          "height": 192
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-27__71-514@4x.png",
+          "width": 1960,
+          "height": 1408
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-28__71-516@4x.png",
+          "width": 1960,
+          "height": 1408
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab3-1__54-4@1x.webp",
+          "width": 1306,
+          "height": 907
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-356.svg",
+          "width": 189,
+          "height": 167
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-357.svg",
+          "width": 335,
+          "height": 241
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-580.svg",
+          "width": 67,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-585.svg",
+          "width": 125,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-587.svg",
+          "width": 325,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-70-451.svg",
+          "width": 166,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-1__70-445@4x.png",
+          "width": 1632,
+          "height": 932
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-2__70-447@4x.png",
+          "width": 1632,
+          "height": 932
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-561.svg",
+          "width": 868,
+          "height": 90
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-533.svg",
+          "width": 433,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-11__71-537@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-13__71-539@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-564.svg",
+          "width": 900,
+          "height": 188
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-576.svg",
+          "width": 89,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-579.svg",
+          "width": 891,
+          "height": 120
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-12__71-538@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-14__71-540@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/hive@1x.webp",
+          "width": 1306,
+          "height": 907
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/ending.svg",
+          "width": 508,
+          "height": 115
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/contact.svg",
+          "width": 608,
+          "height": 112
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@1x.webp",
+          "width": 1306,
+          "height": 946
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab2-1__63-196@1x.webp",
+          "width": 1306,
+          "height": 947
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab3-1__54-4@1x.webp",
+          "width": 1306,
+          "height": 907
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/hive@1x.webp",
+          "width": 1306,
+          "height": 907
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@1x.webp",
+          "width": 1306,
+          "height": 946
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab2-1__63-196@1x.webp",
+          "width": 1306,
+          "height": 947
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab3-1__54-4@1x.webp",
+          "width": 1306,
+          "height": 907
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/hive@1x.webp",
+          "width": 1306,
+          "height": 907
+        }
+      ]
+    },
+    {
+      "step": "preload-after-resize-4",
+      "retainedImages": 94,
+      "uniqueSources": 82,
+      "naturalPixelRGBAEstimateMiB": 268.15344619750977,
+      "jsHeapMiB": 8.774097442626953,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@1x.webp",
+          "width": 1318,
+          "height": 956
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-01.svg",
+          "width": 51,
+          "height": 110
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-02.svg",
+          "width": 75,
+          "height": 107
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-03.svg",
+          "width": 332,
+          "height": 332
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-04.svg",
+          "width": 75,
+          "height": 80
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-05.svg",
+          "width": 385,
+          "height": 401
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-06.svg",
+          "width": 340,
+          "height": 310
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/vision-flower-label.svg",
+          "width": 173,
+          "height": 41
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/side-interest-flower-label.svg",
+          "width": 161,
+          "height": 20
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/art-flower-label.svg",
+          "width": 44,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/bee-scouting-title.svg",
+          "width": 717,
+          "height": 189
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/con-ong-anh-thu-2__63-117@4x.png",
+          "width": 720,
+          "height": 800
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/vision-tab-title.svg",
+          "width": 200,
+          "height": 51
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/background-tab-title.svg",
+          "width": 1084,
+          "height": 108
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/side-interest-tab-title.svg",
+          "width": 431,
+          "height": 53
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-9__71-469@4x.png",
+          "width": 1120,
+          "height": 800
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-10__71-472@4x.png",
+          "width": 1396,
+          "height": 800
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-19__71-489@4x.png",
+          "width": 1124,
+          "height": 1040
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-20__71-491@4x.png",
+          "width": 1124,
+          "height": 1040
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/art-tab-title.svg",
+          "width": 118,
+          "height": 49
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-11__71-478@4x.png",
+          "width": 1016,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-12__71-479@4x.png",
+          "width": 1016,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-13__71-481@4x.png",
+          "width": 1196,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-14__71-483@4x.png",
+          "width": 1196,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-15__71-484@4x.png",
+          "width": 1016,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-16__71-485@4x.png",
+          "width": 1016,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-17__71-486@4x.png",
+          "width": 1196,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-18__71-487@4x.png",
+          "width": 1196,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/home/type/nav-impact.svg",
+          "width": 242,
+          "height": 20
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab2-1__63-196@1x.webp",
+          "width": 1318,
+          "height": 957
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-247.svg",
+          "width": 821,
+          "height": 217
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-262.svg",
+          "width": 298,
+          "height": 82
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-268.svg",
+          "width": 216,
+          "height": 64
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-265.svg",
+          "width": 339,
+          "height": 81
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-344.svg",
+          "width": 215,
+          "height": 83
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-341.svg",
+          "width": 365,
+          "height": 82
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-252.svg",
+          "width": 279,
+          "height": 16
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-266.svg",
+          "width": 197,
+          "height": 44
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-287.svg",
+          "width": 730,
+          "height": 50
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-288.svg",
+          "width": 345,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-289.svg",
+          "width": 336,
+          "height": 124
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-290.svg",
+          "width": 474,
+          "height": 124
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-291.svg",
+          "width": 476,
+          "height": 120
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-21__71-497@4x.png",
+          "width": 1996,
+          "height": 1416
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-22__71-499@4x.png",
+          "width": 1964,
+          "height": 1384
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-303.svg",
+          "width": 599,
+          "height": 50
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-304.svg",
+          "width": 389,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-306.svg",
+          "width": 464,
+          "height": 90
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-307.svg",
+          "width": 462,
+          "height": 192
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-23__71-501@4x.png",
+          "width": 1964,
+          "height": 1164
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-24__71-503@4x.png",
+          "width": 1996,
+          "height": 1196
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-66-321.svg",
+          "width": 487,
+          "height": 109
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-66-324.svg",
+          "width": 562,
+          "height": 256
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-511.svg",
+          "width": 559,
+          "height": 124
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-25__71-509@4x.png",
+          "width": 2084,
+          "height": 1412
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-26__71-512@4x.png",
+          "width": 2084,
+          "height": 1412
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-66-337.svg",
+          "width": 896,
+          "height": 109
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-342.svg",
+          "width": 459,
+          "height": 56
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-343.svg",
+          "width": 471,
+          "height": 192
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-27__71-514@4x.png",
+          "width": 1960,
+          "height": 1408
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-28__71-516@4x.png",
+          "width": 1960,
+          "height": 1408
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab3-1__54-4@1x.webp",
+          "width": 1318,
+          "height": 916
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-356.svg",
+          "width": 189,
+          "height": 167
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-357.svg",
+          "width": 335,
+          "height": 241
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-580.svg",
+          "width": 67,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-585.svg",
+          "width": 125,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-587.svg",
+          "width": 325,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-70-451.svg",
+          "width": 166,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-1__70-445@4x.png",
+          "width": 1632,
+          "height": 932
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-2__70-447@4x.png",
+          "width": 1632,
+          "height": 932
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-561.svg",
+          "width": 868,
+          "height": 90
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-533.svg",
+          "width": 433,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-11__71-537@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-13__71-539@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-564.svg",
+          "width": 900,
+          "height": 188
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-576.svg",
+          "width": 89,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-579.svg",
+          "width": 891,
+          "height": 120
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-12__71-538@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-14__71-540@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/hive@1x.webp",
+          "width": 1319,
+          "height": 916
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/ending.svg",
+          "width": 508,
+          "height": 115
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/contact.svg",
+          "width": 608,
+          "height": 112
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@1x.webp",
+          "width": 1318,
+          "height": 956
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab2-1__63-196@1x.webp",
+          "width": 1318,
+          "height": 957
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab3-1__54-4@1x.webp",
+          "width": 1318,
+          "height": 916
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/hive@1x.webp",
+          "width": 1319,
+          "height": 916
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@1x.webp",
+          "width": 1318,
+          "height": 956
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab2-1__63-196@1x.webp",
+          "width": 1318,
+          "height": 957
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab3-1__54-4@1x.webp",
+          "width": 1318,
+          "height": 916
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/hive@1x.webp",
+          "width": 1319,
+          "height": 916
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@1x.webp",
+          "width": 1318,
+          "height": 956
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab2-1__63-196@1x.webp",
+          "width": 1318,
+          "height": 957
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab3-1__54-4@1x.webp",
+          "width": 1318,
+          "height": 916
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/hive@1x.webp",
+          "width": 1319,
+          "height": 916
+        }
+      ]
+    },
+    {
+      "step": "preload-after-resize-5",
+      "retainedImages": 98,
+      "uniqueSources": 82,
+      "naturalPixelRGBAEstimateMiB": 288.88310623168945,
+      "jsHeapMiB": 8.793804168701172,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@1x.webp",
+          "width": 1332,
+          "height": 965
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-01.svg",
+          "width": 51,
+          "height": 110
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-02.svg",
+          "width": 75,
+          "height": 107
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-03.svg",
+          "width": 332,
+          "height": 332
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-04.svg",
+          "width": 75,
+          "height": 80
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-05.svg",
+          "width": 385,
+          "height": 401
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-06.svg",
+          "width": 340,
+          "height": 310
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/vision-flower-label.svg",
+          "width": 173,
+          "height": 41
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/side-interest-flower-label.svg",
+          "width": 161,
+          "height": 20
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/art-flower-label.svg",
+          "width": 44,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/bee-scouting-title.svg",
+          "width": 717,
+          "height": 189
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/con-ong-anh-thu-2__63-117@4x.png",
+          "width": 720,
+          "height": 800
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/vision-tab-title.svg",
+          "width": 200,
+          "height": 51
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/background-tab-title.svg",
+          "width": 1084,
+          "height": 108
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/side-interest-tab-title.svg",
+          "width": 431,
+          "height": 53
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-9__71-469@4x.png",
+          "width": 1120,
+          "height": 800
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-10__71-472@4x.png",
+          "width": 1396,
+          "height": 800
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-19__71-489@4x.png",
+          "width": 1124,
+          "height": 1040
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-20__71-491@4x.png",
+          "width": 1124,
+          "height": 1040
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/art-tab-title.svg",
+          "width": 118,
+          "height": 49
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-11__71-478@4x.png",
+          "width": 1016,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-12__71-479@4x.png",
+          "width": 1016,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-13__71-481@4x.png",
+          "width": 1196,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-14__71-483@4x.png",
+          "width": 1196,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-15__71-484@4x.png",
+          "width": 1016,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-16__71-485@4x.png",
+          "width": 1016,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-17__71-486@4x.png",
+          "width": 1196,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-18__71-487@4x.png",
+          "width": 1196,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/home/type/nav-impact.svg",
+          "width": 242,
+          "height": 20
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab2-1__63-196@1x.webp",
+          "width": 1332,
+          "height": 966
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-247.svg",
+          "width": 821,
+          "height": 217
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-262.svg",
+          "width": 298,
+          "height": 82
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-268.svg",
+          "width": 216,
+          "height": 64
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-265.svg",
+          "width": 339,
+          "height": 81
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-344.svg",
+          "width": 215,
+          "height": 83
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-341.svg",
+          "width": 365,
+          "height": 82
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-252.svg",
+          "width": 279,
+          "height": 16
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-266.svg",
+          "width": 197,
+          "height": 44
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-287.svg",
+          "width": 730,
+          "height": 50
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-288.svg",
+          "width": 345,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-289.svg",
+          "width": 336,
+          "height": 124
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-290.svg",
+          "width": 474,
+          "height": 124
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-291.svg",
+          "width": 476,
+          "height": 120
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-21__71-497@4x.png",
+          "width": 1996,
+          "height": 1416
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-22__71-499@4x.png",
+          "width": 1964,
+          "height": 1384
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-303.svg",
+          "width": 599,
+          "height": 50
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-304.svg",
+          "width": 389,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-306.svg",
+          "width": 464,
+          "height": 90
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-307.svg",
+          "width": 462,
+          "height": 192
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-23__71-501@4x.png",
+          "width": 1964,
+          "height": 1164
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-24__71-503@4x.png",
+          "width": 1996,
+          "height": 1196
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-66-321.svg",
+          "width": 487,
+          "height": 109
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-66-324.svg",
+          "width": 562,
+          "height": 256
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-511.svg",
+          "width": 559,
+          "height": 124
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-25__71-509@4x.png",
+          "width": 2084,
+          "height": 1412
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-26__71-512@4x.png",
+          "width": 2084,
+          "height": 1412
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-66-337.svg",
+          "width": 896,
+          "height": 109
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-342.svg",
+          "width": 459,
+          "height": 56
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-343.svg",
+          "width": 471,
+          "height": 192
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-27__71-514@4x.png",
+          "width": 1960,
+          "height": 1408
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-28__71-516@4x.png",
+          "width": 1960,
+          "height": 1408
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab3-1__54-4@1x.webp",
+          "width": 1332,
+          "height": 925
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-356.svg",
+          "width": 189,
+          "height": 167
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-357.svg",
+          "width": 335,
+          "height": 241
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-580.svg",
+          "width": 67,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-585.svg",
+          "width": 125,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-587.svg",
+          "width": 325,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-70-451.svg",
+          "width": 166,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-1__70-445@4x.png",
+          "width": 1632,
+          "height": 932
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-2__70-447@4x.png",
+          "width": 1632,
+          "height": 932
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-561.svg",
+          "width": 868,
+          "height": 90
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-533.svg",
+          "width": 433,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-11__71-537@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-13__71-539@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-564.svg",
+          "width": 900,
+          "height": 188
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-576.svg",
+          "width": 89,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-579.svg",
+          "width": 891,
+          "height": 120
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-12__71-538@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-14__71-540@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/hive@1x.webp",
+          "width": 1332,
+          "height": 925
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/ending.svg",
+          "width": 508,
+          "height": 115
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/contact.svg",
+          "width": 608,
+          "height": 112
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@1x.webp",
+          "width": 1332,
+          "height": 965
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab2-1__63-196@1x.webp",
+          "width": 1332,
+          "height": 966
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab3-1__54-4@1x.webp",
+          "width": 1332,
+          "height": 925
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/hive@1x.webp",
+          "width": 1332,
+          "height": 925
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@1x.webp",
+          "width": 1332,
+          "height": 965
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab2-1__63-196@1x.webp",
+          "width": 1332,
+          "height": 966
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab3-1__54-4@1x.webp",
+          "width": 1332,
+          "height": 925
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/hive@1x.webp",
+          "width": 1332,
+          "height": 925
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@1x.webp",
+          "width": 1332,
+          "height": 965
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab2-1__63-196@1x.webp",
+          "width": 1332,
+          "height": 966
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab3-1__54-4@1x.webp",
+          "width": 1332,
+          "height": 925
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/hive@1x.webp",
+          "width": 1332,
+          "height": 925
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@1x.webp",
+          "width": 1332,
+          "height": 965
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab2-1__63-196@1x.webp",
+          "width": 1332,
+          "height": 966
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab3-1__54-4@1x.webp",
+          "width": 1332,
+          "height": 925
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/hive@1x.webp",
+          "width": 1332,
+          "height": 925
+        }
+      ]
+    },
+    {
+      "step": "preload-after-resize-6",
+      "retainedImages": 102,
+      "uniqueSources": 82,
+      "naturalPixelRGBAEstimateMiB": 310.3898735046387,
+      "jsHeapMiB": 8.814208984375,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@1x.webp",
+          "width": 1345,
+          "height": 975
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-01.svg",
+          "width": 51,
+          "height": 110
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-02.svg",
+          "width": 75,
+          "height": 107
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-03.svg",
+          "width": 332,
+          "height": 332
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-04.svg",
+          "width": 75,
+          "height": 80
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-05.svg",
+          "width": 385,
+          "height": 401
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/vector-06.svg",
+          "width": 340,
+          "height": 310
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/vision-flower-label.svg",
+          "width": 173,
+          "height": 41
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/side-interest-flower-label.svg",
+          "width": 161,
+          "height": 20
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/art-flower-label.svg",
+          "width": 44,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/bee-scouting-title.svg",
+          "width": 717,
+          "height": 189
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/con-ong-anh-thu-2__63-117@4x.png",
+          "width": 720,
+          "height": 800
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/vision-tab-title.svg",
+          "width": 200,
+          "height": 51
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/background-tab-title.svg",
+          "width": 1084,
+          "height": 108
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/side-interest-tab-title.svg",
+          "width": 431,
+          "height": 53
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-9__71-469@4x.png",
+          "width": 1120,
+          "height": 800
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-10__71-472@4x.png",
+          "width": 1396,
+          "height": 800
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-19__71-489@4x.png",
+          "width": 1124,
+          "height": 1040
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-20__71-491@4x.png",
+          "width": 1124,
+          "height": 1040
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/type/art-tab-title.svg",
+          "width": 118,
+          "height": 49
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-11__71-478@4x.png",
+          "width": 1016,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-12__71-479@4x.png",
+          "width": 1016,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-13__71-481@4x.png",
+          "width": 1196,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-14__71-483@4x.png",
+          "width": 1196,
+          "height": 1360
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-15__71-484@4x.png",
+          "width": 1016,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-16__71-485@4x.png",
+          "width": 1016,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-17__71-486@4x.png",
+          "width": 1196,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/image-18__71-487@4x.png",
+          "width": 1196,
+          "height": 1140
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/home/type/nav-impact.svg",
+          "width": 242,
+          "height": 20
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab2-1__63-196@1x.webp",
+          "width": 1345,
+          "height": 976
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-247.svg",
+          "width": 821,
+          "height": 217
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-262.svg",
+          "width": 298,
+          "height": 82
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-268.svg",
+          "width": 216,
+          "height": 64
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-265.svg",
+          "width": 339,
+          "height": 81
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-344.svg",
+          "width": 215,
+          "height": 83
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-341.svg",
+          "width": 365,
+          "height": 82
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-252.svg",
+          "width": 279,
+          "height": 16
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-266.svg",
+          "width": 197,
+          "height": 44
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-287.svg",
+          "width": 730,
+          "height": 50
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-288.svg",
+          "width": 345,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-289.svg",
+          "width": 336,
+          "height": 124
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-290.svg",
+          "width": 474,
+          "height": 124
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-291.svg",
+          "width": 476,
+          "height": 120
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-21__71-497@4x.png",
+          "width": 1996,
+          "height": 1416
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-22__71-499@4x.png",
+          "width": 1964,
+          "height": 1384
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-303.svg",
+          "width": 599,
+          "height": 50
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-304.svg",
+          "width": 389,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-306.svg",
+          "width": 464,
+          "height": 90
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-63-307.svg",
+          "width": 462,
+          "height": 192
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-23__71-501@4x.png",
+          "width": 1964,
+          "height": 1164
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-24__71-503@4x.png",
+          "width": 1996,
+          "height": 1196
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-66-321.svg",
+          "width": 487,
+          "height": 109
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-66-324.svg",
+          "width": 562,
+          "height": 256
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-511.svg",
+          "width": 559,
+          "height": 124
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-25__71-509@4x.png",
+          "width": 2084,
+          "height": 1412
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-26__71-512@4x.png",
+          "width": 2084,
+          "height": 1412
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-66-337.svg",
+          "width": 896,
+          "height": 109
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-342.svg",
+          "width": 459,
+          "height": 56
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-343.svg",
+          "width": 471,
+          "height": 192
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-27__71-514@4x.png",
+          "width": 1960,
+          "height": 1408
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-28__71-516@4x.png",
+          "width": 1960,
+          "height": 1408
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab3-1__54-4@1x.webp",
+          "width": 1345,
+          "height": 934
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-356.svg",
+          "width": 189,
+          "height": 167
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-67-357.svg",
+          "width": 335,
+          "height": 241
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-580.svg",
+          "width": 67,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-585.svg",
+          "width": 125,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-587.svg",
+          "width": 325,
+          "height": 18
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-70-451.svg",
+          "width": 166,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-1__70-445@4x.png",
+          "width": 1632,
+          "height": 932
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-2__70-447@4x.png",
+          "width": 1632,
+          "height": 932
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-561.svg",
+          "width": 868,
+          "height": 90
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-533.svg",
+          "width": 433,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-11__71-537@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-13__71-539@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-564.svg",
+          "width": 900,
+          "height": 188
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-576.svg",
+          "width": 89,
+          "height": 24
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/type/text-71-579.svg",
+          "width": 891,
+          "height": 120
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-12__71-538@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/image-14__71-540@4x.png",
+          "width": 1700,
+          "height": 1092
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/hive@1x.webp",
+          "width": 1345,
+          "height": 934
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/ending.svg",
+          "width": 508,
+          "height": 115
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/contact.svg",
+          "width": 608,
+          "height": 112
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@1x.webp",
+          "width": 1345,
+          "height": 975
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab2-1__63-196@1x.webp",
+          "width": 1345,
+          "height": 976
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab3-1__54-4@1x.webp",
+          "width": 1345,
+          "height": 934
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/hive@1x.webp",
+          "width": 1345,
+          "height": 934
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@1x.webp",
+          "width": 1345,
+          "height": 975
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab2-1__63-196@1x.webp",
+          "width": 1345,
+          "height": 976
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab3-1__54-4@1x.webp",
+          "width": 1345,
+          "height": 934
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/hive@1x.webp",
+          "width": 1345,
+          "height": 934
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@1x.webp",
+          "width": 1345,
+          "height": 975
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab2-1__63-196@1x.webp",
+          "width": 1345,
+          "height": 976
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab3-1__54-4@1x.webp",
+          "width": 1345,
+          "height": 934
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/hive@1x.webp",
+          "width": 1345,
+          "height": 934
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@1x.webp",
+          "width": 1345,
+          "height": 975
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab2-1__63-196@1x.webp",
+          "width": 1345,
+          "height": 976
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab3-1__54-4@1x.webp",
+          "width": 1345,
+          "height": 934
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/hive@1x.webp",
+          "width": 1345,
+          "height": 934
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/scouting/untitled-9-september-2026-14-47-00-1__63-49@1x.webp",
+          "width": 1345,
+          "height": 975
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab2-1__63-196@1x.webp",
+          "width": 1345,
+          "height": 976
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/inside/linh-anh-tab3-1__54-4@1x.webp",
+          "width": 1345,
+          "height": 934
+        },
+        {
+          "src": "http://127.0.0.1:5178/assets/world/hive@1x.webp",
+          "width": 1345,
+          "height": 934
+        }
+      ]
+    }
+  ]
+}

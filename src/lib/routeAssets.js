@@ -45,24 +45,33 @@ const assets = {
       .map(name => scouting + name + '@4x.png'),
   ],
 };
-// Retain decoded images so the incoming route can fade in with every layer ready.
+// Cache completion, not decoded media; the browser owns its media cache.
+// Bound viewport-specific keys and detach temporary image sources after decoding.
 const loadedImages = new Map();
 function preloadImage(src) {
   const responsive = src === worldHive || src === scoutingBackdrop || insideBackdrops.includes(src);
-  const key = responsive ? `${src}:${innerWidth}:${innerHeight}:${devicePixelRatio}` : src;
+  const key = responsive ? `${src}:${innerWidth}:${devicePixelRatio}` : src;
   if (!loadedImages.has(key)) {
+    if (loadedImages.size >= 128) loadedImages.delete(loadedImages.keys().next().value);
     loadedImages.set(key, new Promise(resolve => {
       const image = new Image();
       image.decoding = 'async';
+      const finish = () => {
+        image.onload = image.onerror = null;
+        // Detached srcset images can remain registered for viewport changes.
+        image.removeAttribute('srcset');
+        image.removeAttribute('src');
+        resolve();
+      };
       if (responsive) {
         image.srcset = src === worldHive ? worldHiveSrcSet : src === scoutingBackdrop ? scoutingBackdropSrcSet : insideSrcSet(src);
         image.sizes = '100vw';
       }
       image.onload = async () => {
         await image.decode().catch(() => {});
-        resolve(image);
+        finish();
       };
-      image.onerror = () => { loadedImages.delete(key); resolve(image); };
+      image.onerror = () => { loadedImages.delete(key); finish(); };
       image.src = src;
     }));
   }

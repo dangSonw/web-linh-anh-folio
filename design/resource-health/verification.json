@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-14",
+  "change": "Cache completion with at most 128 entries, remove the irrelevant height component from viewport keys, release temporary image handlers/srcset/src after decode, and allow failed loads to retry",
+  "before": "before-preload.json: 82 media-bearing Image objects after the first preload, 102 after six viewport changes; approximately 211 to 310 MiB natural-pixel RGBA workload estimate",
+  "after": "after-preload.json: 20 viewport changes, cache remains capped at 128 entries and temporary Image objects have no media source; empty wrappers are reported separately",
+  "limitations": "Pixel workload is not actual resident RAM; browser/native/GPU caches are not included in JS heap. The test observes wrappers using WeakRef and forces GC; it does not prove total RAM can never exhaust.",
+  "responsive": { "chromiumCases": 199, "webkitCases": 199, "passed": true },
+  "interactions": "Dropdown keyboard/mouse/touch, Back/Forward, direct/reload URL reset and reduced motion passed in the responsive suite",
+  "hmr": "routeAssets.js updated without document reload or route loss",
+  "production": "Cross-project audit saved at ../web-ngo-bao-chau/design/resource-health/linh-production.json; three navigation cycles, steady animation and 20 local HTTP requests passed without application errors",
+  "remainingCost": "Large 4x source images and preloading whole chapter groups can still make cold navigation expensive. Local preview cache behaviour is not deployed CDN behaviour.",
+  "build": "npm run build passed",
+  "graph": "Native Codebase Memory CLI reindexed and queried preloadImage; unrelated partial CSS coverage was checked from source"
+}

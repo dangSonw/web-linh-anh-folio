@@ -1,0 +1,257 @@
+{
+  "phase": "after",
+  "note": "Natural pixel RGBA is a workload estimate, not measured resident browser/GPU RAM. Empty image wrappers are counted separately from retained media.",
+  "errors": [],
+  "snapshots": [
+    {
+      "step": "home",
+      "assetCacheSizes": [],
+      "retainedImages": 0,
+      "retainedMediaImages": 0,
+      "uniqueSources": 0,
+      "naturalPixelRGBAEstimateMiB": 0,
+      "jsHeapMiB": 8.418392181396484,
+      "images": []
+    },
+    {
+      "step": "preload-after-resize-1",
+      "assetCacheSizes": [
+        82
+      ],
+      "retainedImages": 82,
+      "retainedMediaImages": 0,
+      "uniqueSources": 0,
+      "naturalPixelRGBAEstimateMiB": 0,
+      "jsHeapMiB": 8.716571807861328,
+      "images": []
+    },
+    {
+      "step": "preload-after-resize-2",
+      "assetCacheSizes": [
+        86
+      ],
+      "retainedImages": 86,
+      "retainedMediaImages": 0,
+      "uniqueSources": 0,
+      "naturalPixelRGBAEstimateMiB": 0,
+      "jsHeapMiB": 8.745735168457031,
+      "images": []
+    },
+    {
+      "step": "preload-after-resize-3",
+      "assetCacheSizes": [
+        90
+      ],
+      "retainedImages": 90,
+      "retainedMediaImages": 0,
+      "uniqueSources": 0,
+      "naturalPixelRGBAEstimateMiB": 0,
+      "jsHeapMiB": 8.771312713623047,
+      "images": []
+    },
+    {
+      "step": "preload-after-resize-4",
+      "assetCacheSizes": [
+        94
+      ],
+      "retainedImages": 94,
+      "retainedMediaImages": 0,
+      "uniqueSources": 0,
+      "naturalPixelRGBAEstimateMiB": 0,
+      "jsHeapMiB": 8.790061950683594,
+      "images": []
+    },
+    {
+      "step": "preload-after-resize-5",
+      "assetCacheSizes": [
+        98
+      ],
+      "retainedImages": 98,
+      "retainedMediaImages": 0,
+      "uniqueSources": 0,
+      "naturalPixelRGBAEstimateMiB": 0,
+      "jsHeapMiB": 8.807476043701172,
+      "images": []
+    },
+    {
+      "step": "preload-after-resize-6",
+      "assetCacheSizes": [
+        102
+      ],
+      "retainedImages": 102,
+      "retainedMediaImages": 0,
+      "uniqueSources": 0,
+      "naturalPixelRGBAEstimateMiB": 0,
+      "jsHeapMiB": 8.846176147460938,
+      "images": []
+    },
+    {
+      "step": "preload-after-resize-7",
+      "assetCacheSizes": [
+        106
+      ],
+      "retainedImages": 106,
+      "retainedMediaImages": 0,
+      "uniqueSources": 0,
+      "naturalPixelRGBAEstimateMiB": 0,
+      "jsHeapMiB": 8.862491607666016,
+      "images": []
+    },
+    {
+      "step": "preload-after-resize-8",
+      "assetCacheSizes": [
+        110
+      ],
+      "retainedImages": 110,
+      "retainedMediaImages": 0,
+      "uniqueSources": 0,
+      "naturalPixelRGBAEstimateMiB": 0,
+      "jsHeapMiB": 8.878543853759766,
+      "images": []
+    },
+    {
+      "step": "preload-after-resize-9",
+      "assetCacheSizes": [
+        114
+      ],
+      "retainedImages": 114,
+      "retainedMediaImages": 0,
+      "uniqueSources": 0,
+      "naturalPixelRGBAEstimateMiB": 0,
+      "jsHeapMiB": 8.889957427978516,
+      "images": []
+    },
+    {
+      "step": "preload-after-resize-10",
+      "assetCacheSizes": [
+        118
+      ],
+      "retainedImages": 118,
+      "retainedMediaImages": 0,
+      "uniqueSources": 0,
+      "naturalPixelRGBAEstimateMiB": 0,
+      "jsHeapMiB": 8.902095794677734,
+      "images": []
+    },
+    {
+      "step": "preload-after-resize-11",
+      "assetCacheSizes": [
+        122
+      ],
+      "retainedImages": 122,
+      "retainedMediaImages": 0,
+      "uniqueSources": 0,
+      "naturalPixelRGBAEstimateMiB": 0,
+      "jsHeapMiB": 8.91904067993164,
+      "images": []
+    },
+    {
+      "step": "preload-after-resize-12",
+      "assetCacheSizes": [
+        126
+      ],
+      "retainedImages": 126,
+      "retainedMediaImages": 0,
+      "uniqueSources": 0,
+      "naturalPixelRGBAEstimateMiB": 0,
+      "jsHeapMiB": 8.930679321289062,
+      "images": []
+    },
+    {
+      "step": "preload-after-resize-13",
+      "assetCacheSizes": [
+        128
+      ],
+      "retainedImages": 130,
+      "retainedMediaImages": 0,
+      "uniqueSources": 0,
+      "naturalPixelRGBAEstimateMiB": 0,
+      "jsHeapMiB": 8.947158813476562,
+      "images": []
+    },
+    {
+      "step": "preload-after-resize-14",
+      "assetCacheSizes": [
+        128
+      ],
+      "retainedImages": 212,
+      "retainedMediaImages": 0,
+      "uniqueSources": 0,
+      "naturalPixelRGBAEstimateMiB": 0,
+      "jsHeapMiB": 9.192779541015625,
+      "images": []
+    },
+    {
+      "step": "preload-after-resize-15",
+      "assetCacheSizes": [
+        128
+      ],
+      "retainedImages": 216,
+      "retainedMediaImages": 0,
+      "uniqueSources": 0,
+      "naturalPixelRGBAEstimateMiB": 0,
+      "jsHeapMiB": 9.204601287841797,
+      "images": []
+    },
+    {
+      "step": "preload-after-resize-16",
+      "assetCacheSizes": [
+        128
+      ],
+      "retainedImages": 220,
+      "retainedMediaImages": 0,
+      "uniqueSources": 0,
+      "naturalPixelRGBAEstimateMiB": 0,
+      "jsHeapMiB": 9.21878433227539,
+      "images": []
+    },
+    {
+      "step": "preload-after-resize-17",
+      "assetCacheSizes": [
+        128
+      ],
+      "retainedImages": 224,
+      "retainedMediaImages": 0,
+      "uniqueSources": 0,
+      "naturalPixelRGBAEstimateMiB": 0,
+      "jsHeapMiB": 9.228870391845703,
+      "images": []
+    },
+    {
+      "step": "preload-after-resize-18",
+      "assetCacheSizes": [
+        128
+      ],
+      "retainedImages": 228,
+      "retainedMediaImages": 0,
+      "uniqueSources": 0,
+      "naturalPixelRGBAEstimateMiB": 0,
+      "jsHeapMiB": 9.244071960449219,
+      "images": []
+    },
+    {
+      "step": "preload-after-resize-19",
+      "assetCacheSizes": [
+        128
+      ],
+      "retainedImages": 232,
+      "retainedMediaImages": 0,
+      "uniqueSources": 0,
+      "naturalPixelRGBAEstimateMiB": 0,
+      "jsHeapMiB": 9.25604248046875,
+      "images": []
+    },
+    {
+      "step": "preload-after-resize-20",
+      "assetCacheSizes": [
+        128
+      ],
+      "retainedImages": 236,
+      "retainedMediaImages": 0,
+      "uniqueSources": 0,
+      "naturalPixelRGBAEstimateMiB": 0,
+      "jsHeapMiB": 9.268013000488281,
+      "images": []
+    }
+  ]
+}
