@@ -31,10 +31,18 @@ const artImages = [
   ['image-18__71-487@4x.png', 'A painting of a cat under the moon'],
 ];
 
+// Intrinsic widths of the original Figma SVG exports, in the 1440px canvas.
+const outlineWidths = {
+  'vision-tab-title': 200, 'background-tab-title': 1084,
+  'side-interest-tab-title': 431, 'art-tab-title': 118,
+  'vision-flower-label': 173, 'side-interest-flower-label': 161,
+  'art-flower-label': 44, 'bee-scouting-title': 717,
+};
+
 function OutlineText({ file, text, className = '', to, ...events }) {
   const Tag = to ? Link : 'span';
   return (
-    <Tag className={`scouting-outline ${className}`} to={to} {...events}>
+    <Tag className={`scouting-outline ${className}`} to={to} style={{ '--outline-width': outlineWidths[file] }} {...events}>
       <img src={`/assets/scouting/type/${file}.svg`} alt="" aria-hidden="true" />
       <span className="portfolio-visually-hidden">{text}</span>
     </Tag>

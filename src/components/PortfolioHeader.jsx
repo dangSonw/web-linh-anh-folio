@@ -4,14 +4,14 @@ import { preloadRoute } from '../lib/routeAssets.js';
 import './PortfolioHeader.css';
 
 const items = [
-  { label: 'About Me', asset: 'nav-about-gold.svg', to: '/about-me' },
-  { label: 'Scouting for pollens', asset: 'nav-scouting.svg', to: '/scouting' },
-  { label: 'Inside the cells', asset: 'nav-inside.svg', to: '/inside-the-cells' },
-  { label: 'World', asset: 'nav-world.svg', to: '/world' },
+  { label: 'About Me', asset: 'nav-about-gold.svg', width: 113, to: '/about-me' },
+  { label: 'Scouting for pollens', asset: 'nav-scouting.svg', width: 265, to: '/scouting' },
+  { label: 'Inside the cells', asset: 'nav-inside.svg', width: 191, to: '/inside-the-cells' },
+  { label: 'World', asset: 'nav-world.svg', width: 79, to: '/world' },
 ];
 const groups = [
-  { label: 'Impact & Leadership', asset: 'nav-impact.svg', to: '/impact-leadership' },
-  { label: 'Inside the cells', asset: 'nav-inside.svg', to: '/inside-the-cells' },
+  { label: 'Impact & Leadership', asset: 'nav-impact.svg', width: 242, to: '/impact-leadership' },
+  { label: 'Inside the cells', asset: 'nav-inside.svg', width: 191, to: '/inside-the-cells' },
 ];
 export default function PortfolioHeader() {
   const location = useLocation();
@@ -45,7 +45,7 @@ export default function PortfolioHeader() {
     return () => observer.disconnect();
   }, [displayed, movePill]);
   const label = (item, chevron = false) => <>
-    <img src={`/assets/home/type/${item.asset}`} alt="" />
+    <img src={`/assets/home/type/${item.asset}`} style={{ '--label-width': item.width }} alt="" />
     <span className="portfolio-visually-hidden portfolio-nav__text">{item.label}</span>
     {chevron && <img className="portfolio-nav__chevron" src="/assets/home/type/nav-chevron.svg" alt="" />}
   </>;
@@ -54,9 +54,16 @@ export default function PortfolioHeader() {
     <nav className="portfolio-nav" aria-label="Portfolio sections" ref={navRef} onMouseLeave={() => setHoverIndex(null)}>
       <span className="portfolio-nav__pill-track" aria-hidden="true"><span className={`portfolio-nav__pill${displayed === null ? '' : ' is-visible'}`} style={pill} /></span>
       {items.map((item, index) => index === 2 ? <div key={item.to} className="portfolio-nav__group" ref={groupRef}
-        onMouseEnter={() => { setOpen(true); setHoverIndex(2); groups.forEach(group => preloadRoute(group.to)); }}
+        onPointerEnter={event => {
+          if (event.pointerType === 'mouse') { setOpen(true); setHoverIndex(2); }
+          groups.forEach(group => preloadRoute(group.to));
+        }}
         onMouseLeave={event => { if (!event.currentTarget.contains(document.activeElement)) setOpen(false); }}
-        onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false); }}
+        onBlur={event => {
+          // Safari can blur to body on mousedown before a dropdown link receives click.
+          if (!event.currentTarget.contains(event.relatedTarget) &&
+              (event.relatedTarget || !event.currentTarget.matches(':hover'))) setOpen(false);
+        }}
         onKeyDown={event => { if (event.key === 'Escape') { setOpen(false); linkRefs.current[2]?.focus(); } }}>
         <button type="button" className={`portfolio-nav__link${displayed === 2 ? ' is-selected' : ''}`}
           ref={node => { linkRefs.current[2] = node; }} aria-haspopup="true" aria-expanded={open}

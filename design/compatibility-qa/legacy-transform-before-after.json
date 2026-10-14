@@ -1,0 +1,41 @@
+{
+  "browserInfo": {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.4 Safari/605.1.15",
+    "division": true
+  },
+  "simulation": "Original CSS with typed-division transforms rejected; not a claim that this WebKit build rejects the expression",
+  "viewport": [
+    1280,
+    800
+  ],
+  "dpr": 2,
+  "originalCommit": "17f4885",
+  "before": [
+    {
+      "name": "Scientific exploration",
+      "gap": -17.1875,
+      "titleWidth": 298,
+      "captionWidth": 279
+    },
+    {
+      "name": "CNN Vibrant Stage",
+      "gap": -21.765625,
+      "titleWidth": 339,
+      "captionWidth": 197
+    }
+  ],
+  "after": [
+    {
+      "name": "Scientific exploration",
+      "gap": 8.71875,
+      "titleWidth": 203.90625,
+      "captionWidth": 190.90625
+    },
+    {
+      "name": "CNN Vibrant Stage",
+      "gap": 3.8125,
+      "titleWidth": 231.953125,
+      "captionWidth": 134.796875
+    }
+  ]
+}

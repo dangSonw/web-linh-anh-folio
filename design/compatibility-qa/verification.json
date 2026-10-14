@@ -1,0 +1,36 @@
+{
+  "scope": "Responsive typography and shared menu across Home, About Me, Scouting, Impact & Leadership, Inside the Cells and World",
+  "source": {
+    "figmaGeometry": ["design/inside-the-cells.json", "design/inside-text-render-bounds.json", "public/assets/home/type", "public/assets/scouting/type"],
+    "note": "Original SVG dimensions and existing Figma positions retained; no fonts or artwork replaced",
+    "cssArithmeticReference": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Values_and_units/Using_typed_arithmetic"
+  },
+  "changes": {
+    "insideText": "SVG text fills its Figma box using width:100% rather than a transform requiring length/length division",
+    "menu": "SVG widths use original art widths scaled once to the header canvas; chevron keeps its source ratio",
+    "scouting": "Text, flower overlays and arrows use source SVG widths and ordinary length/numeric arithmetic; nested scale transforms removed",
+    "dropdown": "Null-relatedTarget blur on Safari no longer removes a hovered dropdown before link click; touch pointer entry does not open via mouse hover before tap toggles"
+  },
+  "verification": {
+    "totalViewportDprCases": 597,
+    "browsers": ["Chromium Chrome 155", "Playwright WebKit 26.6", "Playwright WebKit 18.4"],
+    "reports": ["chromium-results.json", "webkit-results.json", "webkit-18-results.json"],
+    "eachBrowserCases": 199,
+    "viewportWidths": [375, 420, 600, 601, 768, 880, 881, 906, 1024, 1080, 1200, 1280, 1440, 1512, 1728, 1800, 1920, 2048, 2560, 3440, 3840],
+    "retina": "DPR 2 at 1280x800, 1440x900, 1512x982, 1728x1117, 1920x1200; DPR 3 at 420x896",
+    "specialDisplays": "Portrait, ultrawide, 4K, short 600px-high desktop, split view, both sides of changed layout boundaries and original 1440x1168 frame",
+    "layout": "No horizontal overflow; SVG text matches boxes, all measured overview captions clear titles, menu stays inside links with source aspect ratio",
+    "reproduction": "legacy-transform-before-after.json: original CSS with rejected transforms reproduced overlap at 1280x800/DPR2; gaps -17.19/-21.77px become +8.72/+3.81px",
+    "interactions": "Shared header DOM, dropdown click and touch, Enter/Escape, focus exit, Back/Forward, startup reload/direct URL reset and reduced motion passed",
+    "hmr": "hmr.json: CSS reload preserved header and navigation",
+    "runtime": "No application console errors/warnings, page errors or failed HTTP responses observed. Expected Framer Motion reduced-motion development notices recorded separately",
+    "build": "npm run build passed",
+    "rerun": "node scripts/check-responsive-type.mjs <Playwright-module-URL> chromium|webkit; set QA_LABEL to distinguish engine versions"
+  },
+  "limitations": {
+    "hardware": "Windows-hosted Playwright browsers and Retina/viewport emulation; not a physical MacBook test",
+    "oldSafari": "The Playwright WebKit 18.4 build accepts typed division. Rejection is explicitly simulated, not claimed as an observed rejection by this build",
+    "liveDesign": "Connected Figma Bridge currently targets Ngo Bao Chau; this patch uses the repository's recorded Linh Anh geometry and original SVG assets",
+    "graph": "Native Codegraph MCP CLI architecture/search/reindex succeeded. Parser reports partial coverage for CSS @container rules; those rules were inspected directly and verified in browsers"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "cssHmr": true,
+  "headerPreserved": true,
+  "navigationAfterHmr": true,
+  "errors": []
+}
